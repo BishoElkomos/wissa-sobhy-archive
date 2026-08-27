@@ -49,8 +49,6 @@ Human Rights Watch's 21 August 2013 report documents widespread attacks on churc
 
 Source: https://www.hrw.org/news/2013/08/21/egypt-mass-attacks-churches
 
-The report also connects the event to the wider Minya security context and records statements from the head of the Minya security directorate.
-
 **Archive status:** high-value independent source for the wider event, location and institutional context.
 
 ### 2013 — Deir Mawas field reporting with Wissa Sobhy
@@ -66,6 +64,13 @@ Source: https://www.wataninet.com/2013/09/%D9%85%D8%B1%D9%83%D8%B2-%D8%AF%D9%8A%
 Source: https://www.mobtada.com/cases/102560/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D8%AF%D9%84%D8%AC%D8%A7-%D8%AA%D8%AD%D9%88%D9%84%D8%AA-%D9%84%D9%82%D9%84%D8%B9%D8%A9-%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D8%AE%D9%88%D8%A7%D9%86-%D8%B6%D8%AF-%D8%A3%D9%82%D8%A8%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7
 
 **Archive status:** contemporary multimedia source; media provenance and original video/image files should be recovered.
+
+### 2013 — Kuwait press discovery
+A *Al-Jarida* (Kuwait) report titled **«بعد عام من الاحتراق... الصلاة فوق حطام الكنائس»** is a particularly valuable international source. It identifies Wissa Sobhy as deputy of the Deir Mawas and Delga bishopric and records his statement about Christians in Delga worshipping in the burned church complex because alternative worship space was unavailable, while also documenting the slow restoration process.
+
+Source: https://www.aljarida.com/articles/1462370327718310800/amp
+
+**Archive status:** high-value international press source. Preserve the article, publication date, author, exact quotation, event date/context, and any photographs accompanying it. Search the non-AMP/original page and archive captures for additional media.
 
 ### 2013 — HRW report as a source for the institutional graph
 HRW's August 2013 documentation is particularly useful for connecting **Delga → Minya Governorate → security directorate → churches → clergy/witnesses → attacks**, even when Wissa Sobhy is not personally named. This should become a separate event/institutional context record rather than being forced into his personal biography.
@@ -90,7 +95,9 @@ Fresh searches on Arabic and English variants did **not** locate a reliable 2015
 **Decision:** the previously remembered 2015 governor/Wissa item remains an open `research_lead`. Do not publish the relationship as verified until the original article, archive capture or reliable independent copy is recovered.
 
 ## International-language research
-The 2010 German result demonstrates international circulation of material concerning Wissa Sobhy. Continue systematic searches using:
+The 2010 German result demonstrates international circulation of material concerning Wissa Sobhy. The Kuwait *Al-Jarida* result now provides a second concrete international-language source from the 2013 aftermath.
+
+Continue systematic searches using:
 - Wissa Sobhy / Wissa Soubhy / Wisa Sobhy / Wisa Soubhy
 - Wissa Sobhy Tadrous / Tadros / Tadrous
 - Deir Mawas / Dair Mawas / Dayr Mawas
