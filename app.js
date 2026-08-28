@@ -1,0 +1,4 @@
+const input=document.querySelector('#search');
+const searchable=[...document.querySelectorAll('main section, main article')];
+input?.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();if(!q){searchable.forEach(x=>x.classList.remove('search-hit','search-dim'));return}searchable.forEach(x=>{const hit=x.innerText.toLowerCase().includes(q);x.classList.toggle('search-hit',hit);x.classList.toggle('search-dim',!hit)});const first=document.querySelector('.search-hit');if(first&&q.length>1) first.scrollIntoView({behavior:'smooth',block:'center'});});
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});document.querySelectorAll('.feature,.panel,.timeline article,.place-grid article,.evidence-grid>div').forEach(x=>observer.observe(x));

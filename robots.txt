@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wissa-sobhy-archive.vercel.app/sitemap.xml
