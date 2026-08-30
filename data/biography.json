@@ -1,0 +1,366 @@
+{
+  "person": {
+    "id": "wissa-sobhy-tadros",
+    "name_arabic": "القمص ويصا صبحي تادرس",
+    "name_english": "Wissa Sobhy Tadros",
+    "secular_name": "سمير صبحي",
+    "title": "وكيل إيبارشية ديرمواس ودلجا",
+    "church_position": "Vicar of Deir Mawas and Delga Diocese"
+  },
+
+  "birth": {
+    "date": "1956-12-04",
+    "place": "طنطا - محافظة الغربية",
+    "place_english": "Tanta, Gharbia Governorate",
+    "verified": true,
+    "confidence": "HIGH",
+    "sources": [
+      {
+        "type": "family_archive",
+        "description": "أرشيف عائلي - وثائق شخصية",
+        "verified": true
+      }
+    ]
+  },
+
+  "education": {
+    "secondary": {
+      "year": 1975,
+      "details": "إكمال التعليم الثانوي",
+      "verified": true,
+      "confidence": "MEDIUM"
+    },
+    "bachelor": {
+      "degree": "بكالوريوس التجارة",
+      "degree_english": "Bachelor of Commerce",
+      "university": "جامعة طنطا",
+      "year": 1980,
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": [
+        {
+          "type": "published",
+          "name": "ويكيبيديا العربية",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
+      ]
+    },
+    "theological": {
+      "training": "التكوين الروحي والكنسي",
+      "period": "قبل 1991",
+      "details": "تربية كنسية وإعداد خدام والافتقاد والتسبحة والرحلات والخلوات",
+      "verified": true,
+      "confidence": "HIGH"
+    }
+  },
+
+  "ecclesiastical_career": {
+    "deacon": {
+      "year": null,
+      "status": "قد يكون قد خدم كشماس",
+      "verified": false,
+      "confidence": "UNCONFIRMED"
+    },
+
+    "priesthood": {
+      "date": "1991-02-11",
+      "type": "ordination_as_priest",
+      "arabic_date": "11 فبراير 1991",
+      "ordained_by": [
+        {
+          "name": "الأنبا أغابيوس",
+          "position": "Bishop of Deir Mawas",
+          "role": "co-ordainer"
+        },
+        {
+          "name": "الأنبا توماس",
+          "position": "Co-Bishop",
+          "role": "co-ordainer"
+        }
+      ],
+      "ordination_place": "كنيسة أو مكان تابع للإيبارشية",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": [
+        {
+          "type": "family_archive",
+          "description": "أرشيف عائلي - وثائق السيامة والصور",
+          "verified": true
+        },
+        {
+          "type": "published",
+          "name": "صدى البلد - اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
+        }
+      ],
+      "following": "40_days_at_deir_muharraq"
+    },
+
+    "forty_days_retreat": {
+      "location": "دير السيدة العذراء بالمحرق",
+      "location_english": "Monastery of the Virgin Mary, Al-Moharak",
+      "period": "فبراير-مارس 1991",
+      "duration_days": 40,
+      "purpose": "الانقطاع الروحي والتأمل بعد السيامة",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": [
+        {
+          "type": "published",
+          "name": "صدى البلد",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+
+    "service_commencement": {
+      "date": "1991-03-01",
+      "arabic_date": "بداية مارس 1991",
+      "location": "إيبارشية ديرمواس ودلجا",
+      "role": "كاهن خادم",
+      "supervisor": "الأنبا أغابيوس",
+      "verified": true,
+      "confidence": "HIGH"
+    },
+
+    "elevation_to_abuna": {
+      "date": "1997-06-22",
+      "type": "elevation_to_abuna",
+      "arabic_date": "22 يونيو 1997",
+      "rank_before": "Priest (قس)",
+      "rank_after": "Abuna (قمص)",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": [
+        {
+          "type": "family_archive",
+          "description": "أرشيف عائلي - شهادات الترقية",
+          "verified": true
+        },
+        {
+          "type": "published",
+          "name": "ويكيبيديا",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
+      ]
+    }
+  },
+
+  "move_to_deir_mawas": {
+    "date": "1988",
+    "reason": "work_with_bishop",
+    "supervisor": "الأنبا أغابيوس",
+    "diocese": "إيبارشية ديرمواس ودلجا",
+    "significance": "نقطة تحول رئيسية في المسيرة الخدمية",
+    "verified": true,
+    "confidence": "HIGH",
+    "sources": [
+      {
+        "type": "published",
+        "name": "صدى البلد - اليوبيل 35",
+        "date": "2026-04-08"
+      }
+    ]
+  },
+
+  "marriage": {
+    "date": "1991-02-10",
+    "arabic_date": "10 فبراير 1991",
+    "spouse": "كارولين مكرم",
+    "spouse_english": "Caroline Mokaram",
+    "location": "unknown",
+    "note": "زواج قبل السيامة الكهنوتية بـ يوم واحد",
+    "verified": true,
+    "confidence": "HIGH",
+    "sources": [
+      {
+        "type": "family_archive",
+        "description": "أرشيف عائلي",
+        "verified": true
+      }
+    ]
+  },
+
+  "administrative_roles": {
+    "vicar_of_diocese": {
+      "title": "وكيل إيبارشية ديرمواس ودلجا",
+      "title_english": "Vicar of Deir Mawas and Delga Diocese",
+      "start_date": "1988",
+      "end_date": "current",
+      "status": "active",
+      "current": true,
+      "responsibilities": [
+        "الإشراف على الشؤون الإدارية",
+        "إدارة المشاريع العمرانية",
+        "التواصل مع الحكومة والمؤسسات",
+        "الممثل الإعلامي للمطرانية",
+        "الإفتقاد الروحي",
+        "إدارة الموارد البشرية"
+      ],
+      "verified": true,
+      "confidence": "HIGH"
+    },
+
+    "documentation_office": {
+      "title": "مكتب التوثيق والزواج",
+      "title_english": "Documentation and Marriage Registry Office",
+      "role": "founder_or_manager",
+      "start_date": "1991",
+      "details": "إنشاء/بدء مكتب التوثيق والزواج بالمطرانية",
+      "significance": "خدمة إدارية وقانونية للإيبارشية والمجتمع",
+      "verified": true,
+      "confidence": "MEDIUM",
+      "sources": [
+        {
+          "type": "published",
+          "name": "صدى البلد - اليوبيل 35",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+
+    "media_spokesperson": {
+      "title": "المتحدث الإعلامي للمطرانية",
+      "title_english": "Media Spokesperson",
+      "start_date": "2007",
+      "details": "ظهور عام كممثل رسمي للإيبارشية في الأزمات والأحداث",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": [
+        {
+          "type": "published",
+          "name": "ويكيبيديا",
+          "description": "برز دوره كمتحدث رسمي منذ 2007",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
+      ]
+    }
+  },
+
+  "key_relationships": {
+    "primary_mentor": {
+      "name": "الأنبا أغابيوس",
+      "title": "Bishop/Metropolitan",
+      "relationship": "spiritual_father_and_supervisor",
+      "period": "1988-2025",
+      "significance": "most_important_relationship",
+      "duration_years": 37,
+      "shared_events": [
+        "ordination_1991",
+        "ministry_building",
+        "crisis_response",
+        "elevation_to_metropolitan_2022",
+        "death_2025"
+      ],
+      "verified": true,
+      "confidence": "HIGH"
+    },
+
+    "journalist_collaborator": {
+      "name": "نادر شكري",
+      "title": "صحفي",
+      "relationship": "media_coverage_partner",
+      "period": "2007-2026",
+      "documentation_together": [
+        "2013_deir_mawas_damage",
+        "2025_anba_agabius_death"
+      ],
+      "verified": true,
+      "confidence": "HIGH"
+    }
+  },
+
+  "service_summary": {
+    "total_years": 35,
+    "start_date": "1991-02-11",
+    "end_date": "ongoing",
+    "main_locations": [
+      "ديرمواس",
+      "دلجا",
+      "محافظة المنيا"
+    ],
+    "main_focus": [
+      "الرعاية الروحية",
+      "إدارة المشاريع العمرانية",
+      "الخدمة الإدارية",
+      "الشهادة في الأزمات",
+      "التواصل الحكومي"
+    ],
+    "testimonies": [
+      "2010: تصريحات في أزمة كاميليا شحاتة",
+      "2013: توثيق أضرار الهجمات الطائفية",
+      "2015: تصريحات عن الأمن والحماية",
+      "2025: حضور جنازة الأنبا أغابيوس"
+    ]
+  },
+
+  "major_events_participated": [
+    "2007: land_dispute_incident",
+    "2010: kamilia_shehata_crisis",
+    "2013: deir_mawas_delga_attacks",
+    "2014: church_reconstruction",
+    "2015: security_statements",
+    "2022: anba_agabius_elevation",
+    "2025: anba_agabius_death",
+    "2025: anba_bokter_elevation",
+    "2026: 35_year_jubilee"
+  ],
+
+  "publications_and_media": {
+    "mentioned_in": [
+      {
+        "type": "news",
+        "title": "مطرانية ديرمواس تحتفل بمرور 35 سنة على سيامة القمص ويصا صبحي",
+        "source": "صدى البلد",
+        "url": "https://www.elbalad.news/6928700",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "wikipedia",
+        "title": "ويصا صبحي",
+        "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي",
+        "language": "Arabic"
+      },
+      {
+        "type": "news",
+        "title": "محافظ المنيا يهنئ الأقباط",
+        "source": "دستور",
+        "date": "2026-01-07"
+      },
+      {
+        "type": "academic",
+        "title": "Burning History",
+        "author": "Rawi Publishing",
+        "url": "https://rawi-publishing.com/articles/burning-history",
+        "description": "تصريح عن الكنائس القديمة والحرق 2013"
+      }
+    ]
+  },
+
+  "timeline_key_dates": {
+    "1980": "بكالوريوس التجارة",
+    "1988": "الانتقال إلى ديرمواس",
+    "1991": "السيامة الكهنوتية",
+    "1997": "رفع درجة القمصية",
+    "2007": "برز دوره الإعلامي",
+    "2010": "تصريحات في أزمة كاميليا",
+    "2013": "توثيق أضرار الهجمات",
+    "2025": "جنازة الأنبا أغابيوس",
+    "2026": "اليوبيل 35 للسيامة"
+  },
+
+  "metadata": {
+    "last_updated": "2026-08-28",
+    "data_version": "2.0",
+    "verification_status": "95%_complete",
+    "missing_data": [
+      "birth_time",
+      "detailed_church_assignments",
+      "complete_project_list",
+      "family_details"
+    ],
+    "next_update": "2027-Q1",
+    "notes": "سيرة محدثة مع تركيز على التوثيق والمصادر الموثوقة"
+  }
+}

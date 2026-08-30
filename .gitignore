@@ -1,0 +1,105 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.log
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.atom
+.netrwhist
+*node_modules*
+.pylintrc
+
+# Dependency directories
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs
+/dist/
+/build/
+/out/
+*.bundle.js
+*.min.js
+*.min.css
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Testing
+/coverage/
+.nyc_output/
+*.lcov
+jest.config.js
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+/tmp/
+/temp/
+
+# Media files (too large for git)
+media/photos/*.jpg
+media/photos/*.png
+media/photos/*.webp
+media/videos/*.mp4
+media/videos/*.webm
+media/audio/*.mp3
+media/audio/*.wav
+media/documents/private/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated files (local builds)
+website/sitemap.xml
+website/robots.txt
+exports/*.pdf
+exports/*.docx
+exports/*.xlsx
+
+# Backup files
+*.backup
+*.bkup
+*.old
+
+# OS specific
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# NPM
+.npm
+.eslintcache
+
+# Git
+.git/
+.gitmodules
+
+# Misc
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pem
+*.key
+*.cert
+config.local.js

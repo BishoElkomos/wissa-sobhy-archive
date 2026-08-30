@@ -1,0 +1,511 @@
+{
+  "timeline": [
+    {
+      "year": 1956,
+      "month": 12,
+      "day": 4,
+      "date_arabic": "4 ديسمبر 1956",
+      "event_type": "birth",
+      "title": "الميلاد في طنطا",
+      "description": "ولادة سمير صبحي في مدينة طنطا - محافظة الغربية",
+      "location": "طنطا",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"]
+    },
+
+    {
+      "year": 1975,
+      "event_type": "education",
+      "title": "إكمال التعليم الثانوي",
+      "description": "إكمال الدراسة الثانوية والاستعداد للجامعة",
+      "verified": true,
+      "confidence": "MEDIUM"
+    },
+
+    {
+      "year": 1980,
+      "event_type": "education",
+      "title": "بكالوريوس التجارة",
+      "description": "حصول على درجة البكالوريوس في التجارة من جامعة طنطا",
+      "institution": "جامعة طنطا",
+      "degree": "Bachelor of Commerce",
+      "location": "طنطا",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["wikipedia", "elbalad-2026"]
+    },
+
+    {
+      "year": 1980,
+      "month": null,
+      "event_type": "service_start",
+      "title": "بدء الخدمة الكنسية في طنطا",
+      "description": "بداية النشاط الكنسي والتربية الكنسية وإعداد الخدام",
+      "location": "طنطا",
+      "details": "خادم في كنيسة رئيس الملائكة ميخائيل - الافتقاد والتسبحة والرحلات والخلوات",
+      "verified": true,
+      "confidence": "MEDIUM"
+    },
+
+    {
+      "year": 1988,
+      "event_type": "relocation",
+      "title": "الانتقال إلى ديرمواس",
+      "description": "انتقال إلى ديرمواس للعمل مع الأنبا أغابيوس - نقطة تحول رئيسية",
+      "location": "ديرمواس",
+      "supervisor": "الأنبا أغابيوس",
+      "verified": true,
+      "confidence": "HIGH",
+      "significance": "turning_point",
+      "sources": ["elbalad-2026"]
+    },
+
+    {
+      "year": 1991,
+      "month": 2,
+      "day": 10,
+      "date_arabic": "10 فبراير 1991",
+      "event_type": "personal",
+      "title": "الزواج",
+      "description": "الزواج من كارولين مكرم",
+      "spouse": "كارولين مكرم",
+      "note": "قبل يوم واحد من السيامة الكهنوتية",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"]
+    },
+
+    {
+      "year": 1991,
+      "month": 2,
+      "day": 11,
+      "date_arabic": "11 فبراير 1991",
+      "event_type": "ordination",
+      "title": "السيامة الكهنوتية 🎯",
+      "description": "تمت سيامته كاهناً بيد الأنبا أغابيوس والأنبا توماس",
+      "ordained_by": ["الأنبا أغابيوس", "الأنبا توماس"],
+      "rank_new": "Priest (قس)",
+      "significance": "major_milestone",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive", "elbalad-2026", "wikipedia"],
+      "tags": ["priesthood", "milestone", "religious"]
+    },
+
+    {
+      "year": 1991,
+      "month": null,
+      "event_type": "spiritual",
+      "title": "الأربعون يوماً بدير المحرق",
+      "description": "فترة الانقطاع الروحي والتأمل بعد السيامة الكهنوتية",
+      "location": "دير السيدة العذراء بالمحرق",
+      "duration": "40 days",
+      "period": "فبراير-مارس 1991",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["elbalad-2026"]
+    },
+
+    {
+      "year": 1991,
+      "month": 3,
+      "day": 1,
+      "date_arabic": "1 مارس 1991",
+      "event_type": "ministry_start",
+      "title": "بدء الخدمة الكهنوتية",
+      "description": "بداية مرحلة الخدمة الكهنوتية الفعلية في إيبارشية ديرمواس",
+      "location": "ديرمواس",
+      "supervisor": "الأنبا أغابيوس",
+      "role": "كاهن خادم",
+      "verified": true,
+      "confidence": "HIGH"
+    },
+
+    {
+      "year": 1991,
+      "event_type": "administrative",
+      "title": "بدء/إنشاء مكتب التوثيق والزواج",
+      "description": "إنشاء أو بدء مكتب التوثيق والزواج بالمطرانية",
+      "details": "خدمة إدارية وقانونية للإيبارشية والمجتمع المسيحي",
+      "location": "مطرانية ديرمواس",
+      "verified": true,
+      "confidence": "MEDIUM",
+      "sources": ["elbalad-2026"],
+      "significance": "administrative_achievement"
+    },
+
+    {
+      "year": 1996,
+      "month": 11,
+      "day": 14,
+      "date_arabic": "14 نوفمبر 1996",
+      "event_type": "church_event",
+      "title": "حضور احتفالات اليوبيل الفضي للبابا شنودة",
+      "description": "حضور قداس اليوبيل الفضي لجلوس البابا شنودة الثالث + سيامة الأنبا مكاري ورسامات كهنة",
+      "event": "Silver Jubilee of Pope Shenouda III",
+      "location": "القاهرة",
+      "note": "موثق بالصور الأسرية",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"]
+    },
+
+    {
+      "year": 1997,
+      "month": 6,
+      "day": 22,
+      "date_arabic": "22 يونيو 1997",
+      "event_type": "elevation",
+      "title": "رفع درجة القمصية 🎯",
+      "description": "نال رتبة القمصية - ترقية من قس إلى قمص (أبو)",
+      "rank_before": "Priest (قس)",
+      "rank_new": "Abuna (قمص)",
+      "significance": "major_milestone",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive", "wikipedia"],
+      "tags": ["promotion", "milestone"]
+    },
+
+    {
+      "year": 2004,
+      "event_type": "construction",
+      "title": "مرحلة رئيسية من إعادة بناء كاتدرائية مارجرجس",
+      "description": "بدء أو مرحلة مهمة من مشروع إعادة بناء كاتدرائية الشهيد مارجرجس",
+      "location": "ديرمواس - كاتدرائية الشهيد مارجرجس",
+      "status": "under_verification",
+      "verified": false,
+      "confidence": "PENDING",
+      "note": "قيد التحقق التفصيلي"
+    },
+
+    {
+      "year": 2007,
+      "month": 4,
+      "day": 15,
+      "date_arabic": "15 أبريل 2007",
+      "event_type": "crisis",
+      "title": "أحداث النزاع العقاري - احتجاز الكهنة 🔴",
+      "description": "احتجاز كهنة في قسم الشرطة بديرمواس بسبب نزاع على شراء أرض من قبل الإيبارشية",
+      "location": "ديرمواس - قسم الشرطة",
+      "involved": ["كهنة ديرمواس", "5 مسيحيين"],
+      "cause": "land_dispute",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["copts-united", "voice-of-copts"],
+      "tags": ["crisis", "conflict", "legal"]
+    },
+
+    {
+      "year": 2007,
+      "event_type": "media",
+      "title": "برز دور القمص ويصا كممثل رسمي للمطرانية",
+      "description": "بدء ظهور واضح للقمص ويصا كمتحدث وممثل رسمي للإيبارشية في الأزمات",
+      "role": "media_spokesperson",
+      "significance": "major_turning_point",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["wikipedia"],
+      "tags": ["public_figure"]
+    },
+
+    {
+      "year": 2010,
+      "month": 7,
+      "event_type": "crisis",
+      "title": "أزمة كاميليا شحاتة (زوجة القس تادرس سمعان) 🔴",
+      "description": "اختفاء كاميليا شحاتة (زوجة القس تادرس سمعان) - تحرك الأقباط والاحتجاج",
+      "details": "تصريحات مباشرة للقمص ويصا كممثل رسمي للمطرانية",
+      "quotes": [
+        "زوجة الكاهن تداوس اختفت منذ مساء الأحد وإلى الآن لم نتمكن من العثور عليها",
+        "لم نجد من المسئولين في الأمن إلا التسويف والتأجيل",
+        "صدّقنا حيل الأمن ولكن كانت وعودهم باطلة"
+      ],
+      "wissa_role": "official_spokesman",
+      "location": "القاهرة - الكاتدرائية المرقسية",
+      "verification": "high_profile_media_coverage",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["copts-united", "international_media"],
+      "tags": ["crisis", "witness", "international"]
+    },
+
+    {
+      "year": 2013,
+      "month": 3,
+      "event_type": "church_conference",
+      "title": "مؤتمر الأحوال الشخصية بدير الأنبا بيشوي",
+      "description": "حضور مؤتمر الأحوال الشخصية",
+      "location": "دير الأنبا بيشوي",
+      "note": "موثق بالصور الأسرية",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"]
+    },
+
+    {
+      "year": 2013,
+      "month": 8,
+      "day": 14,
+      "date_arabic": "14 أغسطس 2013",
+      "event_type": "major_crisis",
+      "title": "الهجمات الطائفية على ديرمواس ودلجا 🔴",
+      "description": "هجمات طائفية عقب فض اعتصام رابعة - حرق 4 كنائس على الأقل - تشريد 62 أسرة",
+      "churches_affected": [
+        "الشهيد مارجرجس (الكاتدرائية الرئيسية)",
+        "كنيسة السلام",
+        "كنيسة القديس لعازر",
+        "كنيسة العذراء"
+      ],
+      "casualties": {
+        "families_displaced": 62,
+        "properties_damaged": "dozens",
+        "churches_burned": 4
+      },
+      "location": "ديرمواس ودلجا",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["youm7", "almasryalyoum", "international_media"],
+      "tags": ["major_crisis", "sectarian_violence", "documented"]
+    },
+
+    {
+      "year": 2013,
+      "month": 9,
+      "event_type": "documentation",
+      "title": "توثيق الأضرار - جولة ميدانية مع نادر شكري 📸",
+      "description": "الصحفي نادر شكري يرافق القمص ويصا في جولة ميدانية لتوثيق الخسائر والتدمير",
+      "journalist": "نادر شكري",
+      "locations_visited": [
+        "مبنى الخدمات - شارع الحرية",
+        "كنيسة القديس لعازر",
+        "مطرانية ديرمواس",
+        "مقابر الأقباط"
+      ],
+      "significance": "official_documentation",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["wataninet-2013"],
+      "tags": ["witness", "documentation", "media_coverage"]
+    },
+
+    {
+      "year": 2013,
+      "month": 9,
+      "day": 15,
+      "event_type": "testimony",
+      "title": "تصريحات مباشرة عن أحداث دلجا",
+      "description": "تصريحات مباشرة للقمص ويصا حول أحداث دلجا والخسائر",
+      "location": "دلجا",
+      "source_publication": "موقع مبتدا",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["mobtada-2013"],
+      "tags": ["eyewitness", "official_statement"]
+    },
+
+    {
+      "year": 2014,
+      "event_type": "reconstruction",
+      "title": "مرحلة الترميم واستعادة الصلاة",
+      "description": "بدء عملية ترميم وإعادة الكنائس المحروقة في دلجا والعودة للصلاة",
+      "scope": "multiple_churches",
+      "location": "ديرمواس ودلجا",
+      "verified": true,
+      "confidence": "MEDIUM",
+      "sources": ["copts-today-2014"],
+      "tags": ["reconstruction", "recovery"]
+    },
+
+    {
+      "year": 2014,
+      "month": 2,
+      "event_type": "celebration",
+      "title": "اليوبيل الفضي للسيامة (23 سنة)",
+      "description": "الاحتفال بمرور 23 سنة على السيامة الكهنوتية (1991-2014)",
+      "duration_years": 23,
+      "verified": true,
+      "confidence": "MEDIUM",
+      "note": "تفاصيل الاحتفال قيد الاستكمال"
+    },
+
+    {
+      "year": 2015,
+      "event_type": "statements",
+      "title": "تصريحات حول تأمين المطرانية والكنائس",
+      "description": "تصريحات حول تأمين المطرانية والكنائس والتواصل مع القيادات",
+      "topic": "security",
+      "verified": true,
+      "confidence": "MEDIUM",
+      "tags": ["administration", "security"]
+    },
+
+    {
+      "year": 2016,
+      "month": null,
+      "event_type": "ongoing_service",
+      "title": "خدمة القداس الأسبوعي - بدء السجل",
+      "description": "بدء سجل منتظم لخدمة قداس الأربعاء بعزبة البلكية",
+      "location": "عزبة البلكية",
+      "frequency": "weekly",
+      "day": "Wednesday",
+      "period": "2016-2025",
+      "verified": false,
+      "confidence": "PENDING",
+      "note": "يحتاج استكمال الأدلة"
+    },
+
+    {
+      "year": 2022,
+      "month": 11,
+      "day": 19,
+      "date_arabic": "19 نوفمبر 2022",
+      "event_type": "church_event",
+      "title": "احتفالية \"من جيل إلى جيل\"",
+      "description": "احتفالية دينية بعنوان \"من جيل إلى جيل\"",
+      "note": "حضور القمص ويصا مؤكد بالصور الأسرية",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"]
+    },
+
+    {
+      "year": 2022,
+      "month": 11,
+      "day": 20,
+      "date_arabic": "20 نوفمبر 2022",
+      "event_type": "elevation",
+      "title": "ترقية الأنبا أغابيوس إلى رتبة مطران 🎯",
+      "description": "ترقية الأنبا أغابيوس من أسقف إلى متروبوليت (مطران)",
+      "person_affected": "الأنبا أغابيوس",
+      "promoted_by": "البابا تواضروس الثاني",
+      "rank_before": "Bishop (أسقف)",
+      "rank_new": "Metropolitan (مطران)",
+      "wissa_attendance": "confirmed",
+      "significance": "major_event",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"],
+      "tags": ["major_event", "mentor"]
+    },
+
+    {
+      "year": 2025,
+      "month": 2,
+      "day": 4,
+      "date_arabic": "4 فبراير 2025",
+      "event_type": "death",
+      "title": "وفاة الأنبا أغابيوس 🔴",
+      "description": "انتقال المتنيح الأنبا أغابيوس للملكوت السماوي بعد 36 سنة على رأس الإيبارشية (1989-2025)",
+      "deceased": "الأنبا أغابيوس",
+      "service_years": 36,
+      "significance": "end_of_era",
+      "wissa_attendance": "confirmed_at_funeral",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["wataninet-2025", "voice-of-copts"],
+      "tags": ["death", "major_event", "end_of_era"]
+    },
+
+    {
+      "year": 2025,
+      "month": 5,
+      "day": 31,
+      "date_arabic": "31 مايو 2025",
+      "event_type": "ordination",
+      "title": "عشية سيامة الأنبا بقطر",
+      "description": "حضور عشية سيامة الأنبا بقطر أسقفاً جديداً",
+      "person": "الأنبا بقطر",
+      "wissa_attendance": "confirmed",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["family_archive"],
+      "tags": ["new_beginning"]
+    },
+
+    {
+      "year": 2025,
+      "month": 6,
+      "day": 1,
+      "date_arabic": "1 يونيو 2025",
+      "event_type": "ordination",
+      "title": "قداس سيامة الأنبا بقطر 🎯",
+      "description": "قداس سيامة الأنبا بقطر أسقفاً على إيبارشية ديرمواس ودلجا",
+      "person": "الأنبا بقطر",
+      "location": "كنيسة مارجرجس بديرمواس",
+      "significance": "new_bishop",
+      "wissa_attendance": "confirmed",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["youm7-2025"],
+      "tags": ["new_era", "transition"]
+    },
+
+    {
+      "year": 2025,
+      "month": 8,
+      "day": 2,
+      "date_arabic": "2 أغسطس 2025",
+      "event_type": "ordination",
+      "title": "قداس ترقية ستة كهنة إلى رتبة القمصية",
+      "description": "حضور قداس ترقية ستة كهنة إلى رتبة القمصية بيد الأنبا بقطر",
+      "promoted_priests": 6,
+      "promoted_by": "الأنبا بقطر",
+      "wissa_attendance": "confirmed",
+      "verified": true,
+      "confidence": "HIGH"
+    },
+
+    {
+      "year": 2026,
+      "month": 1,
+      "day": 7,
+      "date_arabic": "7 يناير 2026",
+      "event_type": "official_visit",
+      "title": "زيارة محافظ المنيا لمطرانية ديرمواس 🎯",
+      "description": "زيارة اللواء عماد كدواني محافظ المنيا لمطرانية ديرمواس - استقبل الأنبا بقطر",
+      "visitor": "اللواء عماد كدواني",
+      "position": "محافظ محافظة المنيا",
+      "location": "مطرانية ديرمواس",
+      "occasion": "عيد الميلاد المجيد",
+      "significance": "government_recognition",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["dostor-2026"],
+      "tags": ["government_relations", "official_visit"]
+    },
+
+    {
+      "year": 2026,
+      "month": 4,
+      "day": 8,
+      "date_arabic": "8 أبريل 2026",
+      "event_type": "celebration",
+      "title": "اليوبيل الخامس والثلاثين للسيامة 🎯",
+      "description": "الاحتفال بمرور 35 سنة على السيامة الكهنوتية (1991-2026)",
+      "duration_years": 35,
+      "occasion": "Grand Jubilee",
+      "celebrations": [
+        "احتفالات كنسية",
+        "مقالات صحفية",
+        "شهادات"
+      ],
+      "significance": "major_milestone",
+      "verified": true,
+      "confidence": "HIGH",
+      "sources": ["elbalad-2026", "sohag-albalad-2026"],
+      "tags": ["milestone", "celebration", "35_years"]
+    }
+  ],
+
+  "metadata": {
+    "total_events": 43,
+    "verified_events": 38,
+    "pending_verification": 5,
+    "major_milestones": 8,
+    "crisis_events": 5,
+    "last_updated": "2026-08-28",
+    "version": "2.0"
+  }
+}

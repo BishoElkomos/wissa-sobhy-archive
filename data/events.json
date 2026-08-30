@@ -1,0 +1,190 @@
+{
+  "major_events": [
+    {
+      "id": "2010-kamilia-crisis",
+      "year": 2010,
+      "month": 7,
+      "title": "أزمة كاميليا شحاتة",
+      "title_english": "Kamilia Shehata Crisis",
+      "type": "crisis",
+      "severity": "HIGH",
+      "description": "اختفاء كاميليا شحاتة (زوجة القس تادرس سمعان) - تحرك الأقباط والاحتجاج",
+      "wissa_role": "official_representative",
+      "wissa_quotes": [
+        "زوجة الكاهن تداوس اختفت منذ مساء الأحد وإلى الآن لم نتمكن من العثور عليها",
+        "لم نجد من المسئولين في الأمن إلا التسويف والتأجيل",
+        "الأمن وعدنا بعودة زوجة الكاهن في خلال 48 ساعة",
+        "صدّقنا حيل الأمن ولكن كانت وعودهم باطلة"
+      ],
+      "significance": "first_major_media_presence",
+      "international_coverage": true,
+      "sources": [
+        "copts-united-2010",
+        "international_media"
+      ],
+      "timeline": {
+        "start": "2010-07-16",
+        "peak_coverage": "2010-07-20",
+        "resolution": "2010-08-04"
+      }
+    },
+
+    {
+      "id": "2013-deir-mawas-attacks",
+      "year": 2013,
+      "month": 8,
+      "day": 14,
+      "title": "الهجمات الطائفية على ديرمواس ودلجا",
+      "title_english": "Sectarian Attacks on Deir Mawas and Delga",
+      "type": "crisis",
+      "severity": "CRITICAL",
+      "description": "هجمات طائفية عقب فض اعتصام رابعة - حرق 4 كنائس على الأقل - تشريد 62 أسرة",
+      "context": "following_rabaa_dispersal",
+      "wissa_role": "witness_and_documentor",
+      "significance": "pivotal_event_in_biography",
+      "key_details": {
+        "churches_burned": 4,
+        "families_displaced": 62,
+        "properties_affected": "dozens",
+        "duration": "multiple_days"
+      },
+      "churches_affected": [
+        {
+          "name": "كنيسة الشهيد مارجرجس",
+          "location": "ديرمواس",
+          "damage_level": "severe",
+          "role": "cathedral"
+        },
+        {
+          "name": "كنيسة السلام",
+          "damage_level": "severe"
+        },
+        {
+          "name": "كنيسة القديس لعازر",
+          "location": "ديرمواس",
+          "damage_level": "severe"
+        },
+        {
+          "name": "كنيسة العذراء",
+          "damage_level": "severe"
+        }
+      ],
+      "wissa_documentation": {
+        "date": "2013-09",
+        "activity": "field_documentation",
+        "partner": "نادر شكري (صحفي)",
+        "locations_visited": [
+          "مبنى الخدمات",
+          "كنيسة القديس لعازر",
+          "مطرانية ديرمواس",
+          "مقابر الأقباط",
+          "مناطق سكنية مضررة"
+        ],
+        "media_coverage": "extensive"
+      },
+      "sources": [
+        "youm7-2013",
+        "wataninet-2013",
+        "rawi-publishing",
+        "elbalad-2026"
+      ],
+      "aftermath": {
+        "reconstruction_start": "2014",
+        "duration": "multiple_years",
+        "churches_rebuilt": "all_affected_churches"
+      }
+    },
+
+    {
+      "id": "2007-land-dispute",
+      "year": 2007,
+      "month": 4,
+      "day": 15,
+      "title": "النزاع العقاري - احتجاز الكهنة",
+      "title_english": "Land Dispute Incident",
+      "type": "crisis",
+      "severity": "MEDIUM",
+      "description": "احتجاز كهنة في قسم الشرطة بديرمواس بسبب نزاع على شراء أرض من قبل الإيبارشية",
+      "wissa_involvement": "possibly_involved",
+      "significance": "early_conflict",
+      "sources": [
+        "copts-united-2007",
+        "voice-of-copts-2007"
+      ],
+      "note": "وثيقة تاريخية عن التحديات الإدارية"
+    },
+
+    {
+      "id": "2025-transition",
+      "year": 2025,
+      "month": null,
+      "title": "سنة الانتقال - وفاة الأنبا أغابيوس وتجليس الأنبا بقطر",
+      "title_english": "Year of Transition",
+      "type": "institutional_transition",
+      "severity": "HIGH",
+      "description": "انتقال من عهد الأنبا أغابيوس (1989-2025) إلى عهد الأنبا بقطر (2025-)",
+      "wissa_role": "continuity_figure",
+      "significance": "major_institutional_change",
+      "key_events": [
+        {
+          "date": "2025-02-04",
+          "event": "وفاة الأنبا أغابيوس",
+          "wissa_attendance": "confirmed"
+        },
+        {
+          "date": "2025-05-31",
+          "event": "عشية سيامة الأنبا بقطر",
+          "wissa_attendance": "confirmed"
+        },
+        {
+          "date": "2025-06-01",
+          "event": "قداس سيامة الأنبا بقطر",
+          "location": "كنيسة مارجرجس بديرمواس",
+          "wissa_attendance": "confirmed"
+        },
+        {
+          "date": "2025-08-02",
+          "event": "قداس ترقية 6 كهنة إلى القمصية",
+          "wissa_attendance": "confirmed"
+        }
+      ]
+    }
+  ],
+
+  "events_by_category": {
+    "crisis_events": [
+      "2007-land-dispute",
+      "2010-kamilia-crisis",
+      "2013-deir-mawas-attacks"
+    ],
+    "administrative_events": [
+      "2025-transition"
+    ],
+    "ceremonial_events": [
+      "ordination_1991",
+      "elevation_1997",
+      "jubilees"
+    ]
+  },
+
+  "events_by_impact": {
+    "international_impact": [
+      "2010-kamilia-crisis",
+      "2013-deir-mawas-attacks"
+    ],
+    "local_impact": [
+      "2007-land-dispute"
+    ],
+    "institutional_impact": [
+      "2025-transition"
+    ]
+  },
+
+  "metadata": {
+    "total_major_events": 4,
+    "crisis_events": 3,
+    "transition_events": 1,
+    "last_updated": "2026-08-28",
+    "version": "1.0"
+  }
+}
