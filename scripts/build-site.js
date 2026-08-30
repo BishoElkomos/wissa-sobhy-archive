@@ -52,7 +52,7 @@ function copyDir(src, dest) {
 // 4. نسخ الملفات من website إلى dist
 console.log('📋 نسخ ملفات الموقع...');
 
-// نسخ HTML
+// نسخ HTML من ROOT level
 const htmlFiles = fs.readdirSync(BUILD_CONFIG.websiteDir)
     .filter(f => f.endsWith('.html'));
 htmlFiles.forEach(file => {
@@ -62,6 +62,20 @@ htmlFiles.forEach(file => {
     );
 });
 console.log(`✅ نسخ ${htmlFiles.length} ملف HTML`);
+
+// نسخ subdirectories (مثل en/)
+const subdirs = fs.readdirSync(BUILD_CONFIG.websiteDir)
+    .filter(f => {
+        const fullPath = path.join(BUILD_CONFIG.websiteDir, f);
+        return fs.statSync(fullPath).isDirectory() && f !== 'css' && f !== 'js';
+    });
+subdirs.forEach(subdir => {
+    copyDir(
+        path.join(BUILD_CONFIG.websiteDir, subdir),
+        path.join(BUILD_CONFIG.outputDir, subdir)
+    );
+    console.log(`✅ نسخ مجلد: ${subdir}`);
+});
 
 // نسخ CSS
 if (fs.existsSync(path.join(BUILD_CONFIG.websiteDir, 'css'))) {
