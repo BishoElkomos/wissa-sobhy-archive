@@ -1,0 +1,10 @@
+{
+  "name": "wissa-sobhy-archive",
+  "version": 2,
+  "buildCommand": "node scripts/build-site.js",
+  "outputDirectory": "dist",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "public": true
+}
