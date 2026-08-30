@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="المصادر الموثقة - 15 مصدر موثوق في أرشيف القمص ويصا صبحي">
+    <title>المصادر | أرشيف القمص ويصا صبحي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .sources-list { max-width: 800px; margin: 2rem auto; }
+        .source-item { 
+            background: #f9f9f9; 
+            padding: 1.5rem; 
+            margin-bottom: 1rem; 
+            border-right: 3px solid #1a472a;
+            border-radius: 4px;
+        }
+        .source-title { font-weight: bold; font-size: 1.1rem; color: #1a472a; }
+        .source-url { 
+            display: block; 
+            color: #0066cc; 
+            text-decoration: none; 
+            word-break: break-all;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .source-url:hover { text-decoration: underline; }
+        .source-type { 
+            display: inline-block; 
+            background: #e0e0e0; 
+            padding: 0.3rem 0.7rem; 
+            border-radius: 12px; 
+            font-size: 0.8rem; 
+            margin-top: 0.5rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">القمص ويصا صبحي</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="biography.html">السيرة</a></li>
+                <li><a href="timeline.html">الخط الزمني</a></li>
+                <li><a href="events.html">الأحداث</a></li>
+                <li><a href="media.html">الوسائط</a></li>
+                <li><a href="sources.html" class="active">المصادر</a></li>
+                <li><a href="search.html">البحث</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>المصادر الموثقة</h1>
+        <p class="subtitle">15 مصدر موثوق معروف</p>
+        
+        <div class="sources-list" id="sources-content">
+            جاري تحميل البيانات...
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 أرشيف القمص ويصا صبحي تادرس</p>
+        <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive">GitHub</a> | <a href="mailto:contribute@wissa-archive.com">تواصل معنا</a></p>
+    </footer>
+
+    <script src="js/data-loader.js"></script>
+    <script>
+        async function loadSources() {
+            try {
+                const response = await fetch('data/sources.json');
+                const data = await response.json();
+                const container = document.getElementById('sources-content');
+                container.innerHTML = data.sources.map(source => `
+                    <div class="source-item">
+                        <div class="source-title">${source.title}</div>
+                        <a href="${source.url}" target="_blank" class="source-url">${source.url}</a>
+                        <div class="source-type">${source.type || 'مصدر'}</div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('خطأ:', error);
+                document.getElementById('sources-content').innerHTML = '<p>عذراً، حدث خطأ</p>';
+            }
+        }
+        loadSources();
+    </script>
+</body>
+</html>
