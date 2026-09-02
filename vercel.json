@@ -1,5 +1,5 @@
 {
-  "name": "wissa-sobhy-archive",
+  "name": "wissa-sobhy-tadros-archive",
   "version": 2,
   "buildCommand": "node scripts/build-site.js",
   "outputDirectory": "dist",
