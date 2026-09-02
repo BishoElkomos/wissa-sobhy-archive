@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="معرض الصور والوسائط - أرشيف القمص ويصا صبحي">
-    <title>الوسائط | أرشيف القمص ويصا صبحي</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الأرشيف المرئي للقمص ويصا صبحي تادرس: فيديوهات ومواد إعلامية موثقة وروابط إلى مجموعة YouTube الأرشيفية.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://wissa-sobhy-archive.vercel.app/media.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="الأرشيف المرئي | القمص ويصا صبحي تادرس">
+  <meta property="og:description" content="مجموعة مرئية ضمن أرشيف القمص ويصا صبحي تادرس، مع فصل واضح بين المواد الموثقة والروابط الخارجية.">
+  <meta property="og:url" content="https://wissa-sobhy-archive.vercel.app/media.html">
+  <meta property="og:site_name" content="أرشيف القمص ويصا صبحي تادرس">
+  <title>الأرشيف المرئي | أرشيف القمص ويصا صبحي تادرس</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/archive-v3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">القمص ويصا صبحي</a>
-            <ul class="nav-menu">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="biography.html">السيرة</a></li>
-                <li><a href="timeline.html">الخط الزمني</a></li>
-                <li><a href="events.html">الأحداث</a></li>
-                <li><a href="media.html" class="active">الوسائط</a></li>
-                <li><a href="sources.html">المصادر</a></li>
-                <li><a href="search.html">البحث</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">القمص ويصا صبحي</a>
+    <ul class="nav-menu">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="biography.html">السيرة</a></li>
+      <li><a href="timeline.html">الخط الزمني</a></li>
+      <li><a href="events.html">الأحداث</a></li>
+      <li><a href="media.html" class="active">الوسائط</a></li>
+      <li><a href="sources.html">المصادر</a></li>
+      <li><a href="search.html">البحث</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <main class="container">
-        <h1>معرض الوسائط</h1>
-        <p class="subtitle">صور ووثائق من حياة القمص ويصا صبحي تادرس</p>
-        
-        <div class="media-gallery">
-            <div class="media-placeholder">
-                <i class="fas fa-image"></i>
-                <p>جاري إضافة الصور والوسائط</p>
-                <p class="text-secondary">يمكنك المساهمة بالصور من خلال البريد: contribute@wissa-archive.com</p>
-            </div>
-        </div>
-    </main>
+<main class="container page-content">
+  <header class="page-header">
+    <p class="kicker">المجموعة المرئية</p>
+    <h1>الأرشيف المرئي</h1>
+    <p class="lead">الفيديو هنا ليس مجرد مادة للعرض؛ بل سجلٌّ قابل للفهرسة والربط بالأحداث والأشخاص والمصادر. نضيف المواد تدريجيًا مع الحفاظ على مصدر كل تسجيل وعدم الخلط بين المادة الأصلية والرابط الخارجي.</p>
+  </header>
 
-    <footer class="footer">
-        <p>&copy; 2026 أرشيف القمص ويصا صبحي تادرس</p>
-        <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive">GitHub</a> | <a href="mailto:contribute@wissa-archive.com">تواصل معنا</a></p>
-    </footer>
+  <section class="info-card" aria-labelledby="youtube-collection-title">
+    <div class="card-icon" aria-hidden="true">▶</div>
+    <div>
+      <p class="eyebrow">مجموعة YouTube</p>
+      <h2 id="youtube-collection-title">المجموعة المرئية المرتبطة بالأرشيف</h2>
+      <p>يمكن الوصول إلى قائمة التشغيل التي شاركها صاحب الأرشيف لمتابعة التسجيلات المرئية المرتبطة بالقمص ويصا صبحي. لأن واجهة YouTube لا تتيح لنا هنا التحقق الآلي من كل عنصر داخل القائمة، لا ننسب عناوين أو تواريخ لفيديوهات بعينها قبل مراجعتها وتوثيقها.</p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://youtube.com/playlist?list=PLFTrJ3YY0Kcj9vSdZNx3psWwvvfaOLVGp" target="_blank" rel="noopener noreferrer">فتح قائمة التشغيل على YouTube</a>
+        <a class="btn btn-secondary" href="sources.html">منهجية المصادر</a>
+      </div>
+    </div>
+  </section>
 
-    <style>
-        .media-gallery { text-align: center; padding: 4rem 2rem; }
-        .media-placeholder { color: #999; }
-        .media-placeholder i { font-size: 4rem; margin-bottom: 1rem; display: block; }
-        .text-secondary { font-size: 0.9rem; color: #aaa; margin-top: 1rem; }
-    </style>
+  <section class="archive-section" aria-labelledby="media-method-title">
+    <div class="section-heading">
+      <p class="kicker">كيف سنوثق الفيديو؟</p>
+      <h2 id="media-method-title">بطاقة أرشيفية لكل تسجيل</h2>
+    </div>
+    <div class="grid-3">
+      <article class="info-card"><h3>العنوان</h3><p>العنوان كما يظهر في المصدر، مع تجنب إعادة الصياغة التي قد تغيّر دلالته.</p></article>
+      <article class="info-card"><h3>التاريخ والمكان</h3><p>يُضاف التاريخ والمكان فقط عند توفر دليل واضح، مع تمييز التاريخ المؤكد عن التقريبي.</p></article>
+      <article class="info-card"><h3>السياق والمصدر</h3><p>يرتبط التسجيل بالحدث أو الشخص أو المناسبة، ويُذكر مصدر النشر أو التسجيل وحقوق الاستخدام إن عُرفت.</p></article>
+    </div>
+  </section>
+
+  <section class="archive-section" aria-labelledby="next-media-title">
+    <div class="section-heading">
+      <p class="kicker">المرحلة التالية</p>
+      <h2 id="next-media-title">من قائمة تشغيل إلى مجموعة بحثية</h2>
+    </div>
+    <p class="lead">الهدف ليس نسخ محتوى YouTube إلى الموقع، بل تحويل المواد المرئية المهمة إلى سجلات أرشيفية مرتبطة بالخط الزمني والأحداث والمصادر. بهذه الطريقة تصبح الفيديوهات جزءًا من بنية البحث في الأرشيف بدل أن تبقى روابط منفصلة.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 أرشيف القمص ويصا صبحي تادرس</p>
+  <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive">المشروع على GitHub</a></p>
+</footer>
 </body>
 </html>
