@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="بحث في أرشيف القمص ويصا صبحي">
+    <title>البحث | أرشيف القمص ويصا صبحي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .search-box { max-width: 600px; margin: 2rem auto; }
+        .search-input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 2px solid #1a472a;
+            border-radius: 8px;
+            font-family: 'Cairo', sans-serif;
+        }
+        .search-results { max-width: 800px; margin: 2rem auto; }
+        .result-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-right: 3px solid #1a472a;
+            border-radius: 4px;
+        }
+        .result-title { font-weight: bold; font-size: 1.1rem; color: #1a472a; }
+        .result-text { color: #666; margin-top: 0.5rem; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">القمص ويصا صبحي</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="biography.html">السيرة</a></li>
+                <li><a href="timeline.html">الخط الزمني</a></li>
+                <li><a href="events.html">الأحداث</a></li>
+                <li><a href="media.html">الوسائط</a></li>
+                <li><a href="sources.html">المصادر</a></li>
+                <li><a href="search.html" class="active">البحث</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>البحث</h1>
+        <p class="subtitle">ابحث في السيرة والخط الزمني والأحداث</p>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="اكتب كلمة البحث...">
+        </div>
+
+        <div class="search-results" id="searchResults"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 أرشيف القمص ويصا صبحي تادرس</p>
+        <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive">GitHub</a> | <a href="mailto:contribute@wissa-archive.com">تواصل معنا</a></p>
+    </footer>
+
+    <script src="js/data-loader.js"></script>
+    <script>
+        let allData = {};
+        
+        async function loadData() {
+            try {
+                const [bio, timeline, events] = await Promise.all([
+                    fetch('data/biography.json').then(r => r.json()),
+                    fetch('data/timeline.json').then(r => r.json()),
+                    fetch('data/events.json').then(r => r.json())
+                ]);
+                allData = { biography: bio, timeline: timeline, events: events };
+            } catch (error) {
+                console.error('خطأ في تحميل البيانات:', error);
+            }
+        }
+
+        function search(query) {
+            if (!query || query.length < 2) {
+                document.getElementById('searchResults').innerHTML = '';
+                return;
+            }
+
+            const results = [];
+            const q = query.toLowerCase();
+
+            // بحث في السيرة
+            if (allData.biography) {
+                const bio = JSON.stringify(allData.biography).toLowerCase();
+                if (bio.includes(q)) {
+                    results.push({ type: 'السيرة', title: 'معلومات السيرة', text: 'تم العثور على النتيجة' });
+                }
+            }
+
+            // بحث في الخط الزمني
+            if (allData.timeline && allData.timeline.events) {
+                allData.timeline.events.forEach(event => {
+                    if (event.title.toLowerCase().includes(q) || event.description.toLowerCase().includes(q)) {
+                        results.push({ type: 'خط زمني', title: event.date + ' - ' + event.title, text: event.description });
+                    }
+                });
+            }
+
+            // بحث في الأحداث
+            if (allData.events && allData.events.events) {
+                allData.events.events.forEach(event => {
+                    if (event.title.toLowerCase().includes(q) || event.description.toLowerCase().includes(q)) {
+                        results.push({ type: 'حدث', title: event.title, text: event.description });
+                    }
+                });
+            }
+
+            const container = document.getElementById('searchResults');
+            if (results.length === 0) {
+                container.innerHTML = '<p>لم يتم العثور على نتائج</p>';
+            } else {
+                container.innerHTML = results.map(result => `
+                    <div class="result-item">
+                        <span class="source-type">${result.type}</span>
+                        <div class="result-title">${result.title}</div>
+                        <div class="result-text">${result.text}</div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            search(e.target.value);
+        });
+
+        loadData();
+    </script>
+</body>
+</html>
