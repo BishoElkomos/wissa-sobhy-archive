@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الأحداث الرئيسية في حياة القمص ويصا صبحي - 4 أحداث محددة الأهمية">
+    <meta name="description" content="الأحداث الرئيسية في أرشيف القمص ويصا صبحي تادرس، مع فصل الوقائع التاريخية عن درجة التوثيق ودور القمص ويصا في كل حدث.">
+    <link rel="canonical" href="https://wissa-sobhy-archive.vercel.app/events.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="الأحداث الرئيسية | أرشيف القمص ويصا صبحي">
+    <meta property="og:description" content="الأحداث الرئيسية المرتبطة بحياة وخدمة القمص ويصا صبحي تادرس.">
+    <meta property="og:url" content="https://wissa-sobhy-archive.vercel.app/events.html">
     <title>الأحداث الرئيسية | أرشيف القمص ويصا صبحي</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -11,16 +16,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         .events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
-        .event-card { 
-            background: #f9f9f9; 
-            border-right: 4px solid #1a472a;
-            padding: 1.5rem; 
-            border-radius: 8px;
-        }
+        .event-card { background: #f9f9f9; border-right: 4px solid #1a472a; padding: 1.5rem; border-radius: 8px; }
         .event-year { color: #1a472a; font-weight: bold; font-size: 1.3rem; }
         .event-title { font-size: 1.2rem; font-weight: 600; margin: 0.5rem 0; }
         .event-desc { color: #666; line-height: 1.8; }
+        .archive-note { max-width: 1000px; margin: 0 auto 2rem; padding: 1rem 1.25rem; border-right: 3px solid #888; background: #fafafa; line-height: 1.8; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"CollectionPage",
+      "name":"الأحداث الرئيسية في أرشيف القمص ويصا صبحي تادرس",
+      "url":"https://wissa-sobhy-archive.vercel.app/events.html",
+      "inLanguage":"ar",
+      "about":{"@type":"Person","name":"القمص ويصا صبحي تادرس"}
+    }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -40,16 +51,31 @@
 
     <main class="container">
         <h1>الأحداث الرئيسية</h1>
-        <p class="subtitle">أهم 4 أحداث في حياة القمص ويصا صبحي تادرس</p>
-        
-        <div class="events-grid" id="events-content">
-            جاري تحميل البيانات...
+        <p class="subtitle">أهم الأحداث المرتبطة بحياة وخدمة القمص ويصا صبحي تادرس</p>
+        <div class="archive-note">
+            <strong>ملاحظة منهجية:</strong> تختلف درجة التوثيق من حدث إلى آخر. لا تعني هذه الصفحة أن كل التفاصيل منشورة في مصدر واحد؛ بل تُعرض الوقائع بحسب البيانات المتاحة مع الحفاظ على الفصل بين الحدث نفسه ودور القمص ويصا فيه.
         </div>
+        <div class="events-grid" id="events-content" aria-live="polite">جاري تحميل البيانات...</div>
+
+        <noscript>
+            <section class="archive-note">
+                <h2>محطات موثقة يمكن قراءتها دون JavaScript</h2>
+                <ul>
+                    <li><strong>11 فبراير 1991:</strong> السيامة الكهنوتية للقمص ويصا صبحي.</li>
+                    <li><strong>22 يونيو 1997:</strong> رفع درجة القمصية.</li>
+                    <li><strong>2007:</strong> بروز دوره الإعلامي كممثل للمطرانية بحسب السجل المنشور.</li>
+                    <li><strong>2013:</strong> أحداث العنف التي طالت كنائس وممتلكات مسيحية في ديرمواس ودلجا، مع توثيق صحفي متنوع.</li>
+                    <li><strong>2025:</strong> وفاة الأنبا أغابيوس، ثم سيامة الأنبا بقطر وتجليسه في مناسبتين منفصلتين.</li>
+                    <li><strong>2026:</strong> الاحتفال بمرور 35 عامًا على السيامة الكهنوتية.</li>
+                </ul>
+                <p>للمزيد من التفاصيل راجع <a href="timeline.html">الخط الزمني</a> و<a href="sources.html">المصادر</a>.</p>
+            </section>
+        </noscript>
     </main>
 
     <footer class="footer">
         <p>&copy; 2026 أرشيف القمص ويصا صبحي تادرس</p>
-        <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive">GitHub</a> | <a href="mailto:contribute@wissa-archive.com">تواصل معنا</a></p>
+        <p><a href="https://github.com/BishoElkomos/wissa-sobhy-archive" target="_blank" rel="noopener">GitHub</a> | <a href="mailto:contribute@wissa-archive.com">تواصل معنا</a></p>
     </footer>
 
     <script src="js/data-loader.js"></script>
@@ -57,18 +83,22 @@
         async function loadEvents() {
             try {
                 const response = await fetch('data/events.json');
+                if (!response.ok) throw new Error('HTTP ' + response.status);
                 const data = await response.json();
+                const events = data.events || data.major_events || [];
+                if (!events.length) throw new Error('No event records found');
                 const container = document.getElementById('events-content');
-                container.innerHTML = data.events.map(event => `
-                    <div class="event-card">
-                        <div class="event-year">${event.year}</div>
-                        <div class="event-title">${event.title}</div>
-                        <div class="event-desc">${event.description}</div>
-                    </div>
+                container.innerHTML = events.map(event => `
+                    <article class="event-card">
+                        <div class="event-year">${event.year || event.date || ''}</div>
+                        <h2 class="event-title">${event.title}</h2>
+                        <div class="event-desc">${event.description || ''}</div>
+                        ${event.wissa_role ? `<p class="event-desc"><strong>دور القمص ويصا:</strong> ${event.wissa_role}</p>` : ''}
+                    </article>
                 `).join('');
             } catch (error) {
                 console.error('خطأ:', error);
-                document.getElementById('events-content').innerHTML = '<p>عذراً، حدث خطأ</p>';
+                document.getElementById('events-content').innerHTML = '<p>تعذر تحميل قائمة الأحداث التفاعلية. يمكن الرجوع إلى المحطات الأساسية أدناه.</p>';
             }
         }
         loadEvents();
