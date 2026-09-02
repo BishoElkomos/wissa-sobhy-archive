@@ -6,33 +6,35 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Validate data
         run: npm run validate
-        continue-on-error: true
-      
+
       - name: Build website
         run: npm run build
-      
+
       - name: Generate PDF exports
         run: npm run pdf
         continue-on-error: true
-      
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -40,7 +42,7 @@ jobs:
           publish_dir: ./website
           cname: wissa-sobhy-archive.com
         if: github.ref == 'refs/heads/main'
-      
+
       - name: Notify deployment
         if: success()
         run: |
