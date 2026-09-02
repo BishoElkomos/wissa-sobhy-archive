@@ -67,18 +67,34 @@ if (loaded['biography.json'] && (!loaded['biography.json'].person || !loaded['bi
   warnings.push('biography.json: expected legacy person/ecclesiastical_career sections were not both found');
 }
 
-const sourceIds = new Set((registry?.sources || []).map((source) => source.id));
+const sourceMap = new Map((registry?.sources || []).map((source) => [source.id, source]));
 const aliases = registry?.aliases || {};
-function resolves(id) {
-  return sourceIds.has(id) || (aliases[id] && sourceIds.has(aliases[id]));
+function resolveSource(id) {
+  if (sourceMap.has(id)) return sourceMap.get(id);
+  const alias = aliases[id];
+  return alias && sourceMap.get(alias);
 }
 
+const auditStats = { resolved: 0, pending: 0, missing: 0 };
 function auditItems(items, label) {
   if (!Array.isArray(items)) return;
   items.forEach((item, index) => {
     const refs = Array.isArray(item.sources) ? item.sources : [];
     refs.forEach((id) => {
-      if (!resolves(id)) warnings.push(`${label} #${index + 1} references unregistered source ID: ${id}`);
+      const source = resolveSource(id);
+      if (!source) {
+        auditStats.missing += 1;
+        errors.push(`${label} #${index + 1} references missing source ID: ${id}`);
+        return;
+      }
+
+      if (source.status === 'pending' || source.status === 'needs_verification' || source.status === 'needs_specific_citation' || source.status === 'needs_specific_citations') {
+        auditStats.pending += 1;
+        warnings.push(`${label} #${index + 1} uses pending source: ${id}`);
+        return;
+      }
+
+      auditStats.resolved += 1;
     });
   });
 }
@@ -89,11 +105,13 @@ auditItems(events?.major_events, 'Major event');
 if (errors.length) {
   console.error(`❌ Validation failed with ${errors.length} error(s).`);
   errors.forEach((error) => console.error(`  • ${error}`));
+  console.error(`📊 Evidence links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);
   process.exit(1);
 }
 
 console.log(`✅ JSON integrity passed (${requiredFiles.length} core files).`);
 console.log(`📚 Canonical sources: ${(registry?.sources || []).length}`);
+console.log(`🔗 Evidence links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);
 console.log(`⚠️ Warnings: ${warnings.length}`);
 warnings.slice(0, 25).forEach((warning) => console.warn(`  • ${warning}`));
 if (warnings.length > 25) console.warn(`  • ... ${warnings.length - 25} more warning(s)`);
