@@ -1,6 +1,6 @@
 /**
  * Data Loader - تحميل البيانات من ملفات JSON
- * Handles the archive data layer with compatibility and evidence helpers.
+ * Handles archive data and canonical evidence resolution.
  */
 
 class DataLoader {
@@ -11,30 +11,18 @@ class DataLoader {
             biography: 'biography.json',
             timeline: 'timeline.json',
             events: 'events.json',
-            sources: 'sources.json',
+            sources: 'source-registry.json',
+            legacySources: 'sources.json',
             people: 'people.json',
             places: 'places.json',
             mediaIndex: 'media-index.json'
-        };
-
-        // Legacy IDs found in older timeline/event records.
-        // Keep these aliases in one place so evidence links can be reconciled
-        // without silently changing the historical records themselves.
-        this.sourceAliases = {
-            'wikipedia': 'wikipedia-ar',
-            'family_archive': 'family-documents',
-            'family_testimony': 'family-testimony',
-            'copts-united': 'copts-united-2010',
-            'youm7': 'youm7-2013'
         };
     }
 
     async loadJSON(filename) {
         if (this.cache[filename]) return this.cache[filename];
-
         const response = await fetch(this.baseUrl + filename);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
         const data = await response.json();
         this.cache[filename] = data;
         return data;
@@ -44,49 +32,51 @@ class DataLoader {
     async getTimeline() { return this.loadJSON(this.dataFiles.timeline); }
     async getEvents() { return this.loadJSON(this.dataFiles.events); }
     async getSources() { return this.loadJSON(this.dataFiles.sources); }
+    async getLegacySources() { return this.loadJSON(this.dataFiles.legacySources); }
     async getPeople() { return this.loadJSON(this.dataFiles.people); }
     async getPlaces() { return this.loadJSON(this.dataFiles.places); }
     async getMediaIndex() { return this.loadJSON(this.dataFiles.mediaIndex); }
 
-    /** Return timeline records regardless of the legacy key used by a data file. */
     normalizeTimeline(data) {
         return Array.isArray(data?.timeline) ? data.timeline :
                Array.isArray(data?.events) ? data.events : [];
     }
 
-    /** Return major-event records regardless of the legacy key used by a data file. */
     normalizeEvents(data) {
         return Array.isArray(data?.major_events) ? data.major_events :
                Array.isArray(data?.events) ? data.events : [];
     }
 
-    /** Resolve a historical source ID to the canonical registry ID when an alias exists. */
-    normalizeSourceId(sourceId) {
-        return this.sourceAliases[sourceId] || sourceId;
-    }
-
-    /** Flatten the source registry into a searchable list. */
     normalizeSources(data) {
+        if (Array.isArray(data?.sources)) return data.sources;
         const groups = data?.sources || {};
         return Object.entries(groups).flatMap(([group, items]) =>
-            Array.isArray(items)
-                ? items.map(source => ({ ...source, group }))
-                : []
+            Array.isArray(items) ? items.map(source => ({ ...source, group })) : []
         );
     }
 
-    /** Return the canonical source record for an ID, if present. */
+    normalizeSourceId(sourceId, data) {
+        const aliases = data?.aliases || {};
+        return aliases[sourceId] || sourceId;
+    }
+
     findSource(sourceId, data) {
-        const canonicalId = this.normalizeSourceId(sourceId);
+        const canonicalId = this.normalizeSourceId(sourceId, data);
         return this.normalizeSources(data).find(source => source.id === canonicalId) || null;
     }
 
-    /** Resolve a list of source IDs while preserving unresolved IDs for audit. */
     resolveSourceIds(sourceIds, data) {
         return (Array.isArray(sourceIds) ? sourceIds : []).map(id => ({
             requestedId: id,
-            canonicalId: this.normalizeSourceId(id),
+            canonicalId: this.normalizeSourceId(id, data),
             source: this.findSource(id, data)
+        }));
+    }
+
+    auditSourceIds(sourceIds, data) {
+        return this.resolveSourceIds(sourceIds, data).map(item => ({
+            ...item,
+            status: item.source ? item.source.status || 'registered' : 'UNRESOLVED'
         }));
     }
 
@@ -95,7 +85,6 @@ class DataLoader {
             const fileName = this.dataFiles[name] || name;
             return this.loadJSON(fileName);
         }));
-
         return fileNames.reduce((data, name, index) => {
             data[name] = results[index];
             return data;
@@ -120,12 +109,7 @@ class DataLoader {
             const description = event.description || '';
             const tags = event.tags || [];
             if (title.includes(query) || description.toLowerCase().includes(lowerQuery) || tags.some(tag => tag.includes(query))) {
-                results.push({
-                    type: 'timeline_event',
-                    year: event.year,
-                    title,
-                    date: event.date_arabic || event.date || `${event.year || ''}`
-                });
+                results.push({ type: 'timeline_event', year: event.year, title, date: event.date_arabic || event.date || `${event.year || ''}` });
             }
         });
         return results;
