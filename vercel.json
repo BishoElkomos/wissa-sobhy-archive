@@ -3,6 +3,14 @@
   "version": 2,
   "buildCommand": "node scripts/build-site.js",
   "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/(.*).html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, must-revalidate" }
+      ]
+    }
+  ],
   "env": {
     "NODE_ENV": "production"
   }
