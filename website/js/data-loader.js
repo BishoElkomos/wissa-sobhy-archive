@@ -1,6 +1,6 @@
 /**
  * Data Loader - تحميل البيانات من ملفات JSON
- * Handles the archive data layer with small compatibility helpers.
+ * Handles the archive data layer with compatibility and evidence helpers.
  */
 
 class DataLoader {
@@ -15,6 +15,17 @@ class DataLoader {
             people: 'people.json',
             places: 'places.json',
             mediaIndex: 'media-index.json'
+        };
+
+        // Legacy IDs found in older timeline/event records.
+        // Keep these aliases in one place so evidence links can be reconciled
+        // without silently changing the historical records themselves.
+        this.sourceAliases = {
+            'wikipedia': 'wikipedia-ar',
+            'family_archive': 'family-documents',
+            'family_testimony': 'family-testimony',
+            'copts-united': 'copts-united-2010',
+            'youm7': 'youm7-2013'
         };
     }
 
@@ -47,6 +58,36 @@ class DataLoader {
     normalizeEvents(data) {
         return Array.isArray(data?.major_events) ? data.major_events :
                Array.isArray(data?.events) ? data.events : [];
+    }
+
+    /** Resolve a historical source ID to the canonical registry ID when an alias exists. */
+    normalizeSourceId(sourceId) {
+        return this.sourceAliases[sourceId] || sourceId;
+    }
+
+    /** Flatten the source registry into a searchable list. */
+    normalizeSources(data) {
+        const groups = data?.sources || {};
+        return Object.entries(groups).flatMap(([group, items]) =>
+            Array.isArray(items)
+                ? items.map(source => ({ ...source, group }))
+                : []
+        );
+    }
+
+    /** Return the canonical source record for an ID, if present. */
+    findSource(sourceId, data) {
+        const canonicalId = this.normalizeSourceId(sourceId);
+        return this.normalizeSources(data).find(source => source.id === canonicalId) || null;
+    }
+
+    /** Resolve a list of source IDs while preserving unresolved IDs for audit. */
+    resolveSourceIds(sourceIds, data) {
+        return (Array.isArray(sourceIds) ? sourceIds : []).map(id => ({
+            requestedId: id,
+            canonicalId: this.normalizeSourceId(id),
+            source: this.findSource(id, data)
+        }));
     }
 
     async loadMultiple(fileNames) {
