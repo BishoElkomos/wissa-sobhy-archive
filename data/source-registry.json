@@ -1,19 +1,22 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "last_updated": "2026-09-02",
   "description": "Canonical evidence registry. Legacy source IDs remain traceable through aliases; pending records are not treated as verified publication sources.",
   "sources": [
     {"id":"wikipedia-ar","group":"published","type":"encyclopedia","title":"ويصا صبحي","url":"https://ar.wikipedia.org/wiki/ويصا_صبحي","reliability":"MEDIUM","status":"published_secondary"},
     {"id":"elbalad-2026","group":"published","type":"news_article","title":"مطرانية ديرمواس تحتفل بمرور 35 سنة على سيامة القمص ويصا صبحي","url":"https://www.elbalad.news/6928700","reliability":"MEDIUM_TO_HIGH","status":"published"},
+    {"id":"copts-united","group":"published","type":"news_portal","title":"الأقباط متحدون — سجل عام","reliability":"PENDING","status":"needs_specific_citation"},
     {"id":"copts-united-2010","group":"published","type":"news_portal","title":"مظاهرات الأقباط بقيادة رجال الدين للمطالبة بعودة زوجة الكاهن المختفية","url":"http://www.copts-united.com/Article.php?A=20644","reliability":"MEDIUM_TO_HIGH","status":"published"},
+    {"id":"copts-united-2007","group":"published","type":"news_portal","title":"سجل صحفي لأحداث النزاع العقاري بديرمواس عام 2007","reliability":"PENDING","status":"needs_verification"},
+    {"id":"voice-of-copts","group":"published","type":"news_portal","title":"Voice of Copts — سجل عام","reliability":"PENDING","status":"needs_specific_citation"},
+    {"id":"voice-of-copts-2007","group":"published","type":"news_portal","title":"سجل صحفي مساعد لأحداث النزاع العقاري بديرمواس عام 2007","reliability":"PENDING","status":"needs_verification"},
     {"id":"wataninet-2013","group":"published","type":"news_article","title":"مركز ديرمواس بمحافظة المنيا","url":"https://www.wataninet.com/2013/09/مركز-ديرمواس-بمحافظة-المنيا/","reliability":"MEDIUM_TO_HIGH","status":"published"},
     {"id":"wataninet-2013-delga","group":"published","type":"news_article","title":"قرية دلجا بمحافظة المنيا","url":"https://www.wataninet.com/2013/09/قرية-دلجا-بمحافظة-المنيا/","reliability":"MEDIUM_TO_HIGH","status":"published"},
     {"id":"mobtada-2013","group":"published","type":"news_portal","title":"تغطية أحداث دلجا","url":"https://www.mobtada.com/cases/102560/","reliability":"MEDIUM","status":"published"},
+    {"id":"youm7","group":"published","type":"news_portal","title":"اليوم السابع — سجل عام","reliability":"PENDING","status":"needs_specific_citation"},
     {"id":"youm7-2013","group":"published","type":"news_portal","title":"تغطية أحداث ديرمواس ودلجا","reliability":"MEDIUM","status":"published_record"},
     {"id":"rawi-publishing","group":"published","type":"published_article","title":"Burning History","url":"https://rawi-publishing.com/articles/burning-history","reliability":"MEDIUM_TO_HIGH","status":"published"},
     {"id":"dostor-2026","group":"published","type":"news_article","title":"محافظ المنيا: أعيادنا ركيزة لترسيخ قيم التعايش والمودة","reliability":"MEDIUM","status":"published_record"},
-    {"id":"copts-united-2007","group":"published","type":"news_portal","title":"سجل صحفي لأحداث النزاع العقاري بديرمواس عام 2007","reliability":"PENDING","status":"needs_verification"},
-    {"id":"voice-of-copts-2007","group":"published","type":"news_portal","title":"سجل صحفي مساعد لأحداث النزاع العقاري بديرمواس عام 2007","reliability":"PENDING","status":"needs_verification"},
     {"id":"international_media","group":"published","type":"news_collection","title":"تغطية إعلامية دولية لأحداث 2010 و2013","reliability":"PENDING","status":"needs_specific_citations"},
     {"id":"almasryalyoum","group":"published","type":"news_portal","title":"سجل تغطية لأحداث 2013","reliability":"PENDING","status":"needs_specific_citation"},
     {"id":"family-archive","group":"family_archive","type":"personal_archive","title":"الأرشيف العائلي — سجل جامع","reliability":"MEDIUM_TO_HIGH","status":"internal_archive"},
@@ -31,14 +34,14 @@
     "wikipedia":"wikipedia-ar",
     "family_archive":"family-archive",
     "copts-united":"copts-united",
-    "youm7":"youm7-2013",
+    "voice-of-copts":"voice-of-copts",
+    "youm7":"youm7",
     "international_media":"international_media",
-    "almasryalyoum":"almasryalyoum",
-    "voice-of-copts":"voice-of-copts-2007"
+    "almasryalyoum":"almasryalyoum"
   },
   "tiers": {
     "tier_1_primary_or_official":["church-records","coptic-church-diocese-history","coptic-church-agabius-profile","coptic-church-agabius-departure-2025","coptic-church-boktor-ordination-2025","family-documents"],
     "tier_2_published_or_archival":["elbalad-2026","copts-united-2010","wataninet-2013","wataninet-2013-delga","rawi-publishing","mobtada-2013","youm7-2013","dostor-2026","family-photos"],
-    "tier_3_secondary_or_pending":["wikipedia-ar","family-testimony","coptic-encyclopedias","copts-united-2007","voice-of-copts-2007","international_media","almasryalyoum"]
+    "tier_3_secondary_or_pending":["wikipedia-ar","family-testimony","coptic-encyclopedias","copts-united","copts-united-2007","voice-of-copts","voice-of-copts-2007","youm7","international_media","almasryalyoum"]
   }
 }
