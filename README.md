@@ -28,9 +28,9 @@ wissa-sobhy-archive/
 │   ├── timeline.json               (الخط الزمني)
 │   ├── events.json                 (الأحداث الرئيسية)
 │   ├── sources.json                (قائمة المصادر)
-│   ├── media-index.json            (فهرس الوسائط)
-│   ├── people.json                 (الأشخاص المرتبطين)
-│   └── places.json                 (الأماكن الجغرافية)
+│   ├── media-index.json             (فهرس الوسائط)
+│   ├── people.json                  (الأشخاص المرتبطين)
+│   └── places.json                  (الأماكن الجغرافية)
 │
 ├── 📁 media/
 │   ├── 📷 photos/
@@ -56,32 +56,6 @@ wissa-sobhy-archive/
 │       ├── testimony/
 │       └── INDEX.md
 │
-├── 📖 content/
-│   ├── biography/
-│   │   ├── 01-early-life.md         (النشأة والتكوين)
-│   │   ├── 02-priesthood.md         (السيامة والخدمة)
-│   │   ├── 03-ministry.md           (مسيرة الخدمة)
-│   │   ├── 04-witness.md            (الشهادات والأحداث)
-│   │   └── index.md
-│   │
-│   ├── events/
-│   │   ├── 2007-land-dispute.md
-│   │   ├── 2010-kamilia-shehata.md
-│   │   ├── 2013-attacks-deir-mawas.md
-│   │   ├── 2014-reconstruction.md
-│   │   ├── 2025-transition.md
-│   │   └── index.md
-│   │
-│   ├── relationships/
-│   │   ├── anba-agabius.md          (العلاقة مع الأنبا أغابيوس)
-│   │   ├── nader-shokry.md          (التغطية الصحفية)
-│   │   └── index.md
-│   │
-│   └── analysis/
-│       ├── deir-mawas-history.md
-│       ├── coptic-crises.md
-│       └── index.md
-│
 ├── 🌐 website/
 │   ├── index.html                  (الصفحة الرئيسية)
 │   ├── biography.html              (صفحة السيرة)
@@ -90,18 +64,9 @@ wissa-sobhy-archive/
 │   ├── media.html                  (المعرض)
 │   ├── sources.html                (المصادر)
 │   ├── search.html                 (البحث المتقدم)
-│   │
-│   ├── css/
-│   │   ├── style.css               (الأسلوب الرئيسي)
-│   │   ├── timeline.css            (خط زمني)
-│   │   └── responsive.css          (موبايل)
-│   │
-│   └── js/
-│       ├── app.js                  (التطبيق الرئيسي)
-│       ├── search.js               (محرك البحث)
-│       ├── timeline.js             (الخط الزمني)
-│       ├── data-loader.js          (تحميل البيانات)
-│       └── utils.js                (أدوات عامة)
+│   ├── wissa.html                  (الملف الموحد للقمص ويصا صبحي)
+│   ├── agabius.html                (ملف الأنبا أغابيوس)
+│   └── diocese.html                (تاريخ إيبارشية ديرمواس ودلجا)
 │
 ├── 🔧 scripts/
 │   ├── build-site.js               (بناء الموقع)
@@ -119,7 +84,7 @@ wissa-sobhy-archive/
 ├── .github/
 │   └── workflows/
 │       ├── deploy.yml              (نشر تلقائي)
-│       └── validate.yml            (فحص آلي)
+│       └── validate.yml             (فحص آلي)
 │
 ├── 📋 LICENSE                       (الترخيص)
 └── 🔐 CONTRIBUTE.md                 (كيفية المساهمة)
@@ -297,6 +262,6 @@ npm run deploy
 
 ---
 
-**آخر تحديث:** أغسطس 2026  
+**آخر تحديث:** 2 سبتمبر 2026  
 **الإصدار:** 2.0.0  
 **الحالة:** 🟢 نشط وقيد التطوير
