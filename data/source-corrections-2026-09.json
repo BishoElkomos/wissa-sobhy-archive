@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "last_updated": "2026-09-03",
   "description": "Corrections and strengthened source-ledger records discovered during archive review.",
   "sources": [
@@ -26,6 +26,18 @@
       "date": "2010-07-23",
       "related_person": "القمص ويصا صبحي",
       "note": "Contemporaneous Youm7 record added to strengthen the source trail for the 2010 Camelia/Shahatah media-spokesperson chronology."
+    },
+    {
+      "id": "almasryalyoum-2007-land-dispute-direct",
+      "group": "published",
+      "type": "news_article",
+      "title": "إنهاء النزاع بين عائلة مسيحية وأسقف ديرمواس",
+      "url": "https://www.almasryalyoum.com/news/details/2138588",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2007-04-29",
+      "related_person": "القمص ويصا صبحي",
+      "note": "Contemporaneous Al-Masry Al-Youm report explicitly names Father Wissa Sobhy among the diocesan priests present during the April 2007 property-dispute enforcement incident. It is evidence for presence/participation in that incident, not by itself proof that he was the diocesan media spokesperson."
     }
   ]
 }
