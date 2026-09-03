@@ -1,0 +1,15 @@
+{
+  "version":"1.0",
+  "last_updated":"2026-09-03",
+  "purpose":"Explicit correction ledger for biography claims. It prevents weaker legacy citations from being treated as the preferred evidence while preserving the original research trail.",
+  "corrections":[
+    {"path":"education.bachelor.sources","replace_with":[{"type":"published","source_id":"elbalad-2026","name":"صدى البلد — اليوبيل 35","url":"https://www.elbalad.news/6928700","date":"2026-04-08"}],"reason":"The 2026 jubilee report explicitly repeats the Bachelor of Commerce, Tanta University, 1980 milestone; prefer it over Wikipedia."},
+    {"path":"ecclesiastical_career.elevation_to_abuna.sources","replace_with":[{"type":"published_reference","source_id":"st-takla-wissa-profile","name":"St-Takla.org — أبونا القمص ويصا صبحي تادرس","url":"https://st-takla.org/characters/priest-pastor-father/waaw/weeca-subhi-tadrus.html"},{"type":"published","source_id":"elbalad-2026","name":"صدى البلد — اليوبيل 35","url":"https://www.elbalad.news/6928700","date":"2026-04-08"}],"reason":"Remove Wikipedia as the preferred published citation for the 1997 elevation while preserving the family record as a separate archival source when available."},
+    {"path":"administrative_roles.media_spokesperson.sources","replace_with":[{"type":"published","source_id":"youm7-2010-wissa-cathedral","name":"اليوم السابع — اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية","url":"https://www.youm7.com/story/2010/7/23/اعتصام-عشرات-الأقباط-والكهنة-بكاتدرائية-العباسية-لليوم-الثانى/257407","date":"2010-07-23"},{"type":"published","source_id":"egypt-independent-2010-kamilia","name":"Egypt Independent — Priest's wife denies converting to Islam","url":"https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/","date":"2010-09-09"}],"reason":"Use contemporaneous named reporting for the documented representative/media role rather than Wikipedia."},
+    {"path":"birth.sources","action":"retain_family_archive","reason":"The supplied family archive remains the stated basis; no independent public source has been silently substituted."},
+    {"path":"marriage.sources","action":"retain_family_archive","reason":"Personal/family archival fact remains explicitly family-sourced until an appropriate documentary source is found."},
+    {"path":"move_to_deir_mawas.sources","action":"review_wording","reason":"The 2026 jubilee source supports early connection/service context; it must not be used to infer that a formal vicar title began in 1988."},
+    {"path":"administrative_roles.vicar_of_diocese","action":"date_bound","reason":"Historical vicar/representative wording remains bounded to the former role and must never be rendered as current."},
+    {"path":"key_relationships.journalist_collaborator","action":"needs_claim_level_review","reason":"The relationship claim is stronger than the individual article evidence currently indexed; retain as research metadata until each joint activity is directly sourced."}
+  ]
+}
