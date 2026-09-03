@@ -25,5 +25,5 @@
   "browserslist":["> 0.5%","last 2 versions","Firefox ESR","not dead"],
   "engines":{"node":">=14.0.0","npm":">=6.0.0"},
   "directories":{"data":"data","website":"website","exports":"exports","scripts":"scripts"},
-  "archive":{"language":"ar","direction":"rtl","primaryLanguage":"Arabic","alternateLanguages":["English"],"subject":"Biography, Coptic Orthodox Church, Ecclesiastical History","temporal_coverage":"1991-2026","spatial_coverage":"Minya Governorate, Egypt","verification_status":"evidence_audit_in_progress","last_update":"2026-09-03","curator":"Bishoy Elkomos"}
+  "archive":{"language":"ar","direction":"rtl","primaryLanguage":"Arabic","alternateLanguages":["English"],"subject":"Biography, Coptic Orthodox Church, Ecclesiastical History","temporal_coverage":"1991-2026","spatial_coverage":"Minya Governorate, Egypt","verification_status":"source_audit_active","last_update":"2026-09-03","curator":"Bishoy Elkomos"}
 }
