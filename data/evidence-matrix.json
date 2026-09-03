@@ -1,19 +1,21 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "last_updated": "2026-09-03",
-  "purpose": "Structured audit map connecting major archival claims/events to source IDs and explicitly separating resolved evidence from pending or incomplete evidence.",
+  "purpose": "Structured internal claim-to-source map. It remains an internal control layer; the public site presents sources contextually rather than as a separate audit page.",
   "rules": [
     "A source ID is not proof by itself; the linked source must support the specific claim.",
     "Historical role descriptions are date-bound and must not be reused as current-role evidence.",
     "Pending or metadata-only material is retained but not promoted to verified evidence.",
-    "Primary church records receive priority for current institutional facts and episcopal appointments."
+    "Primary church records receive priority for current institutional facts and episcopal appointments.",
+    "A cross-supported claim must not depend on a pending or uninspected source.",
+    "A source that is useful for context is not automatically evidence for a person's individual action or attendance."
   ],
   "entries": [
     {"id":"wissa-current-role","subject":"القمص ويصا صبحي تادرس","claim":"الصفة الحالية: كاهن كنيسة السيدة العذراء بديرمواس","source_ids":["st-takla-wissa-profile"],"status":"source_recorded","priority":"high","note":"يُحفظ كالوصف الحالي المعتمد في ملف الأرشيف؛ لا تُستخدم أوصاف الوكالة التاريخية كدليل على الوضع الحالي."},
     {"id":"wissa-ordination-1991","subject":"القمص ويصا صبحي تادرس","claim":"السيامة الكهنوتية في 11 فبراير 1991","source_ids":["elbalad-2026","st-takla-wissa-profile"],"status":"cross_supported","priority":"high"},
     {"id":"wissa-jubilee-2026","subject":"القمص ويصا صبحي تادرس","claim":"احتفال الإيبارشية بمرور 35 عامًا على السيامة في 2026","source_ids":["elbalad-2026-wissa-jubilee","elbalad-2026"],"status":"cross_supported","priority":"high"},
     {"id":"wissa-2013-documentation","subject":"القمص ويصا صبحي تادرس","claim":"مشاركته في توثيق أضرار أحداث ديرمواس بعد هجمات أغسطس 2013","source_ids":["coptic-solidarity-2013-deir-mawas","wataninet-2013","rawi-publishing"],"status":"cross_supported","priority":"high"},
-    {"id":"wissa-2010-media-role","subject":"القمص ويصا صبحي تادرس","claim":"ظهوره الإعلامي في أزمة كاميليا شحاتة عام 2010","source_ids":["copts-united-2010","egypt-independent-2010-kamilia","akref-2010-wissa-sobhy-kamilia"],"status":"cross_supported","priority":"high","note":"الأوصاف الوظيفية الواردة في هذه التغطيات تُفهم في سياق 2010 ولا تُستخدم لتحديد منصبه الحالي."},
+    {"id":"wissa-2010-media-role","subject":"القمص ويصا صبحي تادرس","claim":"ظهوره الإعلامي في أزمة كاميليا شحاتة عام 2010","source_ids":["copts-united-2010","egypt-independent-2010-kamilia","akref-2010-wissa-sobhy-kamilia"],"status":"cross_supported","priority":"high","note":"تم فصل المصدر الدولي العام غير المحدد من الادعاء؛ وجود تغطية دولية يُحفظ كسياق، أما إثبات ظهور القمص ويصا نفسه فيستند هنا إلى ثلاث إحالات محددة."},
     {"id":"agabius-repose-2025","subject":"الأنبا أغابيوس","claim":"نياحته في 4 فبراير 2025","source_ids":["wataninet-2025","coptic-church-agabius-departure-2025","coptic-church-agabius-funeral-2025"],"status":"cross_supported","priority":"high"},
     {"id":"diocese-modern-foundation","subject":"إيبارشية ديرمواس ودلجا","claim":"تأسيس الإيبارشية في 13 نوفمبر 1988 وسيامة الأنبا أغابيوس، ثم سيامة الأنبا بقطر في 1 يونيو 2025 بعد نياحته","source_ids":["coptic-church-diocese-history"],"status":"primary_source","priority":"highest"},
     {"id":"boktor-profile-2026","subject":"الأنبا بقطر","claim":"السجل الرسمي الحالي يثبت الميلاد في 5 فبراير 1975 والرهبنة في 23 فبراير 2007 والأسقفية في 1 يونيو 2025","source_ids":["coptic-church-boktor-profile-2026"],"status":"primary_source","priority":"highest","note":"تم العثور على صفحة الأسقف الرسمية في موقع الكنيسة القبطية الأرثوذكسية؛ وهي أقوى من السجلات الثانوية المتعارضة."},
@@ -25,10 +27,11 @@
     {"id":"boktor-abram-feast-2026","subject":"الأنبا بقطر","claim":"ترؤسه قداس عيد الأنبا أبرآم بدلجا في يونيو 2026 وما ارتبط به من رسامات وتكريس","source_ids":["dostor-2026-06-13-boktor-abram","youm7-2026-boktor-abram"],"status":"cross_supported","priority":"high"},
     {"id":"diocese-cleanup-2026-06-11","subject":"إيبارشية ديرمواس ودلجا","claim":"وجود سجل صحفي عن حملة نظافة مشتركة في دلجا بتاريخ 11 يونيو 2026","source_ids":["dostor-2026-06-11-cleanup"],"status":"indexed_not_fully_retrieved","priority":"medium","note":"العنوان والتاريخ مثبتان في فهرس الدستور، لكن الرابط التفصيلي لم يُسترجع بعد؛ لا تُرفع الحالة قبل الاسترجاع المباشر."}
   ],
-  "next_audit": [
-    "استرجاع الرابط التفصيلي لخبر 11 يونيو 2026.",
+  "next_review": [
+    "استرجاع الرابط التفصيلي لخبر 11 يونيو 2026 قبل رفع حالته.",
     "إدخال سجلات 2026 التكميلية في الواجهة المركزية مع الحفاظ على حالات التحقق.",
-    "مراجعة كل source ID قديم مثل wikipedia وfamily_archive مقابل المعرّفات المعيارية قبل اعتبار validate-data خاليًا من الفجوات.",
-    "فحص الوسائط الفعلية ذات الحالة metadata_only قبل إضافة أي عنوان أو تاريخ أو نسبة أداء جديدة."
+    "مراجعة source IDs القديمة مثل wikipedia وfamily_archive مقابل المعرّفات المعيارية.",
+    "فحص الوسائط ذات الحالة metadata_only أو link_only قبل إضافة أي عنوان أو تاريخ أو نسبة أداء جديدة.",
+    "بناء سجل حفظ للمصادر المهمة يتضمن تاريخ الوصول ونسخة محفوظة أو بصمة ملف عندما تكون الحفظة متاحة ومشروعة."
   ]
 }
