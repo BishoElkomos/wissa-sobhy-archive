@@ -14,10 +14,14 @@ if (!fs.existsSync(registryPath)) {
 const additionFiles = fs.readdirSync(dist)
   .filter((name) => /^source-additions-.*\.json$/.test(name))
   .sort();
+const correctionFiles = fs.readdirSync(dist)
+  .filter((name) => /^source-corrections-.*\.json$/.test(name))
+  .sort();
 
 const registry = JSON.parse(fs.readFileSync(registryPath, 'utf8'));
 const existing = new Map((registry.sources || []).map((source) => [source.id, source]));
 let added = 0;
+let corrected = 0;
 let ledgers = 0;
 
 for (const filename of additionFiles) {
@@ -40,10 +44,27 @@ for (const filename of additionFiles) {
   }
 }
 
+for (const filename of correctionFiles) {
+  const correctionsPath = path.join(dist, filename);
+  let corrections;
+  try {
+    corrections = JSON.parse(fs.readFileSync(correctionsPath, 'utf8'));
+  } catch (error) {
+    console.warn(`⚠️ Source correction skipped: ${filename} (${error.message})`);
+    continue;
+  }
+
+  for (const source of corrections.sources || []) {
+    if (!source || !source.id) continue;
+    if (existing.has(source.id)) corrected += 1;
+    existing.set(source.id, source);
+  }
+}
+
 registry.sources = [...existing.values()];
-registry.version = '2.8';
+registry.version = '2.9';
 registry.last_updated = '2026-09-03';
-registry.description = 'Canonical evidence registry. All supplemental source ledgers are merged during production build; pending and metadata-only material remains explicitly marked.';
+registry.description = 'Canonical evidence registry. Supplemental source ledgers are merged during production build and explicit correction ledgers are applied afterward; pending and metadata-only material remains explicitly marked.';
 
 fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2) + '\n', 'utf8');
-console.log(`✅ Production source registry merged: ${added} new source record(s) from ${ledgers} ledger(s); ${registry.sources.length} total.`);
+console.log(`✅ Production source registry merged: ${added} new source record(s), ${corrected} correction(s), ${ledgers} addition ledger(s); ${registry.sources.length} total.`);
