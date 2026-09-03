@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-09-03",
+  "description": "Supplemental source ledger for a contemporaneous 2010 report used in the biography source-correction record.",
+  "sources": [
+    {
+      "id": "youm7-2010-wissa-cathedral",
+      "title": "اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
+      "outlet": "اليوم السابع",
+      "date": "2010-07-23",
+      "url": "https://www.youm7.com/story/2010/7/23/اعتصام-عشرات-الأقباط-والكهنة-بكاتدرائية-العباسية-لليوم-الثانى/257407",
+      "type": "news_article",
+      "group": "published",
+      "language": "ar",
+      "country": "Egypt",
+      "status": "published",
+      "reliability": "medium_high",
+      "note": "Contemporaneous report recorded for claim-level source correction. It should be cited only for what the article itself states; it is not treated as proof of unrelated biographical claims."
+    }
+  ]
+}
