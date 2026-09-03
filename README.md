@@ -1,7 +1,78 @@
-# Wissa Sobhy Tadros Archive
+# 📚 أرشيف القمص ويصا صبحي تادرس - النسخة المحسّنة
 
-Digital historical archive documenting the life, ministry, historical context, sources and media associated with Father Wissa Sobhy Tadros.
+**مشروع أرشيفي رقمي شامل وموثوق** يوثق سيرة وخدمة القمص ويصا صبحي تادرس (1991-2026)
 
-The public website follows a consolidated information architecture: **Home → Father Wissa → Metropolitan Agabius → Diocese History → Sources, News & Media → Evidence → Search**.
+---
 
-Standalone biography, timeline, events, sources and media pages are retired from the source tree; the build system preserves their legacy URLs as noindex compatibility redirects to the consolidated destinations.
+## 🎯 أهداف المشروع
+
+✅ **توثيق سيري معاصر:** كل معلومة بمصدرها  
+✅ **حفظ الذاكرة الكنسية:** للأجيال القادمة  
+✅ **مصدر أكاديمي موثوق:** للباحثين والدارسين  
+✅ **أرشيف رقمي آمن:** على GitHub (للأبد)  
+✅ **محتوى قابل للبحث:** موقع تفاعلي كامل
+
+---
+
+## 📁 بنية المستودع
+
+الموقع العام يعتمد الآن على بنية موحدة: **الرئيسية → القمص ويصا صبحي → الأنبا أغابيوس → تاريخ الإيبارشية → المصادر والأخبار والوسائط → سجل الأدلة → البحث**.
+
+الصفحات المنفصلة القديمة للسيرة والخط الزمني والأحداث والمصادر والوسائط تم دمجها في الصفحات المركزية. ويظل حفظ الروابط القديمة ممكنًا عبر مسارات توافقية ينشئها نظام البناء دون إدراجها في خريطة الموقع.
+
+البيانات الأساسية موجودة في `data/`، وتشمل السيرة والأحداث والخط الزمني وسجل المصادر وسجل الوسائط.
+
+---
+
+## 📊 نظام التحقق من المصادر
+
+```text
+VERIFIED        — مصدر منشور موثوق أو سجل أرشيفي موثق
+PROBABLE        — مرجح ويحتاج تحققًا إضافيًا
+UNCONFIRMED     — معلومة تحتاج مصدرًا أقوى
+DISPUTED        — معلومات متعارضة تحتاج حسمًا
+PENDING         — قيد البحث والتحقق
+```
+
+---
+
+## 🔗 أهم مكونات الأرشيف
+
+- `website/wissa.html` — الملف الموحد للقمص ويصا صبحي
+- `website/agabius.html` — ملف الأنبا أغابيوس
+- `website/diocese.html` — تاريخ إيبارشية ديرمواس ودلجا
+- `website/sources-media.html` — المصادر والأخبار والوسائط في فهرس موحد
+- `website/evidence.html` — تدقيق الأدلة وربطها بالمصادر
+- `website/search.html` — البحث في مواد الأرشيف
+
+---
+
+## 💻 التقنيات
+
+HTML5 + CSS3 + JavaScript، بيانات JSON منظمة، GitHub Actions، وVercel للنشر والتحقق من نسخ الإنتاج.
+
+---
+
+## 🚀 التشغيل المحلي
+
+```bash
+git clone https://github.com/BishoElkomos/wissa-sobhy-archive.git
+cd wissa-sobhy-archive
+npm install
+npm start
+npm run build
+npm run validate
+```
+
+---
+
+## ⚖️ الترخيص
+
+- المحتوى النصي: Creative Commons (CC BY-SA 4.0)
+- الصور الشخصية: للاستخدام الأكاديمي فقط
+- الكود: MIT License
+
+---
+
+**آخر تحديث:** 3 سبتمبر 2026  
+**الحالة:** 🟢 نشط وقيد التطوير
