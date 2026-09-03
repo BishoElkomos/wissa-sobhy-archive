@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wissa-sobhy-archive.vercel.app/</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/biography.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/timeline.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/events.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/agabius.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/sources.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/media.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/search.html</loc></url>
-  <url><loc>https://wissa-sobhy-archive.vercel.app/evidence.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/wissa.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/agabius.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/diocese.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/sources-media.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/evidence.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/search.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/agabius.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/diocese.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/sources-media.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/evidence.html</loc></url>
+  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/search.html</loc></url>
 </urlset>
