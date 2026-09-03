@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "أرشيف رقمي شامل وموثوق لسيرة وخدمة القمص ويصا صبحي تادرس (1991-2026)",
   "main": "scripts/build-site.js",
-  "scripts": {"start":"http-server -p 8080 -c-1","build":"node scripts/build-site.js && node scripts/merge-biography-research-dist.js && node scripts/merge-source-registry-dist.js","validate":"node scripts/validate-data.js","pdf":"node scripts/generate-pdf.js","word":"node scripts/export-word.js","deploy":"bash scripts/deploy.sh","test":"jest","dev":"npm start"},
+  "scripts": {"start":"http-server -p 8080 -c-1","build":"node scripts/build-site.js && node scripts/apply-biography-corrections.js && node scripts/merge-biography-research-dist.js && node scripts/merge-source-registry-dist.js","validate":"node scripts/validate-data.js","pdf":"node scripts/generate-pdf.js","word":"node scripts/export-word.js","deploy":"bash scripts/deploy.sh","test":"jest","dev":"npm start"},
   "keywords":["القمص ويصا صبحي","الكنيسة القبطية","ديرمواس","أرشيف رقمي","سيرة","توثيق"],
   "author":{"name":"Bishoy Elkomos & Contributors","url":"https://github.com/BishoElkomos"},
   "contributors":[{"name":"Contributors","url":"https://github.com/BishoElkomos/wissa-sobhy-archive/graphs/contributors"}],
