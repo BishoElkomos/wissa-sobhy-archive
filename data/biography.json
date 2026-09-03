@@ -38,8 +38,10 @@
       "sources": [
         {
           "type": "published",
-          "name": "ويكيبيديا العربية",
-          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+          "source_id": "elbalad-2026",
+          "name": "صدى البلد — اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
         }
       ]
     },
@@ -127,13 +129,17 @@
       "confidence": "HIGH",
       "sources": [
         {
-          "type": "family_archive",
-          "description": "أرشيف عائلي - شهادات الترقية"
+          "type": "published_reference",
+          "source_id": "st-takla-wissa-profile",
+          "name": "St-Takla.org — أبونا القمص ويصا صبحي تادرس",
+          "url": "https://st-takla.org/characters/priest-pastor-father/waaw/weeca-subhi-tadrus.html"
         },
         {
           "type": "published",
-          "name": "ويكيبيديا",
-          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+          "source_id": "elbalad-2026",
+          "name": "صدى البلد — اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
         }
       ]
     }
@@ -227,9 +233,17 @@
       "sources": [
         {
           "type": "published",
-          "name": "ويكيبيديا",
-          "description": "برز دوره كمتحدث رسمي منذ 2007",
-          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+          "source_id": "youm7-2010-wissa-cathedral",
+          "name": "اليوم السابع — اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
+          "url": "https://www.youm7.com/story/2010/7/23/اعتصام-عشرات-الأقباط-والكهنة-بكاتدرائية-العباسية-لليوم-الثانى/257407",
+          "date": "2010-07-23"
+        },
+        {
+          "type": "published",
+          "source_id": "egypt-independent-2010-kamilia",
+          "name": "Egypt Independent — Priest's wife denies converting to Islam",
+          "url": "https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/",
+          "date": "2010-09-09"
         }
       ]
     }
@@ -362,7 +376,9 @@
       "individual_video_metadata"
     ],
     "next_update": "2027-Q1",
-    "notes": "سيرة محدثة مع فصل التكليف الحالي عن التكليف الإداري السابق، وإضافة رابط المجموعة المرئية الخارجية دون افتراض بيانات غير متحققة."
+    "notes": "سيرة محدثة مع فصل التكليف الحالي عن التكليف الإداري السابق، وإضافة رابط المجموعة المرئية الخارجية دون افتراض بيانات غير متحققة.",
+    "last_source_correction_run": "2026-09-03",
+    "source_correction_ledger": "biography-source-corrections-2026-09.json"
   },
   "research_enrichment": {
     "last_updated": "2026-09-03",
