@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "last_updated": "2026-09-03",
   "purpose": "Structured audit map connecting major archival claims/events to source IDs and explicitly separating resolved evidence from pending or incomplete evidence.",
   "rules": [
@@ -16,6 +16,7 @@
     {"id":"wissa-2010-media-role","subject":"القمص ويصا صبحي تادرس","claim":"ظهوره الإعلامي في أزمة كاميليا شحاتة عام 2010","source_ids":["copts-united-2010","egypt-independent-2010-kamilia","akref-2010-wissa-sobhy-kamilia"],"status":"cross_supported","priority":"high","note":"الأوصاف الوظيفية الواردة في هذه التغطيات تُفهم في سياق 2010 ولا تُستخدم لتحديد منصبه الحالي."},
     {"id":"agabius-repose-2025","subject":"الأنبا أغابيوس","claim":"نياحته في 4 فبراير 2025","source_ids":["wataninet-2025","coptic-church-agabius-departure-2025","coptic-church-agabius-funeral-2025"],"status":"cross_supported","priority":"high"},
     {"id":"diocese-modern-foundation","subject":"إيبارشية ديرمواس ودلجا","claim":"تأسيس الإيبارشية في 13 نوفمبر 1988 وسيامة الأنبا أغابيوس، ثم سيامة الأنبا بقطر في 1 يونيو 2025 بعد نياحته","source_ids":["coptic-church-diocese-history"],"status":"primary_source","priority":"highest"},
+    {"id":"boktor-profile-2026","subject":"الأنبا بقطر","claim":"السجل الرسمي الحالي يثبت الميلاد في 5 فبراير 1975 والرهبنة في 23 فبراير 2007 والأسقفية في 1 يونيو 2025","source_ids":["coptic-church-boktor-profile-2026"],"status":"primary_source","priority":"highest","note":"تم العثور على صفحة الأسقف الرسمية في موقع الكنيسة القبطية الأرثوذكسية؛ وهي أقوى من السجلات الثانوية المتعارضة."},
     {"id":"boktor-ordination-2025","subject":"الأنبا بقطر","claim":"سيامته أسقفًا على إيبارشية ديرمواس ودلجا في 1 يونيو 2025","source_ids":["coptic-church-boktor-ordination-2025","coptic-church-diocese-history"],"status":"primary_source","priority":"highest"},
     {"id":"boktor-papal-2026-03","subject":"الأنبا بقطر","claim":"استقباله من قداسة البابا تواضروس الثاني في 1 مارس 2026 ضمن متابعة العمل الرعوي","source_ids":["coptic-church-2026-03-01-boktor-papal","coptic-church-boktor-papal-2026-03"],"status":"primary_source","priority":"highest"},
     {"id":"boktor-papal-2026-07","subject":"الأنبا بقطر","claim":"استقباله من قداسة البابا تواضروس الثاني في 27 يوليو 2026 لمناقشة موضوعات رعوية خاصة بالإيبارشية","source_ids":["coptic-church-2026-07-27-boktor-papal","coptic-church-boktor-papal-2026-07"],"status":"primary_source","priority":"highest"},
