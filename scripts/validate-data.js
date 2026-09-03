@@ -1,118 +1,26 @@
 #!/usr/bin/env node
-
-const fs = require('fs');
-const path = require('path');
-
-const ROOT = path.join(__dirname, '..');
-const DATA = path.join(ROOT, 'data');
-
-const requiredFiles = [
-  'biography.json',
-  'timeline.json',
-  'events.json',
-  'sources.json',
-  'source-registry.json',
-  'media-registry.json'
-];
-
-const errors = [];
-const warnings = [];
-const loaded = {};
-
-function loadJson(file) {
-  const fullPath = path.join(DATA, file);
-  if (!fs.existsSync(fullPath)) {
-    errors.push(`Missing data file: ${file}`);
-    return null;
-  }
-  try {
-    const value = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-    loaded[file] = value;
-    return value;
-  } catch (error) {
-    errors.push(`Invalid JSON in ${file}: ${error.message}`);
-    return null;
-  }
-}
-
-console.log('🔎 Validating archive data...');
-requiredFiles.forEach(loadJson);
-
-const registry = loaded['source-registry.json'];
-if (registry) {
-  if (!Array.isArray(registry.sources)) {
-    errors.push('source-registry.json: "sources" must be an array');
-  } else {
-    const ids = registry.sources.map((source) => source && source.id).filter(Boolean);
-    const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
-    if (duplicates.length) errors.push(`Duplicate source IDs: ${[...new Set(duplicates)].join(', ')}`);
-    registry.sources.forEach((source, index) => {
-      if (!source || !source.id) errors.push(`source-registry.json: source ${index + 1} has no id`);
-      if (!source || !source.title) warnings.push(`source-registry.json: ${source?.id || `source ${index + 1}`} has no title`);
-      if (source && source.status === 'published' && !source.url) warnings.push(`Published source without URL: ${source.id}`);
-    });
-  }
-}
-
-const timeline = loaded['timeline.json'];
-if (timeline && !Array.isArray(timeline.timeline)) errors.push('timeline.json: "timeline" must be an array');
-
-const events = loaded['events.json'];
-if (events && !Array.isArray(events.major_events)) errors.push('events.json: "major_events" must be an array');
-
-const media = loaded['media-registry.json'];
-if (media && !Array.isArray(media.media)) errors.push('media-registry.json: "media" must be an array');
-
-if (loaded['biography.json'] && (!loaded['biography.json'].person || !loaded['biography.json'].ecclesiastical_career)) {
-  warnings.push('biography.json: expected legacy person/ecclesiastical_career sections were not both found');
-}
-
-const sourceMap = new Map((registry?.sources || []).map((source) => [source.id, source]));
-const aliases = registry?.aliases || {};
-function resolveSource(id) {
-  if (sourceMap.has(id)) return sourceMap.get(id);
-  const alias = aliases[id];
-  return alias && sourceMap.get(alias);
-}
-
-const auditStats = { resolved: 0, pending: 0, missing: 0 };
-function auditItems(items, label) {
-  if (!Array.isArray(items)) return;
-  items.forEach((item, index) => {
-    const refs = Array.isArray(item.sources) ? item.sources : [];
-    refs.forEach((id) => {
-      const source = resolveSource(id);
-      if (!source) {
-        auditStats.missing += 1;
-        errors.push(`${label} #${index + 1} references missing source ID: ${id}`);
-        return;
-      }
-
-      if (source.status === 'pending' || source.status === 'needs_verification' || source.status === 'needs_specific_citation' || source.status === 'needs_specific_citations') {
-        auditStats.pending += 1;
-        warnings.push(`${label} #${index + 1} uses pending source: ${id}`);
-        return;
-      }
-
-      auditStats.resolved += 1;
-    });
-  });
-}
-
-auditItems(timeline?.timeline, 'Timeline event');
-auditItems(events?.major_events, 'Major event');
-
-if (errors.length) {
-  console.error(`❌ Validation failed with ${errors.length} error(s).`);
-  errors.forEach((error) => console.error(`  • ${error}`));
-  console.error(`📊 Evidence links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);
-  process.exit(1);
-}
-
-console.log(`✅ JSON integrity passed (${requiredFiles.length} core files).`);
-console.log(`📚 Canonical sources: ${(registry?.sources || []).length}`);
-console.log(`🔗 Evidence links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);
-console.log(`⚠️ Warnings: ${warnings.length}`);
-warnings.slice(0, 25).forEach((warning) => console.warn(`  • ${warning}`));
-if (warnings.length > 25) console.warn(`  • ... ${warnings.length - 25} more warning(s)`);
-console.log('✅ Archive data validation completed.');
+const fs=require('fs');
+const path=require('path');
+const ROOT=path.join(__dirname,'..');
+const DATA=path.join(ROOT,'data');
+const requiredFiles=['biography.json','timeline.json','events.json','sources.json','source-registry.json','media-registry.json','evidence-matrix.json','archive-methodology.json'];
+const errors=[];const warnings=[];const loaded={};
+function loadJson(file){const full=path.join(DATA,file);if(!fs.existsSync(full)){errors.push(`Missing data file: ${file}`);return null}try{const value=JSON.parse(fs.readFileSync(full,'utf8'));loaded[file]=value;return value}catch(error){errors.push(`Invalid JSON in ${file}: ${error.message}`);return null}}
+console.log('🔎 Validating archive data and provenance...');requiredFiles.forEach(loadJson);
+const registry=loaded['source-registry.json'],methodology=loaded['archive-methodology.json'],matrix=loaded['evidence-matrix.json'];
+if(registry){if(!Array.isArray(registry.sources))errors.push('source-registry.json: "sources" must be an array');else{const ids=registry.sources.map(s=>s&&s.id).filter(Boolean),dupes=ids.filter((id,i)=>ids.indexOf(id)!==i);if(dupes.length)errors.push(`Duplicate source IDs: ${[...new Set(dupes)].join(', ')}`);registry.sources.forEach((s,i)=>{if(!s||!s.id)errors.push(`source-registry.json: source ${i+1} has no id`);if(!s||!s.title)warnings.push(`source-registry.json: ${s?.id||`source ${i+1}`} has no title`);if(s&&['published','published_reference','published_record'].includes(s.status)&&!s.url)warnings.push(`Published source without URL: ${s.id}`)})}}
+if(methodology){if(!Array.isArray(methodology.source_precedence)||methodology.source_precedence.length<3)errors.push('archive-methodology.json: source_precedence is incomplete');if(!Array.isArray(methodology.principles)||methodology.principles.length<5)errors.push('archive-methodology.json: archival principles are incomplete')}
+const timeline=loaded['timeline.json'],events=loaded['events.json'],media=loaded['media-registry.json'];
+if(timeline&&!Array.isArray(timeline.timeline))errors.push('timeline.json: "timeline" must be an array');
+if(events&&!Array.isArray(events.major_events))errors.push('events.json: "major_events" must be an array');
+if(media&&!Array.isArray(media.media))errors.push('media-registry.json: "media" must be an array');
+if(loaded['biography.json']&&(!loaded['biography.json'].person||!loaded['biography.json'].ecclesiastical_career))warnings.push('biography.json: expected legacy person/ecclesiastical_career sections were not both found');
+const sourceMap=new Map((registry?.sources||[]).map(s=>[s.id,s])),aliases=registry?.aliases||{};
+function resolveSource(id){if(sourceMap.has(id))return sourceMap.get(id);const alias=aliases[id];return alias&&sourceMap.get(alias)}
+const pendingStatuses=['pending','needs_verification','needs_specific_citation','needs_specific_citations','metadata_only','link_only'];
+const auditStats={resolved:0,pending:0,missing:0};
+function auditItems(items,label){if(!Array.isArray(items))return;items.forEach((item,index)=>{(Array.isArray(item.sources)?item.sources:[]).forEach(id=>{const source=resolveSource(id);if(!source){auditStats.missing++;errors.push(`${label} #${index+1} references missing source ID: ${id}`)}else if(pendingStatuses.includes(source.status)){auditStats.pending++;warnings.push(`${label} #${index+1} uses pending or uninspected source: ${id}`)}else auditStats.resolved++})})}
+auditItems(timeline?.timeline,'Timeline event');auditItems(events?.major_events,'Major event');
+if(matrix){if(!Array.isArray(matrix.entries))errors.push('evidence-matrix.json: "entries" must be an array');else{const ids=matrix.entries.map(e=>e?.id).filter(Boolean),dupes=ids.filter((id,i)=>ids.indexOf(id)!==i);if(dupes.length)errors.push(`Duplicate evidence-matrix IDs: ${[...new Set(dupes)].join(', ')}`);matrix.entries.forEach((entry,index)=>{if(!entry?.id)errors.push(`evidence-matrix.json: entry ${index+1} has no id`);if(!entry?.claim)errors.push(`evidence-matrix.json: ${entry?.id||`entry ${index+1}`} has no claim`);if(!Array.isArray(entry?.source_ids)||!entry.source_ids.length){warnings.push(`Evidence claim without source IDs: ${entry?.id||`entry ${index+1}`}`);return}entry.source_ids.forEach(id=>{const source=resolveSource(id);if(!source)errors.push(`Evidence claim ${entry.id} references missing source ID: ${id}`);else if(pendingStatuses.includes(source.status))warnings.push(`Evidence claim ${entry.id} uses unresolved source: ${id}`)});if(['primary_source','cross_supported'].includes(entry.status)){const unresolved=entry.source_ids.filter(id=>{const source=resolveSource(id);return !source||pendingStatuses.includes(source.status)});if(unresolved.length)errors.push(`Evidence claim ${entry.id} is marked ${entry.status} but has unresolved source(s): ${unresolved.join(', ')}`)}})}}
+if(errors.length){console.error(`❌ Validation failed with ${errors.length} error(s).`);errors.forEach(e=>console.error(`  • ${e}`));console.error(`📊 Evidence links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);process.exit(1)}
+console.log(`✅ JSON integrity and provenance checks passed (${requiredFiles.length} core files).`);console.log(`📚 Canonical sources: ${(registry?.sources||[]).length}`);console.log(`🧾 Evidence claims: ${(matrix?.entries||[]).length}`);console.log(`🔗 Timeline/event links: ${auditStats.resolved} resolved, ${auditStats.pending} pending, ${auditStats.missing} missing.`);console.log(`⚠️ Warnings: ${warnings.length}`);warnings.slice(0,25).forEach(w=>console.warn(`  • ${w}`));if(warnings.length>25)console.warn(`  • ... ${warnings.length-25} more warning(s)`);console.log('✅ Archive data validation completed.');
