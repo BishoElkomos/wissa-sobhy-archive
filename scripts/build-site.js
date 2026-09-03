@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Build Script - بسيط وفعّال
- * ينسخ الملفات من website/ إلى dist/
+ * Build Script - copy the archive website into dist and normalize the global chrome.
  */
 
 const fs = require('fs');
@@ -14,122 +13,35 @@ const BUILD_CONFIG = {
     dataDir: path.join(__dirname, '../data')
 };
 
-console.log('📝 بدء البناء...');
-
-// 1. حذف مجلد dist القديم
-if (fs.existsSync(BUILD_CONFIG.outputDir)) {
-    fs.rmSync(BUILD_CONFIG.outputDir, { recursive: true });
-    console.log('✅ حذف مجلد dist القديم');
-}
-
-// 2. إنشاء مجلد dist جديد
-fs.mkdirSync(BUILD_CONFIG.outputDir, { recursive: true });
-console.log('✅ إنشاء مجلد dist');
-
-// 3. دالة نسخ مجلد بالكامل
-function copyDir(src, dest) {
-    if (!fs.existsSync(src)) {
-        console.warn(`⚠️  المجلد غير موجود: ${src}`);
-        return;
-    }
-
-    fs.mkdirSync(dest, { recursive: true });
-    const files = fs.readdirSync(src);
-
-    files.forEach(file => {
-        const srcPath = path.join(src, file);
-        const destPath = path.join(dest, file);
-        const stat = fs.statSync(srcPath);
-
-        if (stat.isDirectory()) {
-            copyDir(srcPath, destPath);
-        } else {
-            fs.copyFileSync(srcPath, destPath);
-        }
-    });
-}
-
-// 4. نسخ الملفات من website إلى dist
-console.log('📋 نسخ ملفات الموقع...');
-
-// نسخ HTML من ROOT level
-const htmlFiles = fs.readdirSync(BUILD_CONFIG.websiteDir)
-    .filter(f => f.endsWith('.html'));
-htmlFiles.forEach(file => {
-    fs.copyFileSync(
-        path.join(BUILD_CONFIG.websiteDir, file),
-        path.join(BUILD_CONFIG.outputDir, file)
-    );
-});
-console.log(`✅ نسخ ${htmlFiles.length} ملف HTML`);
-
-// نسخ subdirectories (مثل en/)
-const subdirs = fs.readdirSync(BUILD_CONFIG.websiteDir)
-    .filter(f => {
-        const fullPath = path.join(BUILD_CONFIG.websiteDir, f);
-        return fs.statSync(fullPath).isDirectory() && f !== 'css' && f !== 'js';
-    });
-subdirs.forEach(subdir => {
-    copyDir(
-        path.join(BUILD_CONFIG.websiteDir, subdir),
-        path.join(BUILD_CONFIG.outputDir, subdir)
-    );
-    console.log(`✅ نسخ مجلد: ${subdir}`);
-});
-
-// نسخ CSS
-if (fs.existsSync(path.join(BUILD_CONFIG.websiteDir, 'css'))) {
-    copyDir(
-        path.join(BUILD_CONFIG.websiteDir, 'css'),
-        path.join(BUILD_CONFIG.outputDir, 'css')
-    );
-    console.log('✅ نسخ ملفات CSS');
-}
-
-// نسخ JavaScript
-if (fs.existsSync(path.join(BUILD_CONFIG.websiteDir, 'js'))) {
-    copyDir(
-        path.join(BUILD_CONFIG.websiteDir, 'js'),
-        path.join(BUILD_CONFIG.outputDir, 'js')
-    );
-    console.log('✅ نسخ ملفات JavaScript');
-}
-
-// نسخ البيانات (data folder)
-if (fs.existsSync(BUILD_CONFIG.dataDir)) {
-    copyDir(BUILD_CONFIG.dataDir, path.join(BUILD_CONFIG.outputDir, 'data'));
-    console.log('✅ نسخ ملفات البيانات');
-}
-
-// 5. إنشاء ملف metadata
-const metadata = {
-    buildTime: new Date().toISOString(),
-    version: '2.0.0',
-    project: 'wissa-sobhy-archive',
-    filesCount: {
-        html: htmlFiles.length,
-        css: fs.existsSync(path.join(BUILD_CONFIG.outputDir, 'css')) ? 
-            fs.readdirSync(path.join(BUILD_CONFIG.outputDir, 'css')).length : 0,
-        js: fs.existsSync(path.join(BUILD_CONFIG.outputDir, 'js')) ? 
-            fs.readdirSync(path.join(BUILD_CONFIG.outputDir, 'js')).length : 0
-    }
+const NAV = {
+    ar: [['index.html','الرئيسية','home'],['wissa.html','القمص ويصا صبحي','wissa'],['agabius.html','الأنبا أغابيوس','agabius'],['diocese.html','تاريخ الإيبارشية','diocese'],['sources-media.html','المصادر والأخبار والوسائط','sources-media'],['evidence.html','سجل الأدلة','evidence'],['search.html','البحث','search']],
+    en: [['index.html','Home','home'],['agabius.html','Metropolitan Agabius','agabius'],['diocese.html','Diocese History','diocese'],['sources-media.html','Sources, News & Media','sources-media'],['evidence.html','Evidence','evidence'],['search.html','Search','search']]
 };
 
-fs.writeFileSync(
-    path.join(BUILD_CONFIG.outputDir, 'build.json'),
-    JSON.stringify(metadata, null, 2)
-);
-console.log('✅ إنشاء ملف metadata');
+const HEADER_CSS = `<style id="archive-global-header">.archive-navbar{position:sticky;top:0;z-index:1000;background:rgba(23,58,50,.97);border-bottom:1px solid rgba(215,192,142,.55);box-shadow:0 8px 28px rgba(16,41,35,.18);backdrop-filter:blur(14px);padding:.55rem 0}.archive-nav-shell{display:flex;align-items:center;gap:1.25rem;min-height:58px}.archive-brand{display:inline-flex;align-items:center;gap:.65rem;color:#fff;text-decoration:none;min-width:max-content}.archive-brand:hover{color:#fff}.archive-brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid #b08a45;border-radius:50%;color:#d7c08e;font-size:1.15rem}.archive-brand strong{display:block;font-family:Amiri,Cairo,serif;font-size:1.02rem;line-height:1.2}.archive-brand small{display:block;color:#d7c08e;font-size:.67rem;letter-spacing:.04em;margin-top:.12rem}.archive-nav-panel{margin-inline-start:auto}.archive-navbar .nav-menu{display:flex;align-items:center;justify-content:flex-end;gap:.2rem;list-style:none;margin:0;padding:0}.archive-navbar .nav-menu li{margin:0}.archive-navbar .nav-menu a{display:block;color:rgba(255,255,255,.88);text-decoration:none;padding:.55rem .62rem;border-radius:9px;font-size:.84rem;white-space:nowrap;transition:background .18s ease,color .18s ease,transform .18s ease}.archive-navbar .nav-menu a:hover{color:#fff;background:rgba(255,255,255,.09);transform:translateY(-1px)}.archive-navbar .nav-menu a.active{color:#173a32;background:#d7c08e;font-weight:800}.archive-navbar .nav-menu .archive-language{margin-inline-start:.3rem;padding-inline-start:.35rem;border-inline-start:1px solid rgba(255,255,255,.18)}.archive-navbar .nav-menu a.lang-en{background:#b08a45;color:#173a32;border-radius:999px;padding-inline:.85rem;font-weight:800}.archive-navbar .nav-menu a.lang-en:hover{background:#d7c08e;color:#173a32}.archive-nav-toggle{display:none;margin-inline-start:auto;width:42px;height:42px;border:1px solid rgba(215,192,142,.5);border-radius:10px;background:transparent;cursor:pointer;padding:.55rem}.archive-nav-toggle span{display:block;height:2px;background:#fff;margin:5px 0;border-radius:2px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:1100px){.archive-navbar .nav-menu a{font-size:.76rem;padding:.5rem .48rem}.archive-brand strong{font-size:.94rem}}@media(max-width:900px){.archive-nav-toggle{display:block}.archive-nav-panel{display:none;position:absolute;top:calc(100% + 1px);inset-inline:0;background:#173a32;border-bottom:2px solid #b08a45;box-shadow:0 18px 35px rgba(0,0,0,.18);padding:.65rem 1rem}.archive-nav-panel.is-open{display:block}.archive-navbar .nav-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem}.archive-navbar .nav-menu a{text-align:center;padding:.7rem .55rem}.archive-navbar .nav-menu .archive-language{border-inline-start:0;margin:0;padding:0}.archive-nav-shell{position:relative}.archive-brand{margin-inline-end:auto}}@media(max-width:520px){.archive-brand small{display:none}.archive-brand strong{font-size:.9rem}.archive-navbar .nav-menu{grid-template-columns:1fr}.archive-navbar .nav-menu a{font-size:.86rem}.archive-nav-shell{min-height:54px}}</style>`;
 
-// 6. التحقق من وجود dist
-const distContents = fs.readdirSync(BUILD_CONFIG.outputDir);
-console.log('\n='.repeat(50));
-console.log('✅ البناء اكتمل بنجاح!');
-console.log('='.repeat(50));
-console.log(`📁 مجلد الإخراج: ${BUILD_CONFIG.outputDir}`);
-console.log(`📄 عدد الملفات: ${distContents.length}`);
-console.log(`⏱️  الوقت: ${new Date().toLocaleTimeString('ar-EG')}`);
-console.log('='.repeat(50));
-console.log('\n✅ جاهز للنشر على Vercel!');
+function pageKey(relativePath){const p=relativePath.replace(/\\/g,'/'),file=p.split('/').pop();if(file==='index.html')return'home';if(['wissa.html','biography.html','timeline.html','events.html'].includes(file))return'wissa';if(file==='agabius.html')return'agabius';if(file==='diocese.html')return'diocese';if(['sources.html','media.html','sources-media.html'].includes(file))return'sources-media';if(file==='evidence.html')return'evidence';if(file==='search.html')return'search';return'';}
+function navMarkup(relativePath){const p=relativePath.replace(/\\/g,'/'),en=p.startsWith('en/'),items=en?NAV.en:NAV.ar,current=pageKey(p),links=items.map(([href,label,key])=>`<li><a href="${href}"${current===key?' class="active" aria-current="page"':''}>${label}</a></li>`).join(''),langHref=en?'../index.html':'en/index.html',langLabel=en?'العربية':'EN';return `${HEADER_CSS}<nav class="navbar archive-navbar" aria-label="${en?'Primary navigation':'التنقل الرئيسي'}"><div class="container archive-nav-shell"><a href="index.html" class="archive-brand" aria-label="${en?'Wissa Sobhy Tadros Archive':'أرشيف القمص ويصا صبحي تادرس'}"><span class="archive-brand-mark" aria-hidden="true">✥</span><span><strong>${en?'Wissa Sobhy Tadros':'القمص ويصا صبحي تادرس'}</strong><small>${en?'Digital Historical Archive':'الأرشيف التاريخي الرقمي'}</small></span></a><button class="archive-nav-toggle" type="button" aria-expanded="false" aria-controls="archive-primary-nav"><span></span><span></span><span></span><b class="sr-only">${en?'Open menu':'فتح القائمة'}</b></button><div class="archive-nav-panel"><ul id="archive-primary-nav" class="nav-menu">${links}<li class="archive-language"><a href="${langHref}" class="lang-en">${langLabel}</a></li></ul></div></div></nav><script>(function(){var b=document.querySelector('.archive-nav-toggle'),p=document.querySelector('.archive-nav-panel');if(b&&p){b.addEventListener('click',function(){var open=p.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false')});p.addEventListener('click',function(e){if(e.target.closest('a')){p.classList.remove('is-open');b.setAttribute('aria-expanded','false')}})}})();</script>`;}
+function normalizeNavigation(html,relativePath){const nav=navMarkup(relativePath),replaced=html.replace(/<nav\b[^>]*class=["'][^"']*navbar[^"']*["'][\s\S]*?<\/nav>/i,nav);return replaced===html?html.replace(/<body([^>]*)>/i,`<body$1>${nav}`):replaced;}
+function copyDir(src,dest){if(!fs.existsSync(src)){console.warn(`⚠️ المجلد غير موجود: ${src}`);return;}fs.mkdirSync(dest,{recursive:true});fs.readdirSync(src).forEach(file=>{const s=path.join(src,file),d=path.join(dest,file);if(fs.statSync(s).isDirectory())copyDir(s,d);else fs.copyFileSync(s,d);});}
 
+console.log('📝 بدء البناء...');
+if(fs.existsSync(BUILD_CONFIG.outputDir))fs.rmSync(BUILD_CONFIG.outputDir,{recursive:true});
+fs.mkdirSync(BUILD_CONFIG.outputDir,{recursive:true});
+
+const htmlFiles=fs.readdirSync(BUILD_CONFIG.websiteDir).filter(f=>f.endsWith('.html'));
+htmlFiles.forEach(file=>{const src=path.join(BUILD_CONFIG.websiteDir,file);fs.writeFileSync(path.join(BUILD_CONFIG.outputDir,file),normalizeNavigation(fs.readFileSync(src,'utf8'),file),'utf8');});
+console.log(`✅ نسخ ${htmlFiles.length} ملف HTML بعد توحيد الـ header`);
+
+const subdirs=fs.readdirSync(BUILD_CONFIG.websiteDir).filter(f=>{const full=path.join(BUILD_CONFIG.websiteDir,f);return fs.statSync(full).isDirectory()&&f!=='css'&&f!=='js';});
+subdirs.forEach(subdir=>{const srcDir=path.join(BUILD_CONFIG.websiteDir,subdir),destDir=path.join(BUILD_CONFIG.outputDir,subdir);copyDir(srcDir,destDir);const walk=dir=>{fs.readdirSync(dir,{withFileTypes:true}).forEach(entry=>{const full=path.join(dir,entry.name);if(entry.isDirectory())walk(full);else if(entry.name.endsWith('.html')){const rel=path.relative(BUILD_CONFIG.websiteDir,full);fs.writeFileSync(path.join(BUILD_CONFIG.outputDir,rel),normalizeNavigation(fs.readFileSync(full,'utf8'),rel),'utf8');}});};walk(srcDir);console.log(`✅ نسخ مجلد: ${subdir}`);});
+['css','js'].forEach(dir=>{const src=path.join(BUILD_CONFIG.websiteDir,dir);if(fs.existsSync(src)){copyDir(src,path.join(BUILD_CONFIG.outputDir,dir));console.log(`✅ نسخ ${dir}`);}});
+if(fs.existsSync(BUILD_CONFIG.dataDir))copyDir(BUILD_CONFIG.dataDir,path.join(BUILD_CONFIG.outputDir,'data'));
+
+const legacyRedirects={'biography.html':'wissa.html','timeline.html':'wissa.html#timeline','events.html':'wissa.html#events','media.html':'sources-media.html','sources.html':'sources-media.html','en/biography.html':'en/index.html','en/timeline.html':'en/index.html','en/events.html':'en/index.html','en/media.html':'en/sources-media.html','en/sources.html':'en/sources-media.html'};
+Object.entries(legacyRedirects).forEach(([route,destination])=>{const out=path.join(BUILD_CONFIG.outputDir,route);fs.mkdirSync(path.dirname(out),{recursive:true});const en=route.startsWith('en/');fs.writeFileSync(out,`<!doctype html><html lang="${en?'en':'ar'}" dir="${en?'ltr':'rtl'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${destination}"><meta name="robots" content="noindex"><title>${en?'Archive page moved':'تم نقل صفحة الأرشيف'}</title></head><body><p>${en?'This archive section has been consolidated into the current information architecture.':'تم دمج هذا القسم ضمن البنية الجديدة للأرشيف.'} <a href="${destination}">${en?'Open the current page':'فتح الصفحة الحالية'}</a>.</p><script>location.replace(${JSON.stringify(destination)});</script></body></html>`,'utf8');});
+
+const metadata={buildTime:new Date().toISOString(),version:'2.1.0',project:'wissa-sobhy-archive',navigation:'unified-global-header',filesCount:{html:htmlFiles.length,css:fs.existsSync(path.join(BUILD_CONFIG.outputDir,'css'))?fs.readdirSync(path.join(BUILD_CONFIG.outputDir,'css')).length:0,js:fs.existsSync(path.join(BUILD_CONFIG.outputDir,'js'))?fs.readdirSync(path.join(BUILD_CONFIG.outputDir,'js')).length:0}};
+fs.writeFileSync(path.join(BUILD_CONFIG.outputDir,'build.json'),JSON.stringify(metadata,null,2));
+console.log('✅ البناء اكتمل: global header + legacy route compatibility');
 process.exit(0);
