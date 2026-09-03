@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Validate and Deploy Archive
 
 on:
   push:
@@ -21,30 +21,33 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Validate data
+      - name: Validate data and provenance
         run: npm run validate
 
-      - name: Build website
+      - name: Build canonical site
         run: npm run build
 
       - name: Generate PDF exports
         run: npm run pdf
         continue-on-error: true
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy built site to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website
+          publish_dir: ./dist
           cname: wissa-sobhy-archive.com
-        if: github.ref == 'refs/heads/main'
+          force_orphan: false
 
-      - name: Notify deployment
+      - name: Deployment summary
         if: success()
         run: |
-          echo "✓ Deployment successful!"
-          echo "Website: https://bishoelkomos.github.io/wissa-sobhy-archive/"
+          echo "✓ Validation passed"
+          echo "✓ Canonical site built from dist/"
+          echo "✓ GitHub Pages deployment completed"
