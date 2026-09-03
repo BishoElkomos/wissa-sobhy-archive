@@ -5,7 +5,7 @@
   "main": "scripts/build-site.js",
   "scripts": {
     "start": "http-server -p 8080 -c-1",
-    "build": "node scripts/build-site.js",
+    "build": "node scripts/build-site.js && node scripts/merge-source-registry-dist.js",
     "validate": "node scripts/validate-data.js",
     "pdf": "node scripts/generate-pdf.js",
     "word": "node scripts/export-word.js",
