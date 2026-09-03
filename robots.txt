@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /data/
-Disallow: /exports/
-
-Sitemap: https://wissa-sobhy-archive.vercel.app/sitemap.xml

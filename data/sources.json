@@ -1,0 +1,41 @@
+{
+  "sources": {
+    "published_sources": [
+      {"id":"wikipedia-ar","type":"encyclopedia","language":"Arabic","title":"ويصا صبحي","url":"https://ar.wikipedia.org/wiki/ويصا_صبحي","reliability":"HIGH","coverage":["biography","birth","education","ordination_dates","positions","role_from_2007"],"last_accessed":"2026-08-28","notes":"مصدر موثوق وموثق جيداً"},
+      {"id":"elbalad-2026","type":"news_article","language":"Arabic","outlet":"صدى البلد","title":"مطرانية ديرمواس تحتفل بمرور 35 سنة على سيامة القمص ويصا صبحي","url":"https://www.elbalad.news/6928700","date_published":"2026-04-08","reliability":"HIGH","coverage":["birthplace","education","pre_secular_name","ordination_details","projects_list","service_summary","40_days_retreat"],"featured_information":["Born in Tanta","Commerce degree 1980","Ordination with Anba Agabius and Anba Tomas","Documentation office establishment","Church reconstruction projects","2013 damage documentation"],"notes":"مصدر أساسي للمعلومات البيوجرافية المفصلة"},
+      {"id":"copts-united-2010","type":"news_portal","language":"Arabic","outlet":"الأقباط متحدون","title":"مظاهرات الأقباط بقيادة رجال الدين للمطالبة بعودة زوجة الكاهن المختفية","url":"http://www.copts-united.com/Article.php?A=20644","date_published":"2010-07","reliability":"HIGH","coverage":["2010_kamilia_crisis","wissa_direct_quotes","vicar_role","eyewitness_testimony"],"direct_quotes":["زوجة الكاهن تداوس اختفت منذ مساء الأحد وإلى الآن لم نتمكن من العثور عليها","لم نجد من المسئولين في الأمن إلا التسويف والتأجيل"],"notes":"أول توثيق منشور مباشر لتصريحات القمص ويصا"},
+      {"id":"wataninet-2013","type":"news_article","language":"Arabic","outlet":"وطني","title":"مركز ديرمواس بمحافظة المنيا","url":"https://www.wataninet.com/2013/09/مركز-ديرمواس-بمحافظة-المنيا/","date_published":"2013-09","reliability":"HIGH","coverage":["2013_attacks","damage_documentation","wissa_field_trip","nader_shokry_collaboration","churches_visited"],"documented_locations":["مبنى الخدمات","كنيسة القديس لعازر","مطرانية ديرمواس","مقابر الأقباط"],"notes":"توثيق ميداني مع الصحفي نادر شكري"},
+      {"id":"wataninet-2013-delga","type":"news_article","language":"Arabic","outlet":"وطني","title":"قرية دلجا بمحافظة المنيا","url":"https://www.wataninet.com/2013/09/قرية-دلجا-بمحافظة-المنيا/","date_published":"2013-09","reliability":"HIGH","coverage":["2013_delga_attacks","wissa_direct_statements","damage_assessment"],"notes":"توثيق أحداث دلجا بتصريحات مباشرة"},
+      {"id":"mobtada-2013","type":"news_portal","language":"Arabic","outlet":"مبتدا","url":"https://www.mobtada.com/cases/102560/","date_published":"2013-09-15","reliability":"HIGH","coverage":["2013_delga_incidents","eyewitness_accounts"],"notes":"تصريحات مباشرة عن أحداث دلجا"},
+      {"id":"youm7-2013","type":"news_portal","language":"Arabic","outlet":"اليوم السابع","reliability":"HIGH","coverage":["2013_attacks","church_incidents","2025_ordination"],"notes":"تغطية شاملة للأحداث الطائفية"},
+      {"id":"rawi-publishing","type":"academic_article","language":"English","title":"Burning History","url":"https://rawi-publishing.com/articles/burning-history","reliability":"HIGH","coverage":["2013_church_fires","wissa_direct_quote","ancient_churches","preservation_philosophy"],"featured_quote":"Father Wissa Sobhi, of the bishopric of Deir Mawas, explains that the Coptic Orthodox Church has been more concerned with 'preserving the souls of its flock than preserving brick and mortar'","notes":"English-language published article; first published in RAWI Issue 6 (2014)."},
+      {"id":"coptic-solidarity-2013-deir-mawas","type":"international_news_report","language":"English","outlet":"Coptic Solidarity","title":"The Aftermath of Islamists’ Attacks on Deir Mawas Copts","url":"https://www.copticsolidarity.org/2013/09/06/the-aftermath-of-islamists-attacks-on-deir-mawas-copts/","date_published":"2013-09-06","reliability":"MEDIUM_TO_HIGH","coverage":["2013_attacks","wissa_field_trip","damage_documentation","deir_mawas_losses"],"notes":"English-language international report. It states that the authors met Father Wissa Sobhi and that he accompanied them through Deir Mawas to document losses after the August 2013 attacks."},
+      {"id":"egypt-independent-2010-kamilia","type":"international_news_article","language":"English","outlet":"Egypt Independent","title":"Priest’s wife denies converting to Islam in questionable video clip","url":"https://www.egyptindependent.com/priests-wife-denies-converting-islam-questionable-video-clip/","date_published":"2010-09-09","reliability":"MEDIUM_TO_HIGH","coverage":["2010_kamilia_crisis","wissa_statement","video_authenticity"],"notes":"English-language report translated from the Arabic edition. It quotes Bishop Wissa Sobhi regarding the authenticity of a video attributed to Camellia/Kamilia Shehata."},
+      {"id":"akref-2010-wissa-sobhy-kamilia","type":"international_news_article","language":"German","outlet":"AKREF / Evangelische Allianz in Deutschland","title":"Ägypten: Die entführte Gattin eines koptischen Priesters ist zurück","url":"https://akref.ead.de/akref-nachrichten/2010/juli/26072010-aegyptendie-entfuehrte-gattin-eines-koptischen-priesters-ist-zurueck/","date_published":"2010-07-26","reliability":"MEDIUM","coverage":["2010_kamilia_crisis","wissa_statement","aghapios_diocese"],"notes":"German-language report. It explicitly names Father Wissa Sobhy and reports his statements to the Egyptian and Arabic press; its description of him as Bishop Aghapios’s vicar is historical to 2010 and must not be used as evidence of his current role."},
+      {"id":"dostor-2026","type":"news_article","language":"Arabic","outlet":"دستور","title":"محافظ المنيا: أعيادنا ركيزة لترسيخ قيم التعايش والمودة","date_published":"2026-01-07","reliability":"HIGH","coverage":["2026_governor_visit","anba_bokter","government_relations"],"notes":"توثيق زيارة محافظ المنيا الرسمية"}
+    ],
+    "family_archive_sources": [
+      {"id":"family-photos","type":"personal_archive","category":"photographs","materials":["ordination_1991","priesthood_elevation_1997","service_periods_various","family_events","church_projects","recent_years_2020s"],"reliability":"HIGH","verification":"direct_access","notes":"صور أصلية من الأسرة - غير منشورة"},
+      {"id":"family-documents","type":"personal_archive","category":"documents","materials":["ordination_certificate","elevation_to_abuna_certificate","church_assignments","official_records","correspondence"],"reliability":"HIGH","verification":"original_documents","notes":"وثائق أصلية رسمية وكنسية"},
+      {"id":"family-testimony","type":"personal_archive","category":"oral_history","materials":["family_stories","personal_recollections","events_witnessed","service_details"],"reliability":"MEDIUM_TO_HIGH","verification":"direct_interview","notes":"شهادات عائلية مباشرة"}
+    ],
+    "church_sources": [
+      {"id":"church-records","type":"institutional_archive","institution":"مطرانية ديرمواس ودلجا","materials":["ordination_records","service_history","administrative_records","event_documentation"],"reliability":"HIGH","access":"restricted","notes":"سجلات كنسية رسمية"}
+    ],
+    "secondary_sources": [
+      {"id":"coptic-encyclopedias","type":"reference","language":"Arabic/English","coverage":["general_coptic_context","deir_mawas_history","episcopal_succession"],"reliability":"MEDIUM_TO_HIGH"}
+    ],
+    "source_evaluation": {
+      "tier_1_high_reliability":["wikipedia-ar","elbalad-2026","copts-united-2010","wataninet-2013","rawi-publishing","family_archive","church_records"],
+      "tier_2_medium_reliability":["mobtada-2013","youm7-2013","dostor-2026","family_testimony","coptic-solidarity-2013-deir-mawas","egypt-independent-2010-kamilia","akref-2010-wissa-sobhy-kamilia"],
+      "tier_3_supporting":["secondary_sources","online_portals"]
+    },
+    "citation_guidelines": {
+      "for_publication":"استخدم المصادر من Tier 1 و Tier 2 مع الإشارة الكاملة",
+      "for_academic":"استخدم المصادر المنشورة مع الاستشهاد الدقيق",
+      "for_wikipedia":"استخدم المصادر المنشورة الموثوقة فقط",
+      "for_internal_archive":"جميع المصادر مقبولة مع تحديد درجة التحقق"
+    }
+  },
+  "metadata":{"total_sources":18,"published_sources":13,"archive_sources":3,"last_updated":"2026-09-02","version":"1.6"}
+}
