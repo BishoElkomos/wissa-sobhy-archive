@@ -5,9 +5,10 @@
 ## الحالة عند آخر تحديث
 - التاريخ: 2026-09-09
 - الفرع: `main`
-- آخر commit موثق عند إعداد هذه النقطة: `e7418d1de1d0380f328abd618243d8688318633f`.
-- آخر GitHub Actions ناجح: run `34338019878` / #208 على commit `e7418d1de1d0380f328abd618243d8688318633f`.
+- آخر commit: `8e3a8c3beee1dc3f5f180f69812b71fc91b95d5a`.
+- آخر GitHub Actions ناجح: run `34338372171` / #212 على commit `8e3a8c3beee1dc3f5f180f69812b71fc91b95d5a`.
 - CI مرّ بنجاح على: validation + archive integrity gate + build + PDF + GitHub Pages deployment.
+- آخر Vercel production deployment موثوق: `dpl_DWTA9cJvmUNCZgXtQdoMMApbQbbX`، READY، على commit `8e3a8c3beee1dc3f5f180f69812b71fc91b95d5a`.
 
 ## المشروع
 أرشيف تاريخي رقمي طويل الأمد لسيرة وخدمة القمص ويصا صبحي تادرس، مع المصادر والأخبار والصور والوسائط والسياق الكنسي. المشروع ليس مدونة أو Dashboard أو نسخة من ويكيبيديا.
@@ -52,6 +53,8 @@
 - `data/photo-registry.json`
 - `data/biography-source-corrections-2026-09.json`
 - `scripts/validate-archive-integrity.js`
+- `scripts/retire-evidence-links-dist.js`
+- `vercel.json`
 - `package.json`
 - `.github/workflows/deploy.yml`
 - `PROJECT-HANDOFF.md`
@@ -69,7 +72,7 @@
 ## النشر
 - Vercel canonical project: `wissa-sobhy-tadros-archive`.
 - canonical domain: `https://wissa-sobhy-tadros-archive.vercel.app/`.
-- لا تعتبر أي deployment أحدث live دون تحقق فعلي من deployment نفسه.
+- `vercel.json` أصبح يستخدم `npm run build` بدل تشغيل `build-site.js` وحده؛ وبذلك أصبحت Vercel تبني نفس الـcanonical dist الذي يمر عبر التصحيحات ودمج السجلات وإزالة روابط evidence المتقاعدة.
 - GitHub Pages يستخدم `wissa-sobhy-archive.com` لكنه ليس canonical production.
 
 ## البناء والتحقق
@@ -77,7 +80,7 @@
 
 `npm run integrity` هو بوابة مستقلة تفحص اتساق source IDs والـaliases، ثبات الصفة الحالية والصفة التاريخية، سلامة سجل Facebook الموثق، ومسارات الأدلة المتقاعدة، وتُبقي المواد metadata_only/link_only ظاهرة كتحذيرات لا كأدلة مؤكدة.
 
-`npm run build` ينفذ البناء والتصحيحات ودمج البحث الإضافي وسجل المصادر.
+`npm run build` ينفذ البناء والتصحيحات ودمج البحث الإضافي وسجل المصادر ثم يزيل روابط evidence القديمة من ناتج الإنتاج.
 
 بعد كل تغيير جوهري: **validate → integrity → build → CI → تحقق deployment → فحص live canonical URLs**.
 
@@ -98,8 +101,11 @@
 Issue #4: `Research: recover 2007–2015 primary and international sources`.
 يشمل 2007، كاميليا 2010، هجمات 2013، الأمن/إعادة الإعمار 2014، تغطية 2015، المصادر الدولية واللغات الأجنبية، الصور التاريخية، مع الفصل بين تاريخ الحدث وتاريخ النشر وعدم عد النسخ المنقولة كمصادر مستقلة.
 
-## ملاحظة CI الحالية
-بوابة السلامة نجحت في آخر تشغيل. ما زالت هناك **تحذيرات مقصودة** لا تمنع النشر، أهمها مواد `metadata_only/link_only` وروابط قديمة داخل بعض ملفات المصدر تنتظر تنظيفًا تدريجيًا؛ هذه لا تُعامل كدليل مؤكد.
+## الملاحظات التقنية الحالية
+- آخر integrity gate ناجح.
+- آخر build إنتاجي نجح وطبّق 3 تصحيحات للسيرة، وتصحيحين للمسار الزمني، ودمج 9 claims بحثية و4 إضافات زمنية، ودمج 59 مصدرًا إضافيًا مع تصحيحين، ثم فحص 24 ملف HTML وإزالة رابطَي evidence المتقاعدين من ناتج الإنتاج.
+- ما زالت هناك تحذيرات مقصودة تخص مواد `metadata_only/link_only` وبعض سجلات المصادر القديمة؛ لا تمنح هذه المواد حالة دليل مؤكد.
+- `npm install` يظهر حاليًا تحذيرًا بوجود vulnerability عالية الخطورة في شجرة الاعتماديات؛ لم يتم تنفيذ ترقية عشوائية لأن ذلك يحتاج مراجعة dependency-by-dependency حتى لا نكسر أدوات التصدير والبناء.
 
 ## أسلوب التنفيذ
 اعمل كمراجع أرشيفي + مهندس جودة + مدير تقني: افحص الحالة أولًا، نفّذ ما يمكن بأمان، تحقق من النتيجة، سجل commit واضحًا، ولا تدّعِ نجاحًا لم يتم التحقق منه.
