@@ -28,6 +28,9 @@ jobs:
       - name: Validate data and provenance
         run: npm run validate
 
+      - name: Run archive integrity gate
+        run: npm run integrity
+
       - name: Build canonical site
         run: npm run build
 
@@ -48,5 +51,6 @@ jobs:
         if: success()
         run: |
           echo "✓ Validation passed"
+          echo "✓ Archive integrity gate passed"
           echo "✓ Canonical site built from dist/"
           echo "✓ GitHub Pages deployment completed"
