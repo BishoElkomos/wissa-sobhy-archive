@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "أرشيف رقمي شامل وموثوق لسيرة وخدمة القمص ويصا صبحي تادرس (1991-2026)",
   "main": "scripts/build-site.js",
-  "scripts": {"start":"http-server -p 8080 -c-1","build":"node scripts/build-site.js && node scripts/apply-biography-corrections.js && node scripts/apply-timeline-corrections.js && node scripts/merge-biography-research-dist.js && node scripts/merge-source-registry-dist.js","validate":"node scripts/validate-data.js","pdf":"node scripts/generate-pdf.js","word":"node scripts/export-word.js","deploy":"bash scripts/deploy.sh","test":"jest","dev":"npm start"},
+  "scripts": {"start":"http-server -p 8080 -c-1","build":"node scripts/build-site.js && node scripts/apply-biography-corrections.js && node scripts/apply-timeline-corrections.js && node scripts/merge-biography-research-dist.js && node scripts/merge-source-registry-dist.js","validate":"node scripts/validate-data.js","integrity":"node scripts/validate-archive-integrity.js","pdf":"node scripts/generate-pdf.js","word":"node scripts/export-word.js","deploy":"bash scripts/deploy.sh","test":"jest","dev":"npm start"},
   "keywords":["القمص ويصا صبحي","الكنيسة القبطية","ديرمواس","أرشيف رقمي","سيرة","توثيق"],
   "author":{"name":"Bishoy Elkomos & Contributors","url":"https://github.com/BishoElkomos"},
   "contributors":[{"name":"Contributors","url":"https://github.com/BishoElkomos/wissa-sobhy-archive/graphs/contributors"}],
@@ -16,5 +16,5 @@
   "browserslist":["> 0.5%","last 2 versions","Firefox ESR","not dead"],
   "engines":{"node":">=20.0.0","npm":">=10.0.0"},
   "directories":{"data":"data","website":"website","exports":"exports","scripts":"scripts"},
-  "archive":{"language":"ar","direction":"rtl","primaryLanguage":"Arabic","alternateLanguages":["English"],"subject":"Biography, Coptic Orthodox Church, Ecclesiastical History","temporal_coverage":"1991-2026","spatial_coverage":"Minya Governorate, Egypt","verification_status":"source_audit_active","last_update":"2026-09-05","curator":"Bishoy Elkomos"}
+  "archive":{"language":"ar","direction":"rtl","primaryLanguage":"Arabic","alternateLanguages":["English"],"subject":"Biography, Coptic Orthodox Church, Ecclesiastical History","temporal_coverage":"1991-2026","spatial_coverage":"Minya Governorate, Egypt","verification_status":"source_audit_active","last_update":"2026-09-09","curator":"Bishoy Elkomos"}
 }
