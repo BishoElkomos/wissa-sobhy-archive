@@ -3,11 +3,11 @@
 > نقطة الاستئناف الرسمية عند فتح محادثة جديدة. المستودع وسجل Git هما مصدر الحقيقة التنفيذي، وليس نص المحادثة السابقة.
 
 ## الحالة عند آخر تحديث
-- التاريخ: 2026-09-05
+- التاريخ: 2026-09-09
 - الفرع: `main`
-- آخر commit بعد تحديث هذا الملف سيحمل هذا السجل؛ يجب إعادة فحص HEAD وCI عند الاستئناف.
-- آخر commit معروف قبل هذا التحديث: `946b92586172c50231ce737f6b132e9f44872eb7`.
-- آخر GitHub Actions ناجح موثق: run `33884100819` / #196 على commit `abe141d8a8a35744869b649f3142434ed6f0f6b4`.
+- آخر commit موثق عند إعداد هذه النقطة: `e7418d1de1d0380f328abd618243d8688318633f`.
+- آخر GitHub Actions ناجح: run `34338019878` / #208 على commit `e7418d1de1d0380f328abd618243d8688318633f`.
+- CI مرّ بنجاح على: validation + archive integrity gate + build + PDF + GitHub Pages deployment.
 
 ## المشروع
 أرشيف تاريخي رقمي طويل الأمد لسيرة وخدمة القمص ويصا صبحي تادرس، مع المصادر والأخبار والصور والوسائط والسياق الكنسي. المشروع ليس مدونة أو Dashboard أو نسخة من ويكيبيديا.
@@ -51,6 +51,7 @@
 - `data/media-registry.json`
 - `data/photo-registry.json`
 - `data/biography-source-corrections-2026-09.json`
+- `scripts/validate-archive-integrity.js`
 - `package.json`
 - `.github/workflows/deploy.yml`
 - `PROJECT-HANDOFF.md`
@@ -68,19 +69,22 @@
 ## النشر
 - Vercel canonical project: `wissa-sobhy-tadros-archive`.
 - canonical domain: `https://wissa-sobhy-tadros-archive.vercel.app/`.
-- آخر deployment production موثوق سابقًا: `dpl_H4U5ybHHrRiqdPiT6GD3CDspVc1W` على commit `e3e137025ba8bccb2a7b24152cad84fd6fd9df25`.
-- لا تعتبر أي deployment أحدث live دون تحقق فعلي.
+- لا تعتبر أي deployment أحدث live دون تحقق فعلي من deployment نفسه.
 - GitHub Pages يستخدم `wissa-sobhy-archive.com` لكنه ليس canonical production.
 
 ## البناء والتحقق
-`npm run validate` يتحقق من JSON وسلامة روابط الأدلة، و`npm run build` ينفذ البناء والتصحيحات ودمج البحث الإضافي وسجل المصادر.
+`npm run validate` يتحقق من JSON وسلامة روابط الأدلة.
 
-بعد كل تغيير جوهري: **validate → build → CI → تحقق deployment → فحص live canonical URLs**.
+`npm run integrity` هو بوابة مستقلة تفحص اتساق source IDs والـaliases، ثبات الصفة الحالية والصفة التاريخية، سلامة سجل Facebook الموثق، ومسارات الأدلة المتقاعدة، وتُبقي المواد metadata_only/link_only ظاهرة كتحذيرات لا كأدلة مؤكدة.
+
+`npm run build` ينفذ البناء والتصحيحات ودمج البحث الإضافي وسجل المصادر.
+
+بعد كل تغيير جوهري: **validate → integrity → build → CI → تحقق deployment → فحص live canonical URLs**.
 
 ## العمل المفتوح
 ### 1) Archive Integrity Phase
 - claim-level provenance.
-- مراجعة source IDs القديمة مثل `wikipedia` و`family_archive` والسجلات العامة غير المحددة.
+- مراجعة source IDs القديمة مثل `wikipedia` و`family_archive` والسجلات العامة غير المحددة؛ أصبحت بوابة السلامة تدعم aliases لهذه السجلات بدل كسر البيانات القديمة.
 - عدم المبالغة في أفعال مثل «أسس/أنشأ/أشرف/قاد» ما لم يثبتها المصدر.
 - بناء source preservation records مع access date ونسخة محفوظة/hash عندما يكون ذلك متاحًا ومشروعًا.
 
@@ -93,6 +97,9 @@
 ### 3) البحث التاريخي
 Issue #4: `Research: recover 2007–2015 primary and international sources`.
 يشمل 2007، كاميليا 2010، هجمات 2013، الأمن/إعادة الإعمار 2014، تغطية 2015، المصادر الدولية واللغات الأجنبية، الصور التاريخية، مع الفصل بين تاريخ الحدث وتاريخ النشر وعدم عد النسخ المنقولة كمصادر مستقلة.
+
+## ملاحظة CI الحالية
+بوابة السلامة نجحت في آخر تشغيل. ما زالت هناك **تحذيرات مقصودة** لا تمنع النشر، أهمها مواد `metadata_only/link_only` وروابط قديمة داخل بعض ملفات المصدر تنتظر تنظيفًا تدريجيًا؛ هذه لا تُعامل كدليل مؤكد.
 
 ## أسلوب التنفيذ
 اعمل كمراجع أرشيفي + مهندس جودة + مدير تقني: افحص الحالة أولًا، نفّذ ما يمكن بأمان، تحقق من النتيجة، سجل commit واضحًا، ولا تدّعِ نجاحًا لم يتم التحقق منه.
