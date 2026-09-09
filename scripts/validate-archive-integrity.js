@@ -76,6 +76,14 @@ for (const [id, locations] of sourceOccurrences) {
   }
 }
 
+const aliases = registry?.aliases || {};
+function resolveSourceId(id) {
+  if (sourceMap.has(id)) return id;
+  const alias = aliases[id];
+  if (alias && sourceMap.has(alias)) return alias;
+  return null;
+}
+
 const research = readJson('biography-research-2026-09.json');
 const matrix = readJson('evidence-matrix.json');
 const biography = readJson('biography.json');
@@ -89,7 +97,7 @@ collectSourceIds(timeline, requiredSourceIds);
 collectSourceIds(media, requiredSourceIds);
 
 for (const id of requiredSourceIds) {
-  if (!sourceMap.has(id)) errors.push(`Unresolved source ID in archive data: ${id}`);
+  if (!resolveSourceId(id)) errors.push(`Unresolved source ID in archive data: ${id}`);
 }
 
 if (biography) {
@@ -138,7 +146,7 @@ const uninspected = (media?.media || []).filter(item => mediaStatuses.has(item?.
 if (uninspected.length) warnings.push(`${uninspected.length} media item(s) remain metadata_only/link_only and must not be treated as content-verified.`);
 
 console.log('🔐 Running archive integrity gate...');
-console.log(`📚 Resolved source IDs: ${sourceMap.size}`);
+console.log(`📚 Resolved source IDs: ${sourceMap.size} (+ ${Object.keys(aliases).length} aliases)`);
 console.log(`🧾 Research/evidence references checked: ${requiredSourceIds.size}`);
 console.log(`🖼️ Public HTML files scanned: ${websiteFiles.length}`);
 console.log(`🎞️ Uninspected media: ${uninspected.length}`);
