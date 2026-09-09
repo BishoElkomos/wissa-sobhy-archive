@@ -36,8 +36,8 @@ function collectSourceIds(value, output = new Set()) {
 }
 
 const registry = readJson('source-registry.json');
-const additions = fs.readdirSync(DATA).filter(name => /^source-additions-.*\\.json$/.test(name)).sort();
-const corrections = fs.readdirSync(DATA).filter(name => /^source-corrections-.*\\.json$/.test(name)).sort();
+const additions = fs.readdirSync(DATA).filter(name => /^source-additions-.*\.json$/.test(name)).sort();
+const corrections = fs.readdirSync(DATA).filter(name => /^source-corrections-.*\.json$/.test(name)).sort();
 const sourceMap = new Map();
 const sourceOccurrences = new Map();
 
@@ -120,7 +120,11 @@ function walk(dir) {
 walk(WEBSITE);
 for (const file of websiteFiles) {
   const html = fs.readFileSync(file, 'utf8');
-  if (/href=["'](?:\\.\\.\\/)?evidence\\.html["']/i.test(html)) {
+  const retiredRouteLinked = html.includes('href="evidence.html"') ||
+    html.includes("href='evidence.html'") ||
+    html.includes('href="../evidence.html"') ||
+    html.includes("href='../evidence.html'");
+  if (retiredRouteLinked) {
     warnings.push(`Retired evidence route still linked from public source: ${path.relative(ROOT, file)}`);
   }
 }
