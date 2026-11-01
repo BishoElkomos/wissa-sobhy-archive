@@ -46,7 +46,7 @@ for (const filename of additionFiles) {
 }
 
 for (const filename of correctionFiles) {
-  const correctionsPath = path.join(dist, filename);
+  const correctionsPath = path.join(sourceData, filename);
   let corrections;
   try {
     corrections = JSON.parse(fs.readFileSync(correctionsPath, 'utf8'));
