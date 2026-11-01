@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dist = path.join(__dirname, '..', 'dist', 'data');
+const sourceData = path.join(__dirname, '..', 'data');
 const registryPath = path.join(dist, 'source-registry.json');
 
 if (!fs.existsSync(registryPath)) {
@@ -11,10 +12,10 @@ if (!fs.existsSync(registryPath)) {
   process.exit(0);
 }
 
-const additionFiles = fs.readdirSync(dist)
+const additionFiles = fs.readdirSync(sourceData)
   .filter((name) => /^source-additions-.*\.json$/.test(name))
   .sort();
-const correctionFiles = fs.readdirSync(dist)
+const correctionFiles = fs.readdirSync(sourceData)
   .filter((name) => /^source-corrections-.*\.json$/.test(name))
   .sort();
 
@@ -25,7 +26,7 @@ let corrected = 0;
 let ledgers = 0;
 
 for (const filename of additionFiles) {
-  const additionsPath = path.join(dist, filename);
+  const additionsPath = path.join(sourceData, filename);
   let additions;
   try {
     additions = JSON.parse(fs.readFileSync(additionsPath, 'utf8'));

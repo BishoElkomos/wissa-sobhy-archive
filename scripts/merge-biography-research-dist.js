@@ -5,7 +5,7 @@ const path = require('path');
 
 const dataDir = path.join(__dirname, '..', 'dist', 'data');
 const biographyPath = path.join(dataDir, 'biography.json');
-const researchPath = path.join(dataDir, 'biography-research-2026-09.json');
+const researchPath = path.join(ROOT, 'data', 'biography-research-2026-09.json');
 
 if (!fs.existsSync(biographyPath) || !fs.existsSync(researchPath)) {
   console.log('ℹ️ Biography research merge skipped: required data files are not present.');
