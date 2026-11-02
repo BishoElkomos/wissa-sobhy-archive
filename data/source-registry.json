@@ -132,11 +132,12 @@
       "id": "wataninet-2025-boktor-clergy",
       "group": "published",
       "type": "news_article",
-      "title": "الأنبا بقطر يترأس أول اجتماع كهنة إيبارشية ديرمواس ودلجا ويبدأ جولات رعوية بين القرى — وطني",
-      "url": "https://www.wataninet.com/2025/06/الأنبا-بقطر-يترأس-أول-اجتماع-كهنة-إيبارشية-ديرمواس-ودلجا-ويبدأ-جولات-رعوية-بين-القرى/",
+      "title": "الأنبا بقطر يترأس أول اجتماع كهنة إيبارشية ديرمواس ودلجا ويبدأ جولات رعوية بين القرى — الأقباط متحدون (نص تقرير وطني)",
+      "url": "https://www.copts-united.com/Article.php?A=831037&I=5960",
       "reliability": "MEDIUM_TO_HIGH",
       "status": "published",
-      "date": "2025-06-30"
+      "date": "2025-06-30",
+      "note": "رابط وطني الأصلي لم يعد متاحًا؛ النص ذاته لتقرير وطني (نادر شكري) منشور بالتاريخ ذاته على الأقباط متحدون."
     },
     {
       "id": "wataninet-2025-boktor-six-cuc",
@@ -566,6 +567,25 @@
       "title": "Coptic reference works",
       "reliability": "MEDIUM",
       "status": "secondary"
+    },
+    {
+      "id": "st-takla-boktor-profile",
+      "group": "published",
+      "type": "reference_profile",
+      "title": "الأنبا بقطر أسقف دير مواس ودلجا — St-Takla.org",
+      "url": "https://st-takla.org/Saints/bishops/baa/boktor-2025.html",
+      "reliability": "MEDIUM_TO_HIGH",
+      "status": "published_reference",
+      "date": "2025"
+    },
+    {
+      "id": "coptic-church-boktor-record",
+      "group": "church",
+      "type": "official_church_record",
+      "title": "الأنبا بقطر — سجل الأساقفة الرسمي بالموقع الرسمي للكنيسة القبطية الأرثوذكسية",
+      "url": "https://copticorthodox.church/bishops/%d8%a7%d9%84%d8%a3%d9%86%d8%a8%d8%a7-%d8%a8%d9%82%d8%b7%d8%b1/",
+      "reliability": "HIGH",
+      "status": "official_published"
     },
     {
       "id": "youm7-2010-wissa-cathedral",
@@ -1151,12 +1171,13 @@
       "id": "dostor-2026-03-01-boktor-liturgy",
       "group": "published",
       "type": "news_article",
-      "title": "الأنبا بقطر يترأس قداسًا بإيبارشية ديرمواس ودلجا",
+      "title": "سيامة كاهنين جديدين بإيبارشية ديرمواس ودلجا بالمنيا — الدستور",
       "url": "https://www.dostor.org/5439568",
       "reliability": "MEDIUM_TO_HIGH",
       "status": "published",
       "date": "2026-03-01",
-      "related_person": "الأنبا بقطر"
+      "related_person": "الأنبا بقطر",
+      "note": "عنوان السجل صُحح ليطابق عنوان المقال الفعلي: سيامة كاهنين جديدين (باكورة سيامات الكهنة في عهد الأنبا بقطر بعد تجليسه)."
     },
     {
       "id": "dostor-2026-06-11-cleanup",

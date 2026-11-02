@@ -1,8 +1,8 @@
 {
-  "buildTime": "2026-11-02T08:03:02.341Z",
-  "version": "2.6.2",
+  "buildTime": "2026-11-02T21:03:16.468Z",
+  "version": "3.0.0",
   "navigation": "unified-global-header",
-  "design": "premium-v2",
+  "design": "premium-v3-restructure",
   "seo": "canonical-og-jsonld-per-entity",
   "evidenceAudit": "retired",
   "englishParity": "wissa-unified-page"
