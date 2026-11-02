@@ -7,7 +7,7 @@ function flattenSourceGroups(data){const out=[];Object.entries(data.sources||{})
 async function load(){
  try{
   const [tl,ev,src]=await Promise.all([fetch('../data/timeline.json').then(r=>r.ok?r.json():Promise.reject(r.status)),fetch('../data/events.json').then(r=>r.ok?r.json():Promise.reject(r.status)),fetch('../data/sources.json').then(r=>r.ok?r.json():Promise.reject(r.status))]);
-  add('Biography','Father Wissa Sobhy Tadros','Current ministry: Priest of the Church of the Virgin Mary, Deir Mawas. Previous administrative position: Vicar of the Diocese of Deir Mawas and Delga, 1991–2025.','biography.html');
+  add('Biography','Father Wissa Sobhy Tadros','Current ministry: Priest of the Church of the Virgin Mary, Deir Mawas. Previous administrative position: Vicar of the Diocese of Deir Mawas, 22 June 1997 – 5 February 2025.','biography.html');
   add('Person','Metropolitan Agabius','Metropolitan of Deir Mawas and Delga; a central figure in Father Wissa Sobhy\'s documented priestly history.','agabius.html');
   (tl.timeline||[]).forEach(e=>add('Timeline',e.title_en||e.title,[(e.date_en||e.date_arabic||e.year),e.description,e.location,e.role,e.wissa_role,(e.tags||[]).join(' ')].filter(Boolean).join(' '),'timeline.html'));
   (ev.major_events||[]).forEach(e=>add('Event',e.title_english||e.title,[e.year,e.description,e.location,e.wissa_role,e.wissa_involvement,e.significance].filter(Boolean).join(' '),'events.html'));

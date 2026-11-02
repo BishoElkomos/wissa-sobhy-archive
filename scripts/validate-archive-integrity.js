@@ -104,7 +104,7 @@ if (biography) {
   const currentTitle = biography.person?.title;
   const currentEnglish = biography.person?.church_position;
   const vicar = biography.administrative_roles?.vicar_of_diocese;
-  if (currentTitle !== 'كاهن كنيسة السيدة العذراء بديرمواس') {
+  if (currentTitle !== 'كاهن كنيسة السيدة العذراء مريم بديرمواس') {
     errors.push(`Current Arabic role drift detected: ${currentTitle || '(missing)'}`);
   }
   if (currentEnglish !== 'Priest of the Church of the Virgin Mary, Deir Mawas') {
@@ -112,7 +112,7 @@ if (biography) {
   }
   if (vicar) {
     const end = String(vicar.end_date || '');
-    if (end !== '2025') errors.push(`Historical vicar role must end in 2025, found: ${end || '(missing)'}`);
+    if (end !== '2025-02-05') errors.push(`Historical vicar role must end in 2025, found: ${end || '(missing)'}`);
   }
 }
 

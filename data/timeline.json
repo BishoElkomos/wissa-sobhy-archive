@@ -68,6 +68,21 @@
     },
     {
       "year": 1991,
+      "month": 1,
+      "day": 3,
+      "date_arabic": "3 يناير 1991",
+      "event_type": "personal",
+      "title": "الخطوبة",
+      "description": "الخطوبة قبل الزواج",
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
+      "sources": [
+        "family_archive"
+      ]
+    },
+    {
+      "year": 1991,
       "month": 2,
       "day": 10,
       "date_arabic": "10 فبراير 1991",
@@ -113,30 +128,49 @@
       "year": 1991,
       "month": null,
       "event_type": "spiritual",
-      "title": "الأربعون يوماً بدير المحرق",
+      "title": "فترة روحية بدير المحرق عقب السيامة",
       "description": "فترة الانقطاع الروحي والتأمل بعد السيامة الكهنوتية",
       "location": "دير السيدة العذراء بالمحرق",
-      "duration": "40 days",
-      "period": "فبراير-مارس 1991",
-      "verified": true,
-      "confidence": "HIGH",
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
       "sources": [
         "elbalad-2026"
-      ]
+      ],
+      "verification_note": "الرجوع من الدير 21 مارس 1991 — إفادة عائلية 2 نوفمبر 2026؛ المدة الدقيقة غير موثقة مستنديًا"
     },
     {
       "year": 1991,
       "month": 3,
       "day": 1,
       "date_arabic": "1 مارس 1991",
+      "event_type": "liturgical",
+      "title": "قداس استلام الذبيحة بدير المحرق",
+      "description": "قداس استلام الذبيحة في دير السيدة العذراء بالمحرق",
+      "location": "دير السيدة العذراء بالمحرق",
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
+      "sources": [
+        "family_archive"
+      ]
+    },
+    {
+      "year": 1991,
+      "month": 3,
+      "day": 21,
+      "date_arabic": "21 مارس 1991",
       "event_type": "ministry_start",
       "title": "بدء الخدمة الكهنوتية",
-      "description": "بداية مرحلة الخدمة الكهنوتية الفعلية في إيبارشية ديرمواس",
+      "description": "الرجوع من دير المحرق وبدء الخدمة الكهنوتية الفعلية في إيبارشية ديرمواس ودلجا",
       "location": "ديرمواس",
       "supervisor": "الأنبا أغابيوس",
       "role": "كاهن خادم",
-      "verified": true,
-      "confidence": "HIGH"
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
+      "sources": [
+        "family_archive"
+      ]
     },
     {
       "year": 1991,
