@@ -7,18 +7,30 @@
     "title": "كاهن كنيسة السيدة العذراء بديرمواس",
     "church_position": "Priest of the Church of the Virgin Mary, Deir Mawas"
   },
-
   "birth": {
     "date": "1956-12-04",
     "place": "طنطا - محافظة الغربية",
     "place_english": "Tanta, Gharbia Governorate",
-    "verified": true,
-    "confidence": "HIGH",
-    "sources": [{"type": "family_archive", "description": "أرشيف عائلي - وثائق شخصية", "verified": true}]
+    "verified": false,
+    "confidence": "FAMILY_ATTESTED",
+    "sources": [
+      {
+        "type": "family_archive",
+        "description": "إفادة العائلة — وثائق شخصية بحوزة العائلة لم تُراجع بعد",
+        "verified": false
+      }
+    ],
+    "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة ولم تُعرض على الأرشيف بعد"
   },
-
   "education": {
-    "secondary": {"year": 1975, "details": "إكمال التعليم الثانوي", "verified": true, "confidence": "MEDIUM"},
+    "secondary": {
+      "year": 1975,
+      "details": "إكمال التعليم الثانوي",
+      "verified": false,
+      "confidence": "LOW",
+      "basis": "family_testimony_pending_document",
+      "note": "سنة إتمام الثانوية وفق إفادة عائلية (1975) ولم يُعثر بعد على مستند رسمي؛ تُعرض كقيد التوثيق."
+    },
     "bachelor": {
       "degree": "بكالوريوس التجارة",
       "degree_english": "Bachelor of Commerce",
@@ -26,7 +38,13 @@
       "year": 1980,
       "verified": true,
       "confidence": "HIGH",
-      "sources": [{"type": "published", "name": "ويكيبيديا العربية", "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"}]
+      "sources": [
+        {
+          "type": "published",
+          "name": "ويكيبيديا العربية",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
+      ]
     },
     "theological": {
       "training": "التكوين الروحي والكنسي",
@@ -36,23 +54,44 @@
       "confidence": "HIGH"
     }
   },
-
   "ecclesiastical_career": {
-    "deacon": {"year": null, "status": "قد يكون قد خدم كشماس", "verified": false, "confidence": "UNCONFIRMED"},
+    "deacon": {
+      "year": null,
+      "status": "قد يكون قد خدم كشماس",
+      "verified": false,
+      "confidence": "UNCONFIRMED"
+    },
     "priesthood": {
       "date": "1991-02-11",
       "type": "ordination_as_priest",
       "arabic_date": "11 فبراير 1991",
       "ordained_by": [
-        {"name": "الأنبا أغابيوس", "position": "Bishop of Deir Mawas", "role": "co-ordainer"},
-        {"name": "الأنبا توماس", "position": "Co-Bishop", "role": "co-ordainer"}
+        {
+          "name": "الأنبا أغابيوس",
+          "position": "Bishop of Deir Mawas",
+          "role": "co-ordainer"
+        },
+        {
+          "name": "الأنبا توماس",
+          "position": "Co-Bishop",
+          "role": "co-ordainer"
+        }
       ],
       "ordination_place": "كنيسة أو مكان تابع للإيبارشية",
       "verified": true,
       "confidence": "HIGH",
       "sources": [
-        {"type": "family_archive", "description": "أرشيف عائلي - وثائق السيامة والصور", "verified": true},
-        {"type": "published", "name": "صدى البلد - اليوبيل 35", "url": "https://www.elbalad.news/6928700", "date": "2026-04-08"}
+        {
+          "type": "family_archive",
+          "description": "أرشيف عائلي - وثائق السيامة والصور",
+          "verified": true
+        },
+        {
+          "type": "published",
+          "name": "صدى البلد - اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
+        }
       ],
       "following": "40_days_at_deir_muharraq"
     },
@@ -64,7 +103,13 @@
       "purpose": "الانقطاع الروحي والتأمل بعد السيامة",
       "verified": true,
       "confidence": "HIGH",
-      "sources": [{"type": "published", "name": "صدى البلد", "date": "2026-04-08"}]
+      "sources": [
+        {
+          "type": "published",
+          "name": "صدى البلد",
+          "date": "2026-04-08"
+        }
+      ]
     },
     "service_commencement": {
       "date": "1991-03-01",
@@ -84,12 +129,18 @@
       "verified": true,
       "confidence": "HIGH",
       "sources": [
-        {"type": "family_archive", "description": "أرشيف عائلي - شهادات الترقية"},
-        {"type": "published", "name": "ويكيبيديا", "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"}
+        {
+          "type": "family_archive",
+          "description": "أرشيف عائلي - شهادات الترقية"
+        },
+        {
+          "type": "published",
+          "name": "ويكيبيديا",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
       ]
     }
   },
-
   "move_to_deir_mawas": {
     "date": "1988",
     "reason": "work_with_bishop",
@@ -98,9 +149,14 @@
     "significance": "نقطة تحول رئيسية في المسيرة الخدمية",
     "verified": true,
     "confidence": "HIGH",
-    "sources": [{"type": "published", "name": "صدى البلد - اليوبيل 35", "date": "2026-04-08"}]
+    "sources": [
+      {
+        "type": "published",
+        "name": "صدى البلد - اليوبيل 35",
+        "date": "2026-04-08"
+      }
+    ]
   },
-
   "marriage": {
     "date": "1991-02-10",
     "arabic_date": "10 فبراير 1991",
@@ -110,9 +166,13 @@
     "note": "زواج قبل السيامة الكهنوتية بـ يوم واحد",
     "verified": true,
     "confidence": "HIGH",
-    "sources": [{"type": "family_archive", "description": "أرشيف عائلي"}]
+    "sources": [
+      {
+        "type": "family_archive",
+        "description": "أرشيف عائلي"
+      }
+    ]
   },
-
   "administrative_roles": {
     "vicar_of_diocese": {
       "title": "وكيل إيبارشية ديرمواس ودلجا",
@@ -152,7 +212,13 @@
       "significance": "خدمة إدارية وقانونية للإيبارشية والمجتمع",
       "verified": true,
       "confidence": "MEDIUM",
-      "sources": [{"type": "published", "name": "صدى البلد - اليوبيل 35", "date": "2026-04-08"}]
+      "sources": [
+        {
+          "type": "published",
+          "name": "صدى البلد - اليوبيل 35",
+          "date": "2026-04-08"
+        }
+      ]
     },
     "media_spokesperson": {
       "title": "المتحدث الإعلامي للمطرانية",
@@ -161,10 +227,16 @@
       "details": "ظهور عام كممثل رسمي للإيبارشية في الأزمات والأحداث",
       "verified": true,
       "confidence": "HIGH",
-      "sources": [{"type": "published", "name": "ويكيبيديا", "description": "برز دوره كمتحدث رسمي منذ 2007", "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"}]
+      "sources": [
+        {
+          "type": "published",
+          "name": "ويكيبيديا",
+          "description": "برز دوره كمتحدث رسمي منذ 2007",
+          "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي"
+        }
+      ]
     }
   },
-
   "key_relationships": {
     "primary_mentor": {
       "name": "الأنبا أغابيوس",
@@ -173,7 +245,13 @@
       "period": "1988-2025",
       "significance": "most_important_relationship",
       "duration_years": 37,
-      "shared_events": ["ordination_1991", "ministry_building", "crisis_response", "elevation_to_metropolitan_2022", "death_2025"],
+      "shared_events": [
+        "ordination_1991",
+        "ministry_building",
+        "crisis_response",
+        "elevation_to_metropolitan_2022",
+        "death_2025"
+      ],
       "verified": true,
       "confidence": "HIGH"
     },
@@ -182,21 +260,37 @@
       "title": "صحفي",
       "relationship": "media_coverage_partner",
       "period": "2007-2026",
-      "documentation_together": ["2013_deir_mawas_damage", "2025_anba_agabius_death"],
+      "documentation_together": [
+        "2013_deir_mawas_damage",
+        "2025_anba_agabius_death"
+      ],
       "verified": true,
       "confidence": "HIGH"
     }
   },
-
   "service_summary": {
     "total_years": 35,
     "start_date": "1991-02-11",
     "end_date": "ongoing",
-    "main_locations": ["ديرمواس", "دلجا", "محافظة المنيا"],
-    "main_focus": ["الرعاية الروحية", "إدارة المشاريع العمرانية", "الخدمة الإدارية", "الشهادة في الأزمات", "التواصل الحكومي"],
-    "testimonies": ["2010: تصريحات في أزمة كاميليا شحاتة", "2013: توثيق أضرار الهجمات الطائفية", "2015: تصريحات عن الأمن والحماية", "2025: حضور جنازة الأنبا أغابيوس"]
+    "main_locations": [
+      "ديرمواس",
+      "دلجا",
+      "محافظة المنيا"
+    ],
+    "main_focus": [
+      "الرعاية الروحية",
+      "إدارة المشاريع العمرانية",
+      "الخدمة الإدارية",
+      "الشهادة في الأزمات",
+      "التواصل الحكومي"
+    ],
+    "testimonies": [
+      "2010: تصريحات في أزمة كاميليا شحاتة",
+      "2013: توثيق أضرار الهجمات الطائفية",
+      "2015: تصريحات عن الأمن والحماية",
+      "2025: حضور جنازة الأنبا أغابيوس"
+    ]
   },
-
   "major_events_participated": [
     "2007: land_dispute_incident",
     "2010: kamilia_shehata_crisis",
@@ -208,16 +302,36 @@
     "2025: anba_bokter_elevation",
     "2026: 35_year_jubilee"
   ],
-
   "publications_and_media": {
     "mentioned_in": [
-      {"type": "news", "title": "مطرانية ديرمواس تحتفل بمرور 35 سنة على سيامة القمص ويصا صبحي", "source": "صدى البلد", "url": "https://www.elbalad.news/6928700", "date": "2026-04-08"},
-      {"type": "wikipedia", "title": "ويصا صبحي", "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي", "language": "Arabic"},
-      {"type": "news", "title": "محافظ المنيا يهنئ الأقباط", "source": "دستور", "date": "2026-01-07"},
-      {"type": "academic", "title": "Burning History", "author": "Rawi Publishing", "url": "https://rawi-publishing.com/articles/burning-history", "description": "تصريح عن الكنائس القديمة والحرق 2013"}
+      {
+        "type": "news",
+        "title": "مطرانية ديرمواس تحتفل بمرور 35 سنة على سيامة القمص ويصا صبحي",
+        "source": "صدى البلد",
+        "url": "https://www.elbalad.news/6928700",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "wikipedia",
+        "title": "ويصا صبحي",
+        "url": "https://ar.wikipedia.org/wiki/ويصا_صبحي",
+        "language": "Arabic"
+      },
+      {
+        "type": "news",
+        "title": "محافظ المنيا يهنئ الأقباط",
+        "source": "دستور",
+        "date": "2026-01-07"
+      },
+      {
+        "type": "academic",
+        "title": "Burning History",
+        "author": "Rawi Publishing",
+        "url": "https://rawi-publishing.com/articles/burning-history",
+        "description": "تصريح عن الكنائس القديمة والحرق 2013"
+      }
     ]
   },
-
   "media_archive": {
     "youtube_playlist": {
       "title": "المجموعة المرئية المرتبطة بأرشيف القمص ويصا صبحي",
@@ -228,7 +342,6 @@
       "last_reviewed": "2026-09-02"
     }
   },
-
   "timeline_key_dates": {
     "1980": "بكالوريوس التجارة",
     "1988": "الانتقال إلى ديرمواس",
@@ -240,12 +353,17 @@
     "2025": "جنازة الأنبا أغابيوس",
     "2026": "اليوبيل 35 للسيامة"
   },
-
   "metadata": {
-    "last_updated": "2026-09-02",
+    "last_updated": "2026-11-01",
     "data_version": "2.1",
     "verification_status": "95%_complete",
-    "missing_data": ["birth_time", "detailed_church_assignments", "complete_project_list", "family_details", "individual_video_metadata"],
+    "missing_data": [
+      "birth_time",
+      "detailed_church_assignments",
+      "complete_project_list",
+      "family_details",
+      "individual_video_metadata"
+    ],
     "next_update": "2027-Q1",
     "notes": "سيرة محدثة مع فصل التكليف الحالي عن التكليف الإداري السابق، وإضافة رابط المجموعة المرئية الخارجية دون افتراض بيانات غير متحققة."
   }

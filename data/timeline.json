@@ -9,20 +9,23 @@
       "title": "الميلاد في طنطا",
       "description": "ولادة سمير صبحي في مدينة طنطا - محافظة الغربية",
       "location": "طنطا",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": ["family_archive"]
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "sources": [
+        "family_archive"
+      ],
+      "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة"
     },
-
     {
       "year": 1975,
       "event_type": "education",
       "title": "إكمال التعليم الثانوي",
       "description": "إكمال الدراسة الثانوية والاستعداد للجامعة",
-      "verified": true,
-      "confidence": "MEDIUM"
+      "verified": false,
+      "confidence": "LOW",
+      "basis": "family_testimony_pending_document",
+      "note": "السنة الدقيقة وفق إفادة عائلية وتحتاج مستندًا رسميًا؛ تُعرض كقيد التوثيق."
     },
-
     {
       "year": 1980,
       "event_type": "education",
@@ -33,9 +36,11 @@
       "location": "طنطا",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["wikipedia", "elbalad-2026"]
+      "sources": [
+        "wikipedia",
+        "elbalad-2026"
+      ]
     },
-
     {
       "year": 1980,
       "month": null,
@@ -47,7 +52,6 @@
       "verified": true,
       "confidence": "MEDIUM"
     },
-
     {
       "year": 1988,
       "event_type": "relocation",
@@ -58,9 +62,10 @@
       "verified": true,
       "confidence": "HIGH",
       "significance": "turning_point",
-      "sources": ["elbalad-2026"]
+      "sources": [
+        "elbalad-2026"
+      ]
     },
-
     {
       "year": 1991,
       "month": 2,
@@ -73,9 +78,10 @@
       "note": "قبل يوم واحد من السيامة الكهنوتية",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"]
+      "sources": [
+        "family_archive"
+      ]
     },
-
     {
       "year": 1991,
       "month": 2,
@@ -84,15 +90,25 @@
       "event_type": "ordination",
       "title": "السيامة الكهنوتية 🎯",
       "description": "تمت سيامته كاهناً بيد الأنبا أغابيوس والأنبا توماس",
-      "ordained_by": ["الأنبا أغابيوس", "الأنبا توماس"],
+      "ordained_by": [
+        "الأنبا أغابيوس",
+        "الأنبا توماس"
+      ],
       "rank_new": "Priest (قس)",
       "significance": "major_milestone",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive", "elbalad-2026", "wikipedia"],
-      "tags": ["priesthood", "milestone", "religious"]
+      "sources": [
+        "family_archive",
+        "elbalad-2026",
+        "wikipedia"
+      ],
+      "tags": [
+        "priesthood",
+        "milestone",
+        "religious"
+      ]
     },
-
     {
       "year": 1991,
       "month": null,
@@ -104,9 +120,10 @@
       "period": "فبراير-مارس 1991",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["elbalad-2026"]
+      "sources": [
+        "elbalad-2026"
+      ]
     },
-
     {
       "year": 1991,
       "month": 3,
@@ -121,7 +138,6 @@
       "verified": true,
       "confidence": "HIGH"
     },
-
     {
       "year": 1991,
       "event_type": "administrative",
@@ -131,10 +147,11 @@
       "location": "مطرانية ديرمواس",
       "verified": true,
       "confidence": "MEDIUM",
-      "sources": ["elbalad-2026"],
+      "sources": [
+        "elbalad-2026"
+      ],
       "significance": "administrative_achievement"
     },
-
     {
       "year": 1996,
       "month": 11,
@@ -148,9 +165,10 @@
       "note": "موثق بالصور الأسرية",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"]
+      "sources": [
+        "family_archive"
+      ]
     },
-
     {
       "year": 1997,
       "month": 6,
@@ -164,10 +182,15 @@
       "significance": "major_milestone",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive", "wikipedia"],
-      "tags": ["promotion", "milestone"]
+      "sources": [
+        "family_archive",
+        "wikipedia"
+      ],
+      "tags": [
+        "promotion",
+        "milestone"
+      ]
     },
-
     {
       "year": 2004,
       "event_type": "construction",
@@ -179,7 +202,6 @@
       "confidence": "PENDING",
       "note": "قيد التحقق التفصيلي"
     },
-
     {
       "year": 2007,
       "month": 4,
@@ -189,14 +211,23 @@
       "title": "أحداث النزاع العقاري - احتجاز الكهنة 🔴",
       "description": "احتجاز كهنة في قسم الشرطة بديرمواس بسبب نزاع على شراء أرض من قبل الإيبارشية",
       "location": "ديرمواس - قسم الشرطة",
-      "involved": ["كهنة ديرمواس", "5 مسيحيين"],
+      "involved": [
+        "كهنة ديرمواس",
+        "5 مسيحيين"
+      ],
       "cause": "land_dispute",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["copts-united", "voice-of-copts"],
-      "tags": ["crisis", "conflict", "legal"]
+      "sources": [
+        "copts-united",
+        "voice-of-copts"
+      ],
+      "tags": [
+        "crisis",
+        "conflict",
+        "legal"
+      ]
     },
-
     {
       "year": 2007,
       "event_type": "media",
@@ -206,10 +237,13 @@
       "significance": "major_turning_point",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["wikipedia"],
-      "tags": ["public_figure"]
+      "sources": [
+        "wikipedia"
+      ],
+      "tags": [
+        "public_figure"
+      ]
     },
-
     {
       "year": 2010,
       "month": 7,
@@ -227,10 +261,16 @@
       "verification": "high_profile_media_coverage",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["copts-united", "international_media"],
-      "tags": ["crisis", "witness", "international"]
+      "sources": [
+        "copts-united",
+        "international_media"
+      ],
+      "tags": [
+        "crisis",
+        "witness",
+        "international"
+      ]
     },
-
     {
       "year": 2013,
       "month": 3,
@@ -241,9 +281,10 @@
       "note": "موثق بالصور الأسرية",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"]
+      "sources": [
+        "family_archive"
+      ]
     },
-
     {
       "year": 2013,
       "month": 8,
@@ -266,10 +307,17 @@
       "location": "ديرمواس ودلجا",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["youm7", "almasryalyoum", "international_media"],
-      "tags": ["major_crisis", "sectarian_violence", "documented"]
+      "sources": [
+        "youm7",
+        "almasryalyoum",
+        "international_media"
+      ],
+      "tags": [
+        "major_crisis",
+        "sectarian_violence",
+        "documented"
+      ]
     },
-
     {
       "year": 2013,
       "month": 9,
@@ -286,10 +334,15 @@
       "significance": "official_documentation",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["wataninet-2013"],
-      "tags": ["witness", "documentation", "media_coverage"]
+      "sources": [
+        "wataninet-2013"
+      ],
+      "tags": [
+        "witness",
+        "documentation",
+        "media_coverage"
+      ]
     },
-
     {
       "year": 2013,
       "month": 9,
@@ -301,10 +354,14 @@
       "source_publication": "موقع مبتدا",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["mobtada-2013"],
-      "tags": ["eyewitness", "official_statement"]
+      "sources": [
+        "mobtada-2013"
+      ],
+      "tags": [
+        "eyewitness",
+        "official_statement"
+      ]
     },
-
     {
       "year": 2014,
       "event_type": "reconstruction",
@@ -314,10 +371,14 @@
       "location": "ديرمواس ودلجا",
       "verified": true,
       "confidence": "MEDIUM",
-      "sources": ["copts-today-2014"],
-      "tags": ["reconstruction", "recovery"]
+      "sources": [
+        "copts-today-2014"
+      ],
+      "tags": [
+        "reconstruction",
+        "recovery"
+      ]
     },
-
     {
       "year": 2014,
       "month": 2,
@@ -329,7 +390,6 @@
       "confidence": "MEDIUM",
       "note": "تفاصيل الاحتفال قيد الاستكمال"
     },
-
     {
       "year": 2015,
       "event_type": "statements",
@@ -338,9 +398,11 @@
       "topic": "security",
       "verified": true,
       "confidence": "MEDIUM",
-      "tags": ["administration", "security"]
+      "tags": [
+        "administration",
+        "security"
+      ]
     },
-
     {
       "year": 2016,
       "month": null,
@@ -355,7 +417,6 @@
       "confidence": "PENDING",
       "note": "يحتاج استكمال الأدلة"
     },
-
     {
       "year": 2022,
       "month": 11,
@@ -367,9 +428,10 @@
       "note": "حضور القمص ويصا مؤكد بالصور الأسرية",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"]
+      "sources": [
+        "family_archive"
+      ]
     },
-
     {
       "year": 2022,
       "month": 11,
@@ -386,10 +448,14 @@
       "significance": "major_event",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"],
-      "tags": ["major_event", "mentor"]
+      "sources": [
+        "family_archive"
+      ],
+      "tags": [
+        "major_event",
+        "mentor"
+      ]
     },
-
     {
       "year": 2025,
       "month": 2,
@@ -404,10 +470,16 @@
       "wissa_attendance": "confirmed_at_funeral",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["wataninet-2025", "voice-of-copts"],
-      "tags": ["death", "major_event", "end_of_era"]
+      "sources": [
+        "wataninet-2025",
+        "voice-of-copts"
+      ],
+      "tags": [
+        "death",
+        "major_event",
+        "end_of_era"
+      ]
     },
-
     {
       "year": 2025,
       "month": 5,
@@ -420,10 +492,13 @@
       "wissa_attendance": "confirmed",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["family_archive"],
-      "tags": ["new_beginning"]
+      "sources": [
+        "family_archive"
+      ],
+      "tags": [
+        "new_beginning"
+      ]
     },
-
     {
       "year": 2025,
       "month": 6,
@@ -438,10 +513,14 @@
       "wissa_attendance": "confirmed",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["youm7-2025"],
-      "tags": ["new_era", "transition"]
+      "sources": [
+        "youm7-2025"
+      ],
+      "tags": [
+        "new_era",
+        "transition"
+      ]
     },
-
     {
       "year": 2025,
       "month": 8,
@@ -456,7 +535,6 @@
       "verified": true,
       "confidence": "HIGH"
     },
-
     {
       "year": 2026,
       "month": 1,
@@ -472,10 +550,14 @@
       "significance": "government_recognition",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["dostor-2026"],
-      "tags": ["government_relations", "official_visit"]
+      "sources": [
+        "dostor-2026"
+      ],
+      "tags": [
+        "government_relations",
+        "official_visit"
+      ]
     },
-
     {
       "year": 2026,
       "month": 4,
@@ -494,11 +576,16 @@
       "significance": "major_milestone",
       "verified": true,
       "confidence": "HIGH",
-      "sources": ["elbalad-2026", "sohag-albalad-2026"],
-      "tags": ["milestone", "celebration", "35_years"]
+      "sources": [
+        "elbalad-2026"
+      ],
+      "tags": [
+        "milestone",
+        "celebration",
+        "35_years"
+      ]
     }
   ],
-
   "metadata": {
     "total_events": 43,
     "verified_events": 38,

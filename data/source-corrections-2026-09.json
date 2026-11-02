@@ -1,7 +1,7 @@
 {
   "version": "1.2",
   "last_updated": "2026-09-03",
-  "description": "Corrections and strengthened source-ledger records discovered during archive review.",
+  "description": "تصحيحات وسجلات مصادر مقوّاة للسجل المرجعي.",
   "sources": [
     {
       "id": "youm7-2013-badrman-aghabius",
@@ -25,7 +25,7 @@
       "status": "published",
       "date": "2010-07-23",
       "related_person": "القمص ويصا صبحي",
-      "note": "Contemporaneous Youm7 record added to strengthen the source trail for the 2010 Camelia/Shahatah media-spokesperson chronology."
+      "note": "سجل معاصر من اليوم السابع يدعم تسلسل الدور الإعلامي والتمثيلي الموثق في 2010."
     },
     {
       "id": "almasryalyoum-2007-land-dispute-direct",

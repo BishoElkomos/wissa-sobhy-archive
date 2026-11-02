@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-03",
-  "purpose": "منهج داخلي دائم لضبط سلامة السجل التاريخي دون تحويله إلى صفحة تدقيق عامة.",
+  "last_updated": "2026-11-01",
+  "purpose": "منهج تحريري دائم لضبط سلامة السجل التاريخي للأرشيف واتساق عرض مصادره.",
   "principles": [
     "المعلومة لا تُعامل كحقيقة موثقة لمجرد وجود رابط؛ يجب أن يدعم المصدر الادعاء المحدد.",
     "المصدر الأولي الرسمي يُقدّم على المصدر الثانوي عند تعارض البيانات المؤسسية أو الزمنية.",
@@ -13,13 +13,41 @@
     "كل تعديل جوهري في حقيقة تاريخية يجب أن يكون قابلًا للتتبع عبر سجل Git ورسالة التعديل ومصدره."
   ],
   "source_precedence": [
-    {"rank": 1, "type": "primary_official", "label": "مصدر رسمي أولي"},
-    {"rank": 2, "type": "original_document", "label": "وثيقة أو مادة أصلية مؤرخة"},
-    {"rank": 3, "type": "reputable_news", "label": "صحافة موثوقة ذات إحالة محددة"},
-    {"rank": 4, "type": "specialist_reference", "label": "مرجع متخصص"},
-    {"rank": 5, "type": "family_or_internal_archive", "label": "أرشيف عائلي أو مؤسسي غير منشور"},
-    {"rank": 6, "type": "secondary_web", "label": "مصدر ثانوي عام"},
-    {"rank": 7, "type": "search_snippet_or_social", "label": "نتيجة بحث أو منشور اجتماعي"}
+    {
+      "rank": 1,
+      "type": "primary_official",
+      "label": "مصدر رسمي أولي"
+    },
+    {
+      "rank": 2,
+      "type": "original_document",
+      "label": "وثيقة أو مادة أصلية مؤرخة"
+    },
+    {
+      "rank": 3,
+      "type": "reputable_news",
+      "label": "صحافة موثوقة ذات إحالة محددة"
+    },
+    {
+      "rank": 4,
+      "type": "specialist_reference",
+      "label": "مرجع متخصص"
+    },
+    {
+      "rank": 5,
+      "type": "family_or_internal_archive",
+      "label": "أرشيف عائلي أو مؤسسي غير منشور"
+    },
+    {
+      "rank": 6,
+      "type": "secondary_web",
+      "label": "مصدر ثانوي عام"
+    },
+    {
+      "rank": 7,
+      "type": "search_snippet_or_social",
+      "label": "نتيجة بحث أو منشور اجتماعي"
+    }
   ],
   "evidence_statuses": {
     "primary_source": "مدعوم بمصدر أولي رسمي",
