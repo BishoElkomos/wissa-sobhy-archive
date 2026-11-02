@@ -14,7 +14,10 @@
       "sources": [
         "family_archive"
       ],
-      "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة"
+      "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة",
+      "title_english": "Birth in Tanta",
+      "description_english": "Samir Sobhy is born in the city of Tanta, Gharbia Governorate",
+      "date_english": "December 4, 1956"
     },
     {
       "year": 1975,
@@ -24,7 +27,9 @@
       "verified": false,
       "confidence": "LOW",
       "basis": "family_testimony_pending_document",
-      "note": "السنة الدقيقة وفق إفادة عائلية وتحتاج مستندًا رسميًا؛ تُعرض كقيد التوثيق."
+      "note": "السنة الدقيقة وفق إفادة عائلية وتحتاج مستندًا رسميًا؛ تُعرض كقيد التوثيق.",
+      "title_english": "Completion of secondary education",
+      "description_english": "Completed secondary school and prepared for university"
     },
     {
       "year": 1980,
@@ -39,7 +44,9 @@
       "sources": [
         "wikipedia",
         "elbalad-2026"
-      ]
+      ],
+      "title_english": "Bachelor of Commerce",
+      "description_english": "Earned a Bachelor of Commerce degree from Tanta University"
     },
     {
       "year": 1980,
@@ -50,7 +57,9 @@
       "location": "طنطا",
       "details": "خادم في كنيسة رئيس الملائكة ميخائيل - الافتقاد والتسبحة والرحلات والخلوات",
       "verified": true,
-      "confidence": "MEDIUM"
+      "confidence": "MEDIUM",
+      "title_english": "Beginning of church service in Tanta",
+      "description_english": "Start of church activity, Sunday-school education and servants' preparation"
     },
     {
       "year": 1988,
@@ -64,7 +73,9 @@
       "significance": "turning_point",
       "sources": [
         "elbalad-2026"
-      ]
+      ],
+      "title_english": "Move to Deir Mawas",
+      "description_english": "Moved to Deir Mawas to work with Anba Agabius — a major turning point"
     },
     {
       "year": 1991,
@@ -79,7 +90,10 @@
       "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Engagement",
+      "description_english": "The engagement, ahead of the wedding",
+      "date_english": "January 3, 1991"
     },
     {
       "year": 1991,
@@ -95,7 +109,10 @@
       "confidence": "HIGH",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Wedding",
+      "description_english": "Marriage to Caroline Makram",
+      "date_english": "February 10, 1991"
     },
     {
       "year": 1991,
@@ -122,7 +139,10 @@
         "priesthood",
         "milestone",
         "religious"
-      ]
+      ],
+      "title_english": "Priestly ordination",
+      "description_english": "Ordained a priest by Anba Agabius and Anba Thomas",
+      "date_english": "February 11, 1991"
     },
     {
       "year": 1991,
@@ -136,7 +156,9 @@
       "sources": [
         "elbalad-2026"
       ],
-      "verification_note": "الرجوع من الدير 21 مارس 1991 — إفادة عائلية 2 نوفمبر 2026؛ المدة الدقيقة غير موثقة مستنديًا"
+      "verification_note": "الرجوع من الدير 21 مارس 1991 — إفادة عائلية 2 نوفمبر 2026؛ المدة الدقيقة غير موثقة مستنديًا",
+      "title_english": "Spiritual retreat at Al-Muharraq Monastery after ordination",
+      "description_english": "A period of spiritual retreat and reflection following priestly ordination"
     },
     {
       "year": 1991,
@@ -152,7 +174,10 @@
       "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Receiving-the-Eucharist liturgy at Al-Muharraq Monastery",
+      "description_english": "The receiving liturgy at the Monastery of the Virgin Mary in Al-Muharraq",
+      "date_english": "March 1, 1991"
     },
     {
       "year": 1991,
@@ -170,7 +195,10 @@
       "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Start of priestly ministry",
+      "description_english": "Returned from Al-Muharraq Monastery and began active priestly ministry in the Diocese of Deir Mawas and Delga",
+      "date_english": "March 21, 1991"
     },
     {
       "year": 1991,
@@ -184,7 +212,9 @@
       "sources": [
         "elbalad-2026"
       ],
-      "significance": "administrative_achievement"
+      "significance": "administrative_achievement",
+      "title_english": "Establishment of the documentation and marriage office",
+      "description_english": "Establishment or start of the documentation and marriage office at the diocesan headquarters"
     },
     {
       "year": 1996,
@@ -201,7 +231,10 @@
       "confidence": "HIGH",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Attending Pope Shenouda's silver jubilee celebrations",
+      "description_english": "Attended the silver-jubilee liturgy of Pope Shenouda III's enthronement, including the consecration of Anba Makari and priestly ordinations",
+      "date_english": "November 14, 1996"
     },
     {
       "year": 1997,
@@ -223,7 +256,10 @@
       "tags": [
         "promotion",
         "milestone"
-      ]
+      ],
+      "title_english": "Elevation to hegumen",
+      "description_english": "Elevated to the rank of hegumen — from qass to qummus",
+      "date_english": "June 22, 1997"
     },
     {
       "year": 2004,
@@ -234,7 +270,9 @@
       "status": "under_verification",
       "verified": false,
       "confidence": "PENDING",
-      "note": "قيد التحقق التفصيلي"
+      "note": "قيد التحقق التفصيلي",
+      "title_english": "Major phase of the St George Cathedral rebuilding",
+      "description_english": "Beginning or key phase of the project to rebuild the Cathedral of Saint George the Martyr"
     },
     {
       "year": 2007,
@@ -260,7 +298,10 @@
         "crisis",
         "conflict",
         "legal"
-      ]
+      ],
+      "title_english": "Land dispute incident — priests detained",
+      "description_english": "Priests were detained at Deir Mawas police station over a dispute concerning a land purchase by the diocese",
+      "date_english": "April 15, 2007"
     },
     {
       "year": 2007,
@@ -276,7 +317,9 @@
       ],
       "tags": [
         "public_figure"
-      ]
+      ],
+      "title_english": "Father Wissa emerges as official diocesan representative",
+      "description_english": "Father Wissa begins to appear publicly as spokesman and official representative of the diocese in crises"
     },
     {
       "year": 2010,
@@ -303,7 +346,9 @@
         "crisis",
         "witness",
         "international"
-      ]
+      ],
+      "title_english": "Kamilia Shehata crisis",
+      "description_english": "The disappearance of Kamilia Shehata (wife of Father Tadros Samaan) — Coptic mobilization and protest"
     },
     {
       "year": 2013,
@@ -317,7 +362,9 @@
       "confidence": "HIGH",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "Personal-status conference at St Bishoy Monastery",
+      "description_english": "Attended the personal-status conference"
     },
     {
       "year": 2013,
@@ -350,7 +397,10 @@
         "major_crisis",
         "sectarian_violence",
         "documented"
-      ]
+      ],
+      "title_english": "Sectarian attacks on Deir Mawas and Delga",
+      "description_english": "Sectarian attacks following the Rabaa dispersal — at least 4 churches burned, 62 families displaced",
+      "date_english": "August 14, 2013"
     },
     {
       "year": 2013,
@@ -375,7 +425,9 @@
         "witness",
         "documentation",
         "media_coverage"
-      ]
+      ],
+      "title_english": "Documenting the damage — field tour with Nader Shokry",
+      "description_english": "Journalist Nader Shokry accompanied Father Wissa on a field tour documenting losses and destruction"
     },
     {
       "year": 2013,
@@ -394,7 +446,9 @@
       "tags": [
         "eyewitness",
         "official_statement"
-      ]
+      ],
+      "title_english": "Direct statements on the Delga events",
+      "description_english": "Direct statements by Father Wissa about the Delga events and losses"
     },
     {
       "year": 2014,
@@ -411,7 +465,9 @@
       "tags": [
         "reconstruction",
         "recovery"
-      ]
+      ],
+      "title_english": "Restoration and the return of prayer",
+      "description_english": "The beginning of restoring the burned churches in Delga and the return of prayer"
     },
     {
       "year": 2014,
@@ -422,7 +478,9 @@
       "duration_years": 23,
       "verified": true,
       "confidence": "MEDIUM",
-      "note": "تفاصيل الاحتفال قيد الاستكمال"
+      "note": "تفاصيل الاحتفال قيد الاستكمال",
+      "title_english": "Silver jubilee of ordination (23 years)",
+      "description_english": "Celebrating 23 years since priestly ordination (1991–2014)"
     },
     {
       "year": 2015,
@@ -435,7 +493,9 @@
       "tags": [
         "administration",
         "security"
-      ]
+      ],
+      "title_english": "Statements on securing the diocesan headquarters and churches",
+      "description_english": "Statements on securing the diocesan headquarters and churches and on coordination with officials"
     },
     {
       "year": 2016,
@@ -449,7 +509,9 @@
       "period": "2016-2025",
       "verified": false,
       "confidence": "PENDING",
-      "note": "يحتاج استكمال الأدلة"
+      "note": "يحتاج استكمال الأدلة",
+      "title_english": "Weekly liturgy service — record begins",
+      "description_english": "A regular record of Wednesday liturgy service at Ezbet El-Balkiya begins"
     },
     {
       "year": 2022,
@@ -464,7 +526,10 @@
       "confidence": "HIGH",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "title_english": "'From Generation to Generation' celebration",
+      "description_english": "A church celebration titled 'From Generation to Generation'",
+      "date_english": "November 19, 2022"
     },
     {
       "year": 2022,
@@ -488,7 +553,10 @@
       "tags": [
         "major_event",
         "mentor"
-      ]
+      ],
+      "title_english": "Anba Agabius elevated to metropolitan rank",
+      "description_english": "Anba Agabius elevated from bishop to metropolitan",
+      "date_english": "November 20, 2022"
     },
     {
       "year": 2025,
@@ -512,7 +580,10 @@
         "death",
         "major_event",
         "end_of_era"
-      ]
+      ],
+      "title_english": "Repose of Metropolitan Agabius",
+      "description_english": "Metropolitan Agabius departed in the Lord after 36 years leading the diocese (1989–2025)",
+      "date_english": "February 4, 2025"
     },
     {
       "year": 2025,
@@ -531,7 +602,10 @@
       ],
       "tags": [
         "new_beginning"
-      ]
+      ],
+      "title_english": "Eve of Bishop Boktor's ordination",
+      "description_english": "Attended the vespers before Bishop Boktor's episcopal ordination",
+      "date_english": "May 31, 2025"
     },
     {
       "year": 2025,
@@ -553,7 +627,10 @@
       "tags": [
         "new_era",
         "transition"
-      ]
+      ],
+      "title_english": "Episcopal ordination liturgy of Bishop Boktor",
+      "description_english": "The liturgy of Bishop Boktor's ordination for the Diocese of Deir Mawas and Delga",
+      "date_english": "June 1, 2025"
     },
     {
       "year": 2025,
@@ -567,7 +644,10 @@
       "promoted_by": "الأنبا بقطر",
       "wissa_attendance": "confirmed",
       "verified": true,
-      "confidence": "HIGH"
+      "confidence": "HIGH",
+      "title_english": "Elevation of six priests to hegumen",
+      "description_english": "Attended the liturgy in which Bishop Boktor elevated six priests to the rank of hegumen",
+      "date_english": "August 2, 2025"
     },
     {
       "year": 2026,
@@ -590,7 +670,10 @@
       "tags": [
         "government_relations",
         "official_visit"
-      ]
+      ],
+      "title_english": "Minya governor visits the Deir Mawas diocesan headquarters",
+      "description_english": "Major General Emad Kadwani, Governor of Minya, visited the diocesan headquarters in Deir Mawas and was received by Bishop Boktor",
+      "date_english": "January 7, 2026"
     },
     {
       "year": 2026,
@@ -617,7 +700,10 @@
         "milestone",
         "celebration",
         "35_years"
-      ]
+      ],
+      "title_english": "35th priestly jubilee",
+      "description_english": "Celebrating 35 years since priestly ordination (1991–2026)",
+      "date_english": "April 8, 2026"
     }
   ],
   "metadata": {

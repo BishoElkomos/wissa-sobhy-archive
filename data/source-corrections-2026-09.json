@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "last_updated": "2026-09-03",
+  "last_updated": "2026-11-02",
   "description": "تصحيحات وسجلات مصادر مقوّاة للسجل المرجعي.",
   "sources": [
     {
@@ -38,6 +38,18 @@
       "date": "2007-04-29",
       "related_person": "القمص ويصا صبحي",
       "note": "Contemporaneous Al-Masry Al-Youm report explicitly names Father Wissa Sobhy among the diocesan priests present during the April 2007 property-dispute enforcement incident. It is evidence for presence/participation in that incident, not by itself proof that he was the diocesan media spokesperson."
+    },
+    {
+      "id": "dostor-2026-03-01-boktor-liturgy",
+      "group": "published",
+      "type": "news_article",
+      "title": "سيامة كاهنين جديدين بإيبارشية ديرمواس ودلجا بالمنيا — الدستور",
+      "url": "https://www.dostor.org/5439568",
+      "reliability": "MEDIUM_TO_HIGH",
+      "status": "published",
+      "date": "2026-03-01",
+      "related_person": "الأنبا بقطر",
+      "note": "عنوان السجل صُحح ليطابق عنوان المقال الفعلي: سيامة كاهنين جديدين (باكورة سيامات الكهنة في عهد الأنبا بقطر بعد تجليسه)."
     }
   ]
 }
