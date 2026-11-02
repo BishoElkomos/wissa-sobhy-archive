@@ -1,10 +1,10 @@
 {
   "person": {
     "id": "wissa-sobhy-tadros",
-    "name_arabic": "القمص ويصا صبحي تادرس",
+    "name_arabic": "القمص ويصا صبحي إبراهيم تادرس",
     "name_english": "Wissa Sobhy Tadros",
     "secular_name": "سمير صبحي",
-    "title": "كاهن كنيسة السيدة العذراء بديرمواس",
+    "title": "كاهن كنيسة السيدة العذراء مريم بديرمواس",
     "church_position": "Priest of the Church of the Virgin Mary, Deir Mawas"
   },
   "birth": {
@@ -111,16 +111,18 @@
           "name": "صدى البلد",
           "date": "2026-04-08"
         }
-      ]
+      ],
+      "verification_note": "الرجوع من الدير 21 مارس 1991 بإفادة العائلة؛ صيغة «أربعون يومًا» كما وردت في المصدر المنشور"
     },
     "service_commencement": {
-      "date": "1991-03-01",
-      "arabic_date": "بداية مارس 1991",
+      "date": "1991-03-21",
+      "arabic_date": "21 مارس 1991",
       "location": "إيبارشية ديرمواس ودلجا",
       "role": "كاهن خادم",
       "supervisor": "الأنبا أغابيوس",
-      "verified": true,
-      "confidence": "HIGH"
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "بدء الخدمة بالإيبارشية مع الرجوع من الدير 21 مارس 1991 — إفادة عائلية — 2 نوفمبر 2026"
     },
     "elevation_to_abuna": {
       "date": "1997-06-22",
@@ -145,6 +147,15 @@
           "date": "2026-04-08"
         }
       ]
+    },
+    "receiving_the_sacrifice_liturgy": {
+      "date": "1991-03-01",
+      "arabic_date": "1 مارس 1991",
+      "title": "قداس استلام الذبيحة",
+      "location": "دير السيدة العذراء بالمحرق",
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "إفادة عائلية — 2 نوفمبر 2026"
     }
   },
   "move_to_deir_mawas": {
@@ -181,10 +192,10 @@
   },
   "administrative_roles": {
     "vicar_of_diocese": {
-      "title": "وكيل إيبارشية ديرمواس ودلجا",
-      "title_english": "Vicar of the Diocese of Deir Mawas and Delga",
-      "start_date": "1991",
-      "end_date": "2025",
+      "title": "وكيل مطرانية ديرمواس",
+      "title_english": "Vicar of the Diocese of Deir Mawas",
+      "start_date": "1997-06-22",
+      "end_date": "2025-02-05",
       "status": "previous",
       "current": false,
       "responsibilities": [
@@ -195,11 +206,12 @@
         "الإفتقاد الروحي",
         "إدارة الموارد البشرية"
       ],
-      "verified": true,
-      "confidence": "HIGH"
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
+      "verification_note": "إفادة عائلية — 2 نوفمبر 2026؛ قيد التوثيق المستندي"
     },
     "current_priest": {
-      "title": "كاهن كنيسة السيدة العذراء بديرمواس",
+      "title": "كاهن كنيسة السيدة العذراء مريم بديرمواس",
       "title_english": "Priest of the Church of the Virgin Mary, Deir Mawas",
       "start_date": null,
       "end_date": "current",
