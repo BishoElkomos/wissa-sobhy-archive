@@ -9,19 +9,22 @@
       "title": "الميلاد في طنطا",
       "description": "ولادة سمير صبحي في مدينة طنطا - محافظة الغربية",
       "location": "طنطا",
-      "verified": true,
-      "confidence": "HIGH",
+      "verified": false,
+      "confidence": "FAMILY_ATTESTED",
       "sources": [
         "family_archive"
-      ]
+      ],
+      "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة"
     },
     {
       "year": 1975,
       "event_type": "education",
       "title": "إكمال التعليم الثانوي",
       "description": "إكمال الدراسة الثانوية والاستعداد للجامعة",
-      "verified": true,
-      "confidence": "MEDIUM"
+      "verified": false,
+      "confidence": "LOW",
+      "basis": "family_testimony_pending_document",
+      "note": "السنة الدقيقة وفق إفادة عائلية وتحتاج مستندًا رسميًا؛ تُعرض كقيد التوثيق."
     },
     {
       "year": 1980,
@@ -579,8 +582,7 @@
       "verified": true,
       "confidence": "HIGH",
       "sources": [
-        "elbalad-2026",
-        "sohag-albalad-2026"
+        "elbalad-2026"
       ],
       "tags": [
         "milestone",

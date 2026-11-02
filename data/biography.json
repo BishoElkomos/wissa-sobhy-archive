@@ -11,22 +11,25 @@
     "date": "1956-12-04",
     "place": "طنطا - محافظة الغربية",
     "place_english": "Tanta, Gharbia Governorate",
-    "verified": true,
-    "confidence": "HIGH",
+    "verified": false,
+    "confidence": "FAMILY_ATTESTED",
     "sources": [
       {
         "type": "family_archive",
-        "description": "أرشيف عائلي - وثائق شخصية",
-        "verified": true
+        "description": "إفادة العائلة — وثائق شخصية بحوزة العائلة لم تُراجع بعد",
+        "verified": false
       }
-    ]
+    ],
+    "verification_note": "إفادة عائلية — الوثيقة الرسمية قيد المراجعة ولم تُعرض على الأرشيف بعد"
   },
   "education": {
     "secondary": {
       "year": 1975,
       "details": "إكمال التعليم الثانوي",
-      "verified": true,
-      "confidence": "MEDIUM"
+      "verified": false,
+      "confidence": "LOW",
+      "basis": "family_testimony_pending_document",
+      "note": "سنة إتمام الثانوية وفق إفادة عائلية (1975) ولم يُعثر بعد على مستند رسمي؛ تُعرض كقيد التوثيق."
     },
     "bachelor": {
       "degree": "بكالوريوس التجارة",

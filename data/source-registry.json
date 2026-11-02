@@ -280,17 +280,7 @@
       "reliability": "MEDIUM",
       "status": "published",
       "date": "2015",
-      "note": "Source record used to resolve the historical timeline citation; article discusses restoration progress after the 2013 attacks."
-    },
-    {
-      "id": "copts-today-2014-compat",
-      "group": "published",
-      "type": "source_compatibility_alias",
-      "title": "Compatibility record for historical restoration citation",
-      "url": "https://www.coptstoday.com/Copts-News/Detail.php?Id=138117",
-      "reliability": "MEDIUM",
-      "status": "compatibility_alias",
-      "date": "2015"
+      "note": "تغطية مصورة لأعمال ترميم وإعمار الكنائس التي تضررت في أحداث 2013."
     },
     {
       "id": "coptic-solidarity-2013-deir-mawas",
@@ -578,17 +568,6 @@
       "status": "secondary"
     },
     {
-      "id": "sohag-albalad-2026",
-      "group": "published",
-      "type": "source_compatibility_alias",
-      "title": "Compatibility record for 35th-anniversary article",
-      "url": "https://www.elbalad.news/6928700",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "compatibility_alias",
-      "date": "2026-04-08",
-      "note": "Legacy timeline ID retained as an alias to the verified El Balad article; it is not a separate publication."
-    },
-    {
       "id": "youm7-2010-wissa-cathedral",
       "group": "published",
       "type": "news_article",
@@ -598,7 +577,7 @@
       "status": "published",
       "date": "2010-07-23",
       "related_person": "القمص ويصا صبحي",
-      "note": "Contemporaneous Youm7 record added to strengthen the source trail for the 2010 Camelia/Shahatah media-spokesperson chronology."
+      "note": "سجل معاصر من اليوم السابع يدعم تسلسل الدور الإعلامي والتمثيلي الموثق في 2010."
     },
     {
       "id": "st-takla-wissa-patriarchate-representatives",
