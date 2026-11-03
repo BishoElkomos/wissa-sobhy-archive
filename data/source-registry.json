@@ -50,65 +50,6 @@
       "date": "2026-04-08"
     },
     {
-      "id": "copts-united",
-      "group": "published",
-      "type": "news_portal",
-      "title": "الأقباط متحدون — سجل عام",
-      "reliability": "PENDING",
-      "status": "needs_specific_citation"
-    },
-    {
-      "id": "copts-united-2010",
-      "group": "published",
-      "type": "news_article",
-      "title": "مظاهرات الأقباط بقيادة رجال الدين للمطالبة بعودة زوجة الكاهن المختفية",
-      "url": "https://www.copts-united.com/PrintPage.php?A=20644",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published"
-    },
-    {
-      "id": "copts-united-2007",
-      "group": "published",
-      "type": "news_portal",
-      "title": "سجل صحفي لأحداث النزاع العقاري بديرمواس عام 2007",
-      "reliability": "PENDING",
-      "status": "needs_verification"
-    },
-    {
-      "id": "voice-of-copts",
-      "group": "published",
-      "type": "news_portal",
-      "title": "Voice of Copts — سجل عام",
-      "reliability": "PENDING",
-      "status": "needs_specific_citation"
-    },
-    {
-      "id": "voice-of-copts-2007",
-      "group": "published",
-      "type": "news_portal",
-      "title": "سجل صحفي مساعد لأحداث النزاع العقاري بديرمواس عام 2007",
-      "reliability": "PENDING",
-      "status": "needs_verification"
-    },
-    {
-      "id": "wataninet-2013",
-      "group": "published",
-      "type": "news_article",
-      "title": "مركز ديرمواس بمحافظة المنيا",
-      "url": "https://www.wataninet.com/2013/09/مركز-ديرمواس-بمحافظة-المنيا/",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published"
-    },
-    {
-      "id": "wataninet-2013-delga",
-      "group": "published",
-      "type": "news_article",
-      "title": "قرية دلجا بمحافظة المنيا",
-      "url": "https://www.wataninet.com/2013/09/قرية-دلجا-بمحافظة-المنيا/",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published"
-    },
-    {
       "id": "wataninet-2025",
       "group": "published",
       "type": "news_article",
@@ -150,31 +91,6 @@
       "date": "2025-08-02"
     },
     {
-      "id": "mobtada-2013",
-      "group": "published",
-      "type": "news_portal",
-      "title": "تغطية أحداث دلجا",
-      "url": "https://www.mobtada.com/cases/102560/",
-      "reliability": "MEDIUM",
-      "status": "published"
-    },
-    {
-      "id": "youm7",
-      "group": "published",
-      "type": "news_portal",
-      "title": "اليوم السابع — سجل عام",
-      "reliability": "PENDING",
-      "status": "needs_specific_citation"
-    },
-    {
-      "id": "youm7-2013",
-      "group": "published",
-      "type": "news_portal",
-      "title": "تغطية أحداث ديرمواس ودلجا",
-      "reliability": "MEDIUM",
-      "status": "published_record"
-    },
-    {
       "id": "youm7-2025",
       "group": "published",
       "type": "news_article",
@@ -195,18 +111,6 @@
       "date": "2026-06-13"
     },
     {
-      "id": "rawi-publishing",
-      "group": "published",
-      "type": "published_article",
-      "title": "Burning History — Egypt's Coptic Heritage in Peril",
-      "url": "https://rawi-publishing.com/articles/burning-history?lang=en",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published",
-      "date": "2014",
-      "language": "en",
-      "outlet": "RAWI — A Journal of Coptic Studies"
-    },
-    {
       "id": "dostor-2026",
       "group": "published",
       "type": "news_article",
@@ -225,118 +129,6 @@
       "reliability": "MEDIUM_TO_HIGH",
       "status": "published",
       "date": "2026-06-13"
-    },
-    {
-      "id": "international_media",
-      "group": "published",
-      "type": "news_collection",
-      "title": "تغطية إعلامية دولية لأحداث 2010 و2013",
-      "reliability": "PENDING",
-      "status": "needs_specific_citations"
-    },
-    {
-      "id": "almasryalyoum",
-      "group": "published",
-      "type": "news_portal",
-      "title": "سجل تغطية لأحداث 2013",
-      "reliability": "PENDING",
-      "status": "needs_specific_citation"
-    },
-    {
-      "id": "almasryalyoum-2007-land-dispute",
-      "group": "published",
-      "type": "news_article",
-      "title": "إنهاء النزاع بين عائلة مسيحية وأسقف ديرمواس — المصري اليوم",
-      "url": "https://www.almasryalyoum.com/news/details/2138588",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2007-04-29"
-    },
-    {
-      "id": "almasryalyoum-2010-kamilia",
-      "group": "published",
-      "type": "news_article",
-      "title": "بعد انفراد المصري اليوم بخبر السماح بظهورها: كاميليا شحاتة تنفي إسلامها في مقطع فيديو منسوب لها",
-      "url": "https://www.almasryalyoum.com/news/details/14080",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2010"
-    },
-    {
-      "id": "coptichistory-2007",
-      "group": "published",
-      "type": "historical_archive",
-      "title": "الشرطة والقانون ودير مواس — موسوعة تاريخ أقباط مصر",
-      "url": "https://www.coptichistory.org/new_page_2405.htm",
-      "reliability": "MEDIUM",
-      "status": "published_secondary",
-      "date": "2007"
-    },
-    {
-      "id": "copts-today-2014",
-      "group": "published",
-      "type": "news_article",
-      "title": "صور.. كشف حساب إعمار الكنائس التي أضيرت عقب فض اعتصام رابعة — أقباط اليوم",
-      "url": "https://www.coptstoday.com/Copts-News/Detail.php?Id=138117",
-      "reliability": "MEDIUM",
-      "status": "published",
-      "date": "2015",
-      "note": "تغطية مصورة لأعمال ترميم وإعمار الكنائس التي تضررت في أحداث 2013."
-    },
-    {
-      "id": "coptic-solidarity-2013-deir-mawas",
-      "group": "published",
-      "type": "international_news_report",
-      "title": "The Aftermath of Islamists’ Attacks on Deir Mawas Copts",
-      "url": "https://www.copticsolidarity.org/2013/09/06/the-aftermath-of-islamists-attacks-on-deir-mawas-copts/",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published",
-      "date": "2013-09-06",
-      "language": "en",
-      "country": "US",
-      "outlet": "Coptic Solidarity",
-      "note": "Reports that the authors met Father Wissa Sobhy and that he accompanied them through Deir Mawas to document losses after the August 2013 attacks."
-    },
-    {
-      "id": "coptic-solidarity-2014-minya",
-      "group": "published",
-      "type": "international_news_report",
-      "title": "Egypt’s Minya Province Flashpoint for ‘Muslim-Christian’ Violence",
-      "url": "https://www.copticsolidarity.org/2014/04/28/egypt-s-minya-province-flashpoint-for-muslim-christian-violence/",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published",
-      "date": "2014-04-28",
-      "language": "en",
-      "country": "US",
-      "outlet": "Coptic Solidarity"
-    },
-    {
-      "id": "egypt-independent-2010-kamilia",
-      "group": "published",
-      "type": "international_news_article",
-      "title": "Priest’s wife denies converting to Islam in questionable video clip",
-      "url": "https://www.egyptindependent.com/priests-wife-denies-converting-islam-questionable-video-clip/",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published",
-      "date": "2010-09-09",
-      "language": "en",
-      "country": "Egypt",
-      "outlet": "Egypt Independent",
-      "note": "English-language report quoting Wissa Sobhy regarding the authenticity of a video attributed to Kamilia Shehata."
-    },
-    {
-      "id": "akref-2010-wissa-sobhy-kamilia",
-      "group": "published",
-      "type": "international_news_article",
-      "title": "Ägypten: Die entführte Gattin eines koptischen Priesters ist zurück",
-      "url": "https://akref.ead.de/akref-nachrichten/2010/juli/26072010-aegyptendie-entfuehrte-gattin-eines-koptischen-priesters-ist-zurueck/",
-      "reliability": "MEDIUM",
-      "status": "published",
-      "date": "2010-07-26",
-      "language": "de",
-      "country": "Germany",
-      "outlet": "AKREF / Evangelische Allianz in Deutschland",
-      "note": "Names Father Wissa Sobhy; the vicar description is historical to 2010 and is not current-role evidence."
     },
     {
       "id": "coptic-church-diocese-history",
@@ -445,16 +237,6 @@
       "reliability": "MEDIUM",
       "status": "metadata_only",
       "date": "2012"
-    },
-    {
-      "id": "mediafire-lazarus-saturday-2013",
-      "group": "media",
-      "type": "video_archive",
-      "title": "قداس سبت لعازر 2013 - القمص ويصا صبحي",
-      "url": "https://www.mediafire.com/file/17ul000u457x2ab/%25D9%2582%25D8%25%AF%25D8%25%A7%25D8%25B3_%25D8%25%B3%25D8%25%A8%25D8%25%AA_%25D9%2584%25D9%2584%25D8%25B9%25D8%25A7%25D8%25B2%25D8%25B1_2013_-_%25D9%2584%25D9%2582%25D9%2585%25D8%25B5_%25D9%2588%25D9%258A%25D8%25B5%25D8%25%A8%25D8%25%AD%25D9%258A.rar/file",
-      "reliability": "MEDIUM",
-      "status": "metadata_only",
-      "date": "2013"
     },
     {
       "id": "mediafire-qisma-ibn-senowy",
@@ -588,18 +370,6 @@
       "status": "official_published"
     },
     {
-      "id": "youm7-2010-wissa-cathedral",
-      "group": "published",
-      "type": "news_article",
-      "title": "اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
-      "url": "https://www.youm7.com/story/2010/7/23/%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%82%D8%A8%D8%A7%D8%B7-%D9%88%D8%A7%D9%84%D9%83%D9%87%D9%86%D8%A9-%D8%A8%D9%83%D8%A7%D8%AA%D8%AF%D8%B1%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%D8%A9-%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%89/257407",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2010-07-23",
-      "related_person": "القمص ويصا صبحي",
-      "note": "سجل معاصر من اليوم السابع يدعم تسلسل الدور الإعلامي والتمثيلي الموثق في 2010."
-    },
-    {
       "id": "st-takla-wissa-patriarchate-representatives",
       "group": "reference",
       "type": "directory",
@@ -636,138 +406,6 @@
       "note": "Likely a copy/syndication of the El Balad jubilee report; retain for archival resilience but do not count as independent corroboration."
     },
     {
-      "id": "wataninet-2013-deir-mawas-wissa",
-      "group": "published",
-      "type": "news_article",
-      "title": "مركز ديرمواس بمحافظة المنيا — وطني",
-      "url": "https://www.wataninet.com/2013/09/%D9%85%D8%B1%D9%83%D8%B2-%D8%AF%D9%8A%D8%B1%D9%85%D9%88%D8%A7%D8%B3-%D8%A8%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7/",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2013-09",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Reports a field tour with Father Wissa covering St Lazarus church, cemetery, bishopric and service building and documenting damage."
-    },
-    {
-      "id": "coptic-solidarity-2013-wissa-deir-mawas",
-      "group": "international",
-      "type": "news_article",
-      "title": "The Aftermath of Islamists’ Attacks on Deir Mawas Copts",
-      "url": "https://www.copticsolidarity.org/2013/09/06/the-aftermath-of-islamists-attacks-on-deir-mawas-copts/",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2013-09-06",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "English-language source naming Father Wissa Sobhi and his documentation tour."
-    },
-    {
-      "id": "rawi-burning-history-wissa",
-      "group": "international",
-      "type": "feature_article",
-      "title": "Burning History",
-      "url": "https://rawi-publishing.com/articles/burning-history?lang=en",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "unknown",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "English source discussing destroyed churches and citing Father Wissa Sobhi of the Deir Mawas bishopric."
-    },
-    {
-      "id": "almasryalyoum-2010-kamilia-wissa",
-      "group": "published",
-      "type": "news_article",
-      "title": "كاميليا شحاتة تنفي إسلامها في مقطع فيديو",
-      "url": "https://www.almasryalyoum.com/news/details/14080",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2010",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Names Wissa and records his statement that he had heard of the recording but had not personally seen it."
-    },
-    {
-      "id": "egypt-independent-2010-kamilia-wissa",
-      "group": "international",
-      "type": "news_article",
-      "title": "Priest's wife denies converting to Islam in questionable video clip",
-      "url": "https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2010",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Independent English-language contemporaneous coverage naming Father Wissa Sobhi."
-    },
-    {
-      "id": "coptichistory-2010-kamilia",
-      "group": "archive",
-      "type": "archival_compilation",
-      "title": "خطف كاميليا زوجة كاهن",
-      "url": "https://www.coptichistory.org/untitled_1227.htm",
-      "reliability": "MEDIUM",
-      "status": "published",
-      "date": "2010",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Archival compilation containing multiple reports and Wissa statements; secondary compilation rather than an original report."
-    },
-    {
-      "id": "copts-united-2010-wissa-kamilia",
-      "group": "published",
-      "type": "news_article",
-      "title": "مظاهرات الأقباط بقيادة رجال الدين",
-      "url": "https://www.copts-united.com/PrintPage.php?A=20644",
-      "reliability": "MEDIUM_TO_HIGH",
-      "status": "published",
-      "date": "2010",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Contemporaneous coverage naming Wissa Sobhi as bishopric vicar and quoting him."
-    },
-    {
-      "id": "almasryalyoum-2007-wissa-land",
-      "group": "published",
-      "type": "news_article",
-      "title": "إنهاء النزاع بين عائلة مسيحية وأسقف ديرمواس",
-      "url": "https://www.almasryalyoum.com/news/details/2138588",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2007-04-29",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Names Wissa among bishopric priests present during implementation of a possession decision. Does not by itself establish that he led the dispute."
-    },
-    {
-      "id": "coptichistory-2007-wissa-land",
-      "group": "archive",
-      "type": "archival_article",
-      "title": "الشرطة والقانون ودير مواس",
-      "url": "https://www.coptichistory.org/new_page_2405.htm",
-      "reliability": "MEDIUM",
-      "status": "published",
-      "date": "2007-04",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Archival account naming Wissa among Deir Mawas priests present in the incident."
-    },
-    {
-      "id": "youm7-2010-minya-religious-committee",
-      "group": "published",
-      "type": "news_article",
-      "title": "اللجنة الدينية بمجلس الشعب تزور المنيا",
-      "url": "https://www.youm7.com/story/2010/3/26/%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B4%D8%B9%D8%A8-%D8%AA%D8%AF%D9%8A%D9%86-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89/205949",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2010-03-26",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Names Wissa as bishopric vicar representing the diocese in an official parliamentary-religious committee visit."
-    },
-    {
-      "id": "wataninet-2014-wissa-security",
-      "group": "published",
-      "type": "news_article",
-      "title": "خطف الأقباط أصبح أمرًا متكررًا",
-      "url": "https://www.wataninet.com/2014/04/%D8%A7%D9%84%D8%A7%D9%86%D8%A8%D8%A7-%D9%85%D9%83%D8%A7%D8%B1%D9%8A%D9%88%D8%B3-%D8%AE%D8%B7%D9%81-%D8%A7%D9%84%D8%A7%D9%82%D8%A8%D8%A7%D8%B7-%D8%A3%D8%B5%D8%A8%D8%AD-%D8%A7%D9%85%D8%B1-%D9%85%D8%AA-%D9%83%D8%B1%D8%B1",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2014-04",
-      "related_person": "القمص ويصا صبحي تادرس",
-      "note": "Contemporaneous source carrying a direct statement by Wissa about security and kidnapping of Christians in Upper Egypt."
-    },
-    {
       "id": "coptichistory-2014-st-george-deir-mawas",
       "group": "archive",
       "type": "church_history",
@@ -778,54 +416,6 @@
       "date": "2014",
       "related_person": "القمص ويصا صبحي تادرس",
       "note": "Records Wissa among priests serving at the cathedral and includes church-history material."
-    },
-    {
-      "id": "usdos-2013-egypt-religious-freedom-refworld",
-      "group": "international",
-      "type": "government_report",
-      "title": "2013 Report on International Religious Freedom — Egypt",
-      "url": "https://www.refworld.org/reference/annualreport/usdos/2014/100842",
-      "reliability": "HIGHEST",
-      "status": "published",
-      "date": "2014",
-      "related_person": "إيبارشية ديرمواس ودلجا",
-      "note": "U.S. Department of State report preserved by Refworld; valuable independent institutional context for Delga and post-August 2013 security conditions."
-    },
-    {
-      "id": "coptic-solidarity-2013-attacked-establishments",
-      "group": "international",
-      "type": "incident_list",
-      "title": "List of Christian Establishments Attacked After the Sit-in Dispersal",
-      "url": "https://www.copticsolidarity.org/2013/08/16/list-of-christian-establishments-attacked-after-the-sit-in-dispersal/",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2013-08-16",
-      "related_person": "إيبارشية ديرمواس ودلجا",
-      "note": "English-language incident list identifying Virgin Mary and Father Abram in Delga among attacked Christian establishments."
-    },
-    {
-      "id": "coptic-solidarity-2013-torched-list",
-      "group": "international",
-      "type": "incident_list",
-      "title": "List of Christian Churches, Schools, Institutions Torched",
-      "url": "https://www.copticsolidarity.org/2013/08/21/list-of-christian-churches-schools-institutions-torched-by-the-muslim-brotherhood-in-three-days-aug-14-16/",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2013-08-21",
-      "related_person": "إيبارشية ديرمواس ودلجا",
-      "note": "English-language list for the August 14–16, 2013 attacks; use as event corroboration, not as a source for Wissa's personal role."
-    },
-    {
-      "id": "maronite-heritage-2013-08-14",
-      "group": "international",
-      "type": "heritage_archive",
-      "title": "Aug 14, 2013 — Christian heritage archive",
-      "url": "https://www.maronite-heritage.com/Aug14-2013.php",
-      "reliability": "MEDIUM",
-      "status": "published",
-      "date": "2013-08-14",
-      "related_person": "إيبارشية ديرمواس ودلجا",
-      "note": "Independent heritage archive for the August 2013 attacks."
     },
     {
       "id": "youm7-2024-diocese-priests-council",
@@ -1018,18 +608,6 @@
       "date": "unknown",
       "related_person": "الأنبا أغابيوس",
       "note": "Direct photo page; archive reference only until reproduction rights are clarified."
-    },
-    {
-      "id": "youm7-2013-badrman-aghabius",
-      "group": "published",
-      "type": "news_article",
-      "title": "أسقف دير مواس — لا نرفض التصالح والنيابة تستمع إلى اليوم",
-      "url": "https://gate.ahram.org.eg/daily/News/1021/60/245605/%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/%D8%A3%D8%B3%D9%82%D9%81-%D8%AF%D9%8A%D8%B1-%D9%85%D9%88%D8%A7%D8%B3%E2%80%8F%E2%80%8F-%D9%84%D8%A7-%D9%86%D8%B1%D9%81%D8%B6-%D8%A7%D9%84%D8%AA%D8%B5%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D8%A9-%D8%AA%D8%B3%D8%AA%D9%85%D8%B9-%D8%A7%D9%84%D9%8A%D9%88%D9%85.aspx",
-      "reliability": "HIGH",
-      "status": "published",
-      "date": "2013",
-      "related_person": "الأنبا أغابيوس",
-      "note": "Corrected URL for the Ahram archive record surfaced in the research notes."
     },
     {
       "id": "elwatan-2017-agabius-highschool",
@@ -1287,6 +865,210 @@
       "date": "2025-07-10",
       "related_person": "القمص ويصا صبحي تادرس",
       "note": "تمت مراجعة لقطة شاشة أصلية قدمها صاحب الأرشيف للمنشور. يظهر في اللقطة تاريخ النشر Jul 10, 2025، واسم الصفحة «مطرانية ديرمواس ودلجا للأقباط الأرثوذكس». نص المنشور تهنئة للمقدم/ مصطفى عثمان، مأمور مركز شرطة ديرمواس، بمناسبة سيامة وتجليس الأنبا بقطر أسقفًا على إيبارشية ديرمواس ودلجا. كما يظهر القمص ويصا في الصورة الجماعية وفق تعريف صاحب الأرشيف. هذا يثبت وجوده الظاهر في الصورة ضمن المنشور، لكنه يظل مصدرًا اجتماعيًا مقدمًا من صاحب الأرشيف ولا يُستخدم وحده لإثبات هوية الأشخاص الآخرين أو تفاصيل إضافية غير ظاهرة في اللقطة."
+    },
+    {
+      "id": "youm7-2010-wissa-cathedral",
+      "group": "published",
+      "type": "news_article",
+      "title": "اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
+      "url": "https://www.youm7.com/story/2010/7/23/%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%82%D8%A8%D8%A7%D8%B7-%D9%88%D8%A7%D9%84%D9%83%D9%87%D9%86%D8%A9-%D8%A8%D9%83%D8%A7%D8%AA%D8%AF%D8%B1%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%D8%A9-%D9%84%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%89/257407",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2010-07-23",
+      "related_person": "القمص ويصا صبحي",
+      "note": "سجل معاصر من اليوم السابع يدعم تسلسل الدور الإعلامي والتمثيلي الموثق في 2010."
+    },
+    {
+      "id": "wataninet-2013-deir-mawas-wissa",
+      "group": "published",
+      "type": "news_article",
+      "title": "مركز ديرمواس بمحافظة المنيا — وطني",
+      "url": "https://www.wataninet.com/2013/09/%D9%85%D8%B1%D9%83%D8%B2-%D8%AF%D9%8A%D8%B1%D9%85%D9%88%D8%A7%D8%B3-%D8%A8%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%8A%D8%A7/",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2013-09",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Reports a field tour with Father Wissa covering St Lazarus church, cemetery, bishopric and service building and documenting damage."
+    },
+    {
+      "id": "coptic-solidarity-2013-wissa-deir-mawas",
+      "group": "international",
+      "type": "news_article",
+      "title": "The Aftermath of Islamists’ Attacks on Deir Mawas Copts",
+      "url": "https://www.copticsolidarity.org/2013/09/06/the-aftermath-of-islamists-attacks-on-deir-mawas-copts/",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2013-09-06",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "English-language source naming Father Wissa Sobhi and his documentation tour."
+    },
+    {
+      "id": "rawi-burning-history-wissa",
+      "group": "international",
+      "type": "feature_article",
+      "title": "Burning History",
+      "url": "https://rawi-publishing.com/articles/burning-history?lang=en",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "unknown",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "English source discussing destroyed churches and citing Father Wissa Sobhi of the Deir Mawas bishopric."
+    },
+    {
+      "id": "almasryalyoum-2010-kamilia-wissa",
+      "group": "published",
+      "type": "news_article",
+      "title": "كاميليا شحاتة تنفي إسلامها في مقطع فيديو",
+      "url": "https://www.almasryalyoum.com/news/details/14080",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2010",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Names Wissa and records his statement that he had heard of the recording but had not personally seen it."
+    },
+    {
+      "id": "egypt-independent-2010-kamilia-wissa",
+      "group": "international",
+      "type": "news_article",
+      "title": "Priest's wife denies converting to Islam in questionable video clip",
+      "url": "https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2010",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Independent English-language contemporaneous coverage naming Father Wissa Sobhi."
+    },
+    {
+      "id": "coptichistory-2010-kamilia",
+      "group": "archive",
+      "type": "archival_compilation",
+      "title": "خطف كاميليا زوجة كاهن",
+      "url": "https://www.coptichistory.org/untitled_1227.htm",
+      "reliability": "MEDIUM",
+      "status": "published",
+      "date": "2010",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Archival compilation containing multiple reports and Wissa statements; secondary compilation rather than an original report."
+    },
+    {
+      "id": "copts-united-2010-wissa-kamilia",
+      "group": "published",
+      "type": "news_article",
+      "title": "مظاهرات الأقباط بقيادة رجال الدين",
+      "url": "https://www.copts-united.com/PrintPage.php?A=20644",
+      "reliability": "MEDIUM_TO_HIGH",
+      "status": "published",
+      "date": "2010",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Contemporaneous coverage naming Wissa Sobhi as bishopric vicar and quoting him."
+    },
+    {
+      "id": "almasryalyoum-2007-wissa-land",
+      "group": "published",
+      "type": "news_article",
+      "title": "إنهاء النزاع بين عائلة مسيحية وأسقف ديرمواس",
+      "url": "https://www.almasryalyoum.com/news/details/2138588",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2007-04-29",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Names Wissa among bishopric priests present during implementation of a possession decision. Does not by itself establish that he led the dispute."
+    },
+    {
+      "id": "coptichistory-2007-wissa-land",
+      "group": "archive",
+      "type": "archival_article",
+      "title": "الشرطة والقانون ودير مواس",
+      "url": "https://www.coptichistory.org/new_page_2405.htm",
+      "reliability": "MEDIUM",
+      "status": "published",
+      "date": "2007-04",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Archival account naming Wissa among Deir Mawas priests present in the incident."
+    },
+    {
+      "id": "youm7-2010-minya-religious-committee",
+      "group": "published",
+      "type": "news_article",
+      "title": "اللجنة الدينية بمجلس الشعب تزور المنيا",
+      "url": "https://www.youm7.com/story/2010/3/26/%D8%A7%D9%84%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B4%D8%B9%D8%A8-%D8%AA%D8%AF%D9%8A%D9%86-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89/205949",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2010-03-26",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Names Wissa as bishopric vicar representing the diocese in an official parliamentary-religious committee visit."
+    },
+    {
+      "id": "wataninet-2014-wissa-security",
+      "group": "published",
+      "type": "news_article",
+      "title": "خطف الأقباط أصبح أمرًا متكررًا",
+      "url": "https://www.wataninet.com/2014/04/%D8%A7%D9%84%D8%A7%D9%86%D8%A8%D8%A7-%D9%85%D9%83%D8%A7%D8%B1%D9%8A%D9%88%D8%B3-%D8%AE%D8%B7%D9%81-%D8%A7%D9%84%D8%A7%D9%82%D8%A8%D8%A7%D8%B7-%D8%A3%D8%B5%D8%A8%D8%AD-%D8%A7%D9%85%D8%B1-%D9%85%D8%AA-%D9%83%D8%B1%D8%B1",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2014-04",
+      "related_person": "القمص ويصا صبحي تادرس",
+      "note": "Contemporaneous source carrying a direct statement by Wissa about security and kidnapping of Christians in Upper Egypt."
+    },
+    {
+      "id": "usdos-2013-egypt-religious-freedom-refworld",
+      "group": "international",
+      "type": "government_report",
+      "title": "2013 Report on International Religious Freedom — Egypt",
+      "url": "https://www.refworld.org/reference/annualreport/usdos/2014/100842",
+      "reliability": "HIGHEST",
+      "status": "published",
+      "date": "2014",
+      "related_person": "إيبارشية ديرمواس ودلجا",
+      "note": "U.S. Department of State report preserved by Refworld; valuable independent institutional context for Delga and post-August 2013 security conditions."
+    },
+    {
+      "id": "coptic-solidarity-2013-attacked-establishments",
+      "group": "international",
+      "type": "incident_list",
+      "title": "List of Christian Establishments Attacked After the Sit-in Dispersal",
+      "url": "https://www.copticsolidarity.org/2013/08/16/list-of-christian-establishments-attacked-after-the-sit-in-dispersal/",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2013-08-16",
+      "related_person": "إيبارشية ديرمواس ودلجا",
+      "note": "English-language incident list identifying Virgin Mary and Father Abram in Delga among attacked Christian establishments."
+    },
+    {
+      "id": "coptic-solidarity-2013-torched-list",
+      "group": "international",
+      "type": "incident_list",
+      "title": "List of Christian Churches, Schools, Institutions Torched",
+      "url": "https://www.copticsolidarity.org/2013/08/21/list-of-christian-churches-schools-institutions-torched-by-the-muslim-brotherhood-in-three-days-aug-14-16/",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2013-08-21",
+      "related_person": "إيبارشية ديرمواس ودلجا",
+      "note": "English-language list for the August 14–16, 2013 attacks; use as event corroboration, not as a source for Wissa's personal role."
+    },
+    {
+      "id": "maronite-heritage-2013-08-14",
+      "group": "international",
+      "type": "heritage_archive",
+      "title": "Aug 14, 2013 — Christian heritage archive",
+      "url": "https://www.maronite-heritage.com/Aug14-2013.php",
+      "reliability": "MEDIUM",
+      "status": "published",
+      "date": "2013-08-14",
+      "related_person": "إيبارشية ديرمواس ودلجا",
+      "note": "Independent heritage archive for the August 2013 attacks."
+    },
+    {
+      "id": "youm7-2013-badrman-aghabius",
+      "group": "published",
+      "type": "news_article",
+      "title": "أسقف دير مواس — لا نرفض التصالح والنيابة تستمع إلى اليوم",
+      "url": "https://gate.ahram.org.eg/daily/News/1021/60/245605/%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A/%D8%A3%D8%B3%D9%82%D9%81-%D8%AF%D9%8A%D8%B1-%D9%85%D9%88%D8%A7%D8%B3%E2%80%8F%E2%80%8F-%D9%84%D8%A7-%D9%86%D8%B1%D9%81%D8%B6-%D8%A7%D9%84%D8%AA%D8%B5%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D8%A9-%D8%AA%D8%B3%D8%AA%D9%85%D8%B9-%D8%A7%D9%84%D9%8A%D9%88%D9%85.aspx",
+      "reliability": "HIGH",
+      "status": "published",
+      "date": "2013",
+      "related_person": "الأنبا أغابيوس",
+      "note": "Corrected URL for the Ahram archive record surfaced in the research notes."
     },
     {
       "id": "almasryalyoum-2007-land-dispute-direct",

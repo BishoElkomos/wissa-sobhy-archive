@@ -237,30 +237,6 @@
           "date": "2026-04-08"
         }
       ]
-    },
-    "media_spokesperson": {
-      "title": "المتحدث الإعلامي للمطرانية",
-      "title_english": "Media Spokesperson",
-      "start_date": "2007",
-      "details": "ظهور عام كممثل رسمي للإيبارشية في الأزمات والأحداث",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        {
-          "type": "published",
-          "source_id": "youm7-2010-wissa-cathedral",
-          "name": "اليوم السابع — اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
-          "url": "https://www.youm7.com/story/2010/7/23/اعتصام-عشرات-الأقباط-والكهنة-بكاتدرائية-العباسية-لليوم-الثانى/257407",
-          "date": "2010-07-23"
-        },
-        {
-          "type": "published",
-          "source_id": "egypt-independent-2010-kamilia",
-          "name": "Egypt Independent — Priest's wife denies converting to Islam",
-          "url": "https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/",
-          "date": "2010-09-09"
-        }
-      ]
     }
   },
   "key_relationships": {
@@ -277,18 +253,6 @@
         "crisis_response",
         "elevation_to_metropolitan_2022",
         "death_2025"
-      ],
-      "verified": true,
-      "confidence": "HIGH"
-    },
-    "journalist_collaborator": {
-      "name": "نادر شكري",
-      "title": "صحفي",
-      "relationship": "media_coverage_partner",
-      "period": "2007-2026",
-      "documentation_together": [
-        "2013_deir_mawas_damage",
-        "2025_anba_agabius_death"
       ],
       "verified": true,
       "confidence": "HIGH"
@@ -311,18 +275,11 @@
       "التواصل الحكومي"
     ],
     "testimonies": [
-      "2010: تصريحات في أزمة كاميليا شحاتة",
-      "2013: توثيق أضرار الهجمات الطائفية",
-      "2015: تصريحات عن الأمن والحماية",
       "2025: حضور جنازة الأنبا أغابيوس"
     ]
   },
   "major_events_participated": [
-    "2007: land_dispute_incident",
-    "2010: kamilia_shehata_crisis",
-    "2013: deir_mawas_delga_attacks",
     "2014: church_reconstruction",
-    "2015: security_statements",
     "2022: anba_agabius_elevation",
     "2025: anba_agabius_death",
     "2025: anba_bokter_elevation",
@@ -348,13 +305,6 @@
         "title": "محافظ المنيا يهنئ الأقباط",
         "source": "دستور",
         "date": "2026-01-07"
-      },
-      {
-        "type": "academic",
-        "title": "Burning History",
-        "author": "Rawi Publishing",
-        "url": "https://rawi-publishing.com/articles/burning-history",
-        "description": "تصريح عن الكنائس القديمة والحرق 2013"
       }
     ]
   },
@@ -373,11 +323,8 @@
     "1988": "الانتقال إلى ديرمواس",
     "1991": "السيامة الكهنوتية",
     "1997": "رفع درجة القمصية",
-    "2007": "برز دوره الإعلامي",
-    "2010": "تصريحات في أزمة كاميليا",
-    "2013": "توثيق أضرار الهجمات",
     "2025": "جنازة الأنبا أغابيوس",
-    "2026": "اليوبيل 35 للسيامة"
+    "2026": "ذكرى مرور 35 عامًا على السيامة"
   },
   "metadata": {
     "last_updated": "2026-09-03",
@@ -402,73 +349,9 @@
       "st-takla-wissa-patriarchate-representatives",
       "st-takla-st-george-deir-mawas",
       "elbalad-2026-wissa-jubilee",
-      "wataninet-2013-deir-mawas-wissa",
-      "coptic-solidarity-2013-wissa-deir-mawas",
-      "rawi-burning-history-wissa",
-      "youm7-2010-wissa-cathedral",
-      "almasryalyoum-2010-kamilia-wissa",
-      "egypt-independent-2010-kamilia-wissa",
-      "copts-united-2010-wissa-kamilia",
-      "almasryalyoum-2007-wissa-land",
-      "coptichistory-2007-wissa-land",
-      "youm7-2010-minya-religious-committee",
-      "wataninet-2014-wissa-security",
       "coptichistory-2014-st-george-deir-mawas"
     ],
     "claims": [
-      {
-        "year": 2007,
-        "claim": "ظهر اسم القمص ويصا صبحي ضمن كهنة المطرانية الموجودين أثناء تنفيذ قرار تمكين متعلق بنزاع عقاري في ديرمواس.",
-        "status": "cross_supported",
-        "source_ids": [
-          "almasryalyoum-2007-wissa-land",
-          "coptichistory-2007-wissa-land"
-        ],
-        "wording_rule": "لا يُوصف بأنه قائد النزاع أو صاحبه إلا بدليل مباشر."
-      },
-      {
-        "year": 2010,
-        "claim": "كان القمص ويصا صبحي يُعرّف في التغطية الصحفية المعاصرة بوصفه وكيل مطرانية ديرمواس، وظهر ممثلًا للمطرانية في زيارة لجنة دينية برلمانية للمنيا.",
-        "status": "cross_supported",
-        "source_ids": [
-          "youm7-2010-wissa-cathedral",
-          "youm7-2010-minya-religious-committee",
-          "copts-united-2010-wissa-kamilia"
-        ],
-        "wording_rule": "يُستخدم كدليل على الدور التمثيلي في تلك الفترة، لا كدليل على استمرار المنصب بعد 2025."
-      },
-      {
-        "year": 2010,
-        "claim": "ورد اسم القمص ويصا صبحي وتصريحاته في تغطية قضية كاميليا شحاتة، كما ظهر في مصدر إنجليزي مستقل.",
-        "status": "cross_supported",
-        "source_ids": [
-          "youm7-2010-wissa-cathedral",
-          "almasryalyoum-2010-kamilia-wissa",
-          "egypt-independent-2010-kamilia-wissa",
-          "copts-united-2010-wissa-kamilia"
-        ],
-        "wording_rule": "يُذكر بوصفه متحدثًا/ممثلًا في التغطية المعاصرة دون إعادة صياغة تصريحاته كحقائق مستقلة."
-      },
-      {
-        "year": 2013,
-        "claim": "رافق القمص ويصا صبحي صحفيين في جولة ميدانية داخل ديرمواس لتوثيق أضرار لحقت بكنائس ومبانٍ وممتلكات كنسية، وورد ذلك أيضًا في تغطية إنجليزية.",
-        "status": "cross_supported",
-        "source_ids": [
-          "wataninet-2013-deir-mawas-wissa",
-          "coptic-solidarity-2013-wissa-deir-mawas",
-          "rawi-burning-history-wissa"
-        ],
-        "wording_rule": "هذه من أقوى الشواهد على دوره التوثيقي المباشر في أحداث 2013."
-      },
-      {
-        "year": 2014,
-        "claim": "نقلت وطني تصريحًا مباشرًا للقمص ويصا صبحي حول الوضع الأمني وخطف الأقباط في صعيد مصر.",
-        "status": "source_recorded",
-        "source_ids": [
-          "wataninet-2014-wissa-security"
-        ],
-        "wording_rule": "يُعرض كتغطية صحفية وتصريح منسوب إليه، لا كحكم تحليلي على الوضع الأمني."
-      },
       {
         "year": 2014,
         "claim": "تسجل مادة تاريخية عن كاتدرائية مارجرجس بديرمواس اسم القمص ويصا صبحي ضمن آباء كهنة المطرانية.",
@@ -507,31 +390,6 @@
       }
     ],
     "timeline_additions": [
-      {
-        "date": "2010-03-26",
-        "title": "تمثيل المطرانية في زيارة لجنة دينية برلمانية",
-        "description": "تغطية معاصرة تسمي القمص ويصا صبحي وكيلًا للمطرانية وتذكر تمثيله لها في زيارة اللجنة الدينية بمجلس الشعب للمنيا.",
-        "source_ids": [
-          "youm7-2010-minya-religious-committee"
-        ]
-      },
-      {
-        "date": "2013-09",
-        "title": "جولة ميدانية لتوثيق أضرار أحداث 2013",
-        "description": "رافق صحفيين في جولة داخل ديرمواس شملت كنيسة القديس لعازر والمقابر ومبنى المطرانية ومبنى الخدمات، وشرح الأضرار التي لحقت بها.",
-        "source_ids": [
-          "wataninet-2013-deir-mawas-wissa",
-          "coptic-solidarity-2013-wissa-deir-mawas"
-        ]
-      },
-      {
-        "date": "2014-04",
-        "title": "تصريح صحفي حول خطف الأقباط والوضع الأمني",
-        "description": "نقلت وطني تصريحًا مباشرًا للقمص ويصا صبحي حول تكرار حوادث خطف الأقباط في صعيد مصر.",
-        "source_ids": [
-          "wataninet-2014-wissa-security"
-        ]
-      },
       {
         "date": "2026-04-08",
         "title": "الاحتفال بمرور 35 عامًا على السيامة",

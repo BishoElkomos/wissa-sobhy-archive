@@ -20,18 +20,6 @@
       "date_english": "December 4, 1956"
     },
     {
-      "year": 1975,
-      "event_type": "education",
-      "title": "إكمال التعليم الثانوي",
-      "description": "إكمال الدراسة الثانوية والاستعداد للجامعة",
-      "verified": false,
-      "confidence": "LOW",
-      "basis": "family_testimony_pending_document",
-      "note": "السنة الدقيقة وفق إفادة عائلية وتحتاج مستندًا رسميًا؛ تُعرض كقيد التوثيق.",
-      "title_english": "Completion of secondary education",
-      "description_english": "Completed secondary school and prepared for university"
-    },
-    {
       "year": 1980,
       "event_type": "education",
       "title": "بكالوريوس التجارة",
@@ -79,48 +67,11 @@
     },
     {
       "year": 1991,
-      "month": 1,
-      "day": 3,
-      "date_arabic": "3 يناير 1991",
-      "event_type": "personal",
-      "title": "الخطوبة",
-      "description": "الخطوبة قبل الزواج",
-      "verified": false,
-      "confidence": "FAMILY_ATTESTED",
-      "verification_note": "إفادة عائلية — 2 نوفمبر 2026",
-      "sources": [
-        "family_archive"
-      ],
-      "title_english": "Engagement",
-      "description_english": "The engagement, ahead of the wedding",
-      "date_english": "January 3, 1991"
-    },
-    {
-      "year": 1991,
-      "month": 2,
-      "day": 10,
-      "date_arabic": "10 فبراير 1991",
-      "event_type": "personal",
-      "title": "الزواج",
-      "description": "الزواج من كارولين مكرم",
-      "spouse": "كارولين مكرم",
-      "note": "قبل يوم واحد من السيامة الكهنوتية",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "family_archive"
-      ],
-      "title_english": "Wedding",
-      "description_english": "Marriage to Caroline Makram",
-      "date_english": "February 10, 1991"
-    },
-    {
-      "year": 1991,
       "month": 2,
       "day": 11,
       "date_arabic": "11 فبراير 1991",
       "event_type": "ordination",
-      "title": "السيامة الكهنوتية 🎯",
+      "title": "السيامة الكهنوتية",
       "description": "تمت سيامته كاهناً بيد الأنبا أغابيوس والأنبا توماس",
       "ordained_by": [
         "الأنبا أغابيوس",
@@ -242,7 +193,7 @@
       "day": 22,
       "date_arabic": "22 يونيو 1997",
       "event_type": "elevation",
-      "title": "رفع درجة القمصية 🎯",
+      "title": "رفع درجة القمصية",
       "description": "نال رتبة القمصية - ترقية من قس إلى قمص (أبو)",
       "rank_before": "Priest (قس)",
       "rank_new": "Abuna (قمص)",
@@ -262,100 +213,6 @@
       "date_english": "June 22, 1997"
     },
     {
-      "year": 2004,
-      "event_type": "construction",
-      "title": "مرحلة رئيسية من إعادة بناء كاتدرائية مارجرجس",
-      "description": "بدء أو مرحلة مهمة من مشروع إعادة بناء كاتدرائية الشهيد مارجرجس",
-      "location": "ديرمواس - كاتدرائية الشهيد مارجرجس",
-      "status": "under_verification",
-      "verified": false,
-      "confidence": "PENDING",
-      "note": "قيد التحقق التفصيلي",
-      "title_english": "Major phase of the St George Cathedral rebuilding",
-      "description_english": "Beginning or key phase of the project to rebuild the Cathedral of Saint George the Martyr"
-    },
-    {
-      "year": 2007,
-      "month": 4,
-      "day": 15,
-      "date_arabic": "15 أبريل 2007",
-      "event_type": "crisis",
-      "title": "أحداث النزاع العقاري - احتجاز الكهنة 🔴",
-      "description": "احتجاز كهنة في قسم الشرطة بديرمواس بسبب نزاع على شراء أرض من قبل الإيبارشية",
-      "location": "ديرمواس - قسم الشرطة",
-      "involved": [
-        "كهنة ديرمواس",
-        "5 مسيحيين"
-      ],
-      "cause": "land_dispute",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "copts-united",
-        "voice-of-copts",
-        "almasryalyoum-2007-land-dispute-direct"
-      ],
-      "tags": [
-        "crisis",
-        "conflict",
-        "legal"
-      ],
-      "title_english": "Land dispute incident — priests detained",
-      "description_english": "Priests were detained at Deir Mawas police station over a dispute concerning a land purchase by the diocese",
-      "date_english": "April 15, 2007",
-      "provenance_note": "The contemporaneous Al-Masry Al-Youm report explicitly names Father Wissa Sobhy among the diocesan priests present during the enforcement incident. This supports presence/participation, not a broader role claim."
-    },
-    {
-      "year": 2007,
-      "event_type": "media",
-      "title": "برز دور القمص ويصا كممثل رسمي للمطرانية",
-      "description": "بدء ظهور واضح للقمص ويصا كمتحدث وممثل رسمي للإيبارشية في الأزمات",
-      "role": "media_spokesperson",
-      "significance": "major_turning_point",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "wikipedia"
-      ],
-      "tags": [
-        "public_figure"
-      ],
-      "title_english": "Father Wissa emerges as official diocesan representative",
-      "description_english": "Father Wissa begins to appear publicly as spokesman and official representative of the diocese in crises"
-    },
-    {
-      "year": 2010,
-      "month": 7,
-      "event_type": "crisis",
-      "title": "أزمة كاميليا شحاتة (زوجة القس تادرس سمعان) 🔴",
-      "description": "اختفاء كاميليا شحاتة (زوجة القس تادرس سمعان) - تحرك الأقباط والاحتجاج",
-      "details": "تصريحات مباشرة للقمص ويصا كممثل رسمي للمطرانية",
-      "quotes": [
-        "زوجة الكاهن تداوس اختفت منذ مساء الأحد وإلى الآن لم نتمكن من العثور عليها",
-        "لم نجد من المسئولين في الأمن إلا التسويف والتأجيل",
-        "صدّقنا حيل الأمن ولكن كانت وعودهم باطلة"
-      ],
-      "wissa_role": "official_spokesman",
-      "location": "القاهرة - الكاتدرائية المرقسية",
-      "verification": "high_profile_media_coverage",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "copts-united",
-        "youm7-2010-wissa-cathedral",
-        "egypt-independent-2010-kamilia",
-        "akref-2010-wissa-sobhy-kamilia"
-      ],
-      "tags": [
-        "crisis",
-        "witness",
-        "international"
-      ],
-      "title_english": "Kamilia Shehata crisis",
-      "description_english": "The disappearance of Kamilia Shehata (wife of Father Tadros Samaan) — Coptic mobilization and protest",
-      "provenance_note": "Contemporaneous published coverage is used for the Father Wissa media-role chronology; international_media is retained only where a specific independently identified publication is recorded elsewhere."
-    },
-    {
       "year": 2013,
       "month": 3,
       "event_type": "church_conference",
@@ -372,151 +229,17 @@
       "description_english": "Attended the personal-status conference"
     },
     {
-      "year": 2013,
-      "month": 8,
-      "day": 14,
-      "date_arabic": "14 أغسطس 2013",
-      "event_type": "major_crisis",
-      "title": "الهجمات الطائفية على ديرمواس ودلجا 🔴",
-      "description": "هجمات طائفية عقب فض اعتصام رابعة - حرق 4 كنائس على الأقل - تشريد 62 أسرة",
-      "churches_affected": [
-        "الشهيد مارجرجس (الكاتدرائية الرئيسية)",
-        "كنيسة السلام",
-        "كنيسة القديس لعازر",
-        "كنيسة العذراء"
-      ],
-      "casualties": {
-        "families_displaced": 62,
-        "properties_damaged": "dozens",
-        "churches_burned": 4
-      },
-      "location": "ديرمواس ودلجا",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "youm7",
-        "almasryalyoum",
-        "international_media"
-      ],
-      "tags": [
-        "major_crisis",
-        "sectarian_violence",
-        "documented"
-      ],
-      "title_english": "Sectarian attacks on Deir Mawas and Delga",
-      "description_english": "Sectarian attacks following the Rabaa dispersal — at least 4 churches burned, 62 families displaced",
-      "date_english": "August 14, 2013"
-    },
-    {
-      "year": 2013,
-      "month": 9,
-      "event_type": "documentation",
-      "title": "توثيق الأضرار - جولة ميدانية مع نادر شكري 📸",
-      "description": "الصحفي نادر شكري يرافق القمص ويصا في جولة ميدانية لتوثيق الخسائر والتدمير",
-      "journalist": "نادر شكري",
-      "locations_visited": [
-        "مبنى الخدمات - شارع الحرية",
-        "كنيسة القديس لعازر",
-        "مطرانية ديرمواس",
-        "مقابر الأقباط"
-      ],
-      "significance": "official_documentation",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "wataninet-2013"
-      ],
-      "tags": [
-        "witness",
-        "documentation",
-        "media_coverage"
-      ],
-      "title_english": "Documenting the damage — field tour with Nader Shokry",
-      "description_english": "Journalist Nader Shokry accompanied Father Wissa on a field tour documenting losses and destruction"
-    },
-    {
-      "year": 2013,
-      "month": 9,
-      "day": 15,
-      "event_type": "testimony",
-      "title": "تصريحات مباشرة عن أحداث دلجا",
-      "description": "تصريحات مباشرة للقمص ويصا حول أحداث دلجا والخسائر",
-      "location": "دلجا",
-      "source_publication": "موقع مبتدا",
-      "verified": true,
-      "confidence": "HIGH",
-      "sources": [
-        "mobtada-2013"
-      ],
-      "tags": [
-        "eyewitness",
-        "official_statement"
-      ],
-      "title_english": "Direct statements on the Delga events",
-      "description_english": "Direct statements by Father Wissa about the Delga events and losses"
-    },
-    {
-      "year": 2014,
-      "event_type": "reconstruction",
-      "title": "مرحلة الترميم واستعادة الصلاة",
-      "description": "بدء عملية ترميم وإعادة الكنائس المحروقة في دلجا والعودة للصلاة",
-      "scope": "multiple_churches",
-      "location": "ديرمواس ودلجا",
-      "verified": true,
-      "confidence": "MEDIUM",
-      "sources": [
-        "copts-today-2014"
-      ],
-      "tags": [
-        "reconstruction",
-        "recovery"
-      ],
-      "title_english": "Restoration and the return of prayer",
-      "description_english": "The beginning of restoring the burned churches in Delga and the return of prayer"
-    },
-    {
-      "year": 2014,
-      "month": 2,
-      "event_type": "celebration",
-      "title": "اليوبيل الفضي للسيامة (23 سنة)",
-      "description": "الاحتفال بمرور 23 سنة على السيامة الكهنوتية (1991-2014)",
-      "duration_years": 23,
-      "verified": true,
-      "confidence": "MEDIUM",
-      "note": "تفاصيل الاحتفال قيد الاستكمال",
-      "title_english": "Silver jubilee of ordination (23 years)",
-      "description_english": "Celebrating 23 years since priestly ordination (1991–2014)"
-    },
-    {
-      "year": 2015,
-      "event_type": "statements",
-      "title": "تصريحات حول تأمين المطرانية والكنائس",
-      "description": "تصريحات حول تأمين المطرانية والكنائس والتواصل مع القيادات",
-      "topic": "security",
-      "verified": true,
-      "confidence": "MEDIUM",
-      "tags": [
-        "administration",
-        "security"
-      ],
-      "title_english": "Statements on securing the diocesan headquarters and churches",
-      "description_english": "Statements on securing the diocesan headquarters and churches and on coordination with officials"
-    },
-    {
       "year": 2016,
-      "month": null,
-      "event_type": "ongoing_service",
-      "title": "خدمة القداس الأسبوعي - بدء السجل",
-      "description": "بدء سجل منتظم لخدمة قداس الأربعاء بعزبة البلكية",
-      "location": "عزبة البلكية",
-      "frequency": "weekly",
-      "day": "Wednesday",
-      "period": "2016-2025",
+      "event_type": "celebration",
+      "title": "يوبيل القمص ويصا",
+      "description": "احتفال يوبيل القمص ويصا في كاتدرائية الشهيد العظيم الملاك ميخائيل بطنطا مع جموع من محبيه وآباء إيبارشية طنطا (إفادة عائلية، نوفمبر 2026). ويوافق يوبيل 2014 تاريخيًا يوبيل سيامة الأنبا أغابيوس الأسقفية، لا يوبيل القمص ويصا.",
+      "duration_years": 25,
       "verified": false,
-      "confidence": "PENDING",
-      "note": "يحتاج استكمال الأدلة",
-      "title_english": "Weekly liturgy service — record begins",
-      "description_english": "A regular record of Wednesday liturgy service at Ezbet El-Balkiya begins"
+      "confidence": "FAMILY_TESTIMONY",
+      "note": "إفادة عائلية؛ تفاصيل الاحتفال قيد الاستكمال بالصور والمصادر",
+      "title_english": "Jubilee of Father Wissa",
+      "description_english": "Jubilee celebration of Father Wissa at the Archangel Michael Cathedral in Tanta with his loved ones and the priests of the Tanta diocese (family testimony, November 2026). The 2014 jubilee marks Metropolitan Agabius’s episcopal jubilee, not Father Wissa’s.",
+      "basis": "family_testimony_pending_document"
     },
     {
       "year": 2022,
@@ -542,7 +265,7 @@
       "day": 20,
       "date_arabic": "20 نوفمبر 2022",
       "event_type": "elevation",
-      "title": "ترقية الأنبا أغابيوس إلى رتبة مطران 🎯",
+      "title": "ترقية الأنبا أغابيوس إلى رتبة مطران",
       "description": "ترقية الأنبا أغابيوس من أسقف إلى متروبوليت (مطران)",
       "person_affected": "الأنبا أغابيوس",
       "promoted_by": "البابا تواضروس الثاني",
@@ -569,7 +292,7 @@
       "day": 4,
       "date_arabic": "4 فبراير 2025",
       "event_type": "death",
-      "title": "وفاة الأنبا أغابيوس 🔴",
+      "title": "وفاة الأنبا أغابيوس",
       "description": "انتقال المتنيح الأنبا أغابيوس للملكوت السماوي بعد 36 سنة على رأس الإيبارشية (1989-2025)",
       "deceased": "الأنبا أغابيوس",
       "service_years": 36,
@@ -578,8 +301,7 @@
       "verified": true,
       "confidence": "HIGH",
       "sources": [
-        "wataninet-2025",
-        "voice-of-copts"
+        "wataninet-2025"
       ],
       "tags": [
         "death",
@@ -618,7 +340,7 @@
       "day": 1,
       "date_arabic": "1 يونيو 2025",
       "event_type": "ordination",
-      "title": "قداس سيامة الأنبا بقطر 🎯",
+      "title": "قداس سيامة الأنبا بقطر",
       "description": "قداس سيامة الأنبا بقطر أسقفاً على إيبارشية ديرمواس ودلجا",
       "person": "الأنبا بقطر",
       "location": "كنيسة مارجرجس بديرمواس",
@@ -660,7 +382,7 @@
       "day": 7,
       "date_arabic": "7 يناير 2026",
       "event_type": "official_visit",
-      "title": "زيارة محافظ المنيا لمطرانية ديرمواس 🎯",
+      "title": "زيارة محافظ المنيا لمطرانية ديرمواس",
       "description": "زيارة اللواء عماد كدواني محافظ المنيا لمطرانية ديرمواس - استقبل الأنبا بقطر",
       "visitor": "اللواء عماد كدواني",
       "position": "محافظ محافظة المنيا",
@@ -686,7 +408,7 @@
       "day": 8,
       "date_arabic": "8 أبريل 2026",
       "event_type": "celebration",
-      "title": "اليوبيل الخامس والثلاثين للسيامة 🎯",
+      "title": "اليوبيل الخامس والثلاثين للسيامة",
       "description": "الاحتفال بمرور 35 سنة على السيامة الكهنوتية (1991-2026)",
       "duration_years": 35,
       "occasion": "Grand Jubilee",
