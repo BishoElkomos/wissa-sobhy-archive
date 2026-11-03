@@ -3,4 +3,4 @@ Allow: /
 Disallow: /data/
 Disallow: /exports/
 
-Sitemap: https://wissa-sobhy-tadros-archive.vercel.app/sitemap.xml
+Sitemap: https://abonawessa.pages.dev/sitemap.xml
