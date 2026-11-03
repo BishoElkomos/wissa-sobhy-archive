@@ -1,9 +1,11 @@
 {
-  "buildTime": "2026-11-03T08:54:20.760Z",
-  "version": "3.1.0",
+  "buildTime": "2026-11-03T11:32:43.219Z",
+  "version": "3.3.0",
   "navigation": "unified-global-header",
-  "design": "premium-v6.1-restructure",
+  "design": "sijill-al-dhakira-v7-redesign",
   "seo": "canonical-og-jsonld-per-entity",
+  "primaryDomain": "https://abonawessa.pages.dev",
+  "mirrorRedirect": "vercel-308-to-primary",
   "evidenceAudit": "retired",
   "englishParity": "wissa-unified-page"
 }
