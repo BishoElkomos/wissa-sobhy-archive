@@ -1,17 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/wissa.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/agabius.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/boktor.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/diocese.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/sources-media.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/wissa.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/agabius.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/boktor.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/diocese.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/sources-media.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/about.html</loc></url>
-  <url><loc>https://wissa-sobhy-tadros-archive.vercel.app/en/about.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://abonawessa.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/wissa.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/wissa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/wissa.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/wissa.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/wissa.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/wissa.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/wissa.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/wissa.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/agabius.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/agabius.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/agabius.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/agabius.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/agabius.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/agabius.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/agabius.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/agabius.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/boktor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/boktor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/boktor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/boktor.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/boktor.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/boktor.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/boktor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/boktor.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/diocese.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/diocese.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/diocese.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/diocese.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/diocese.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/diocese.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/diocese.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/diocese.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/media.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/media.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/media.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/media.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/media.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/media.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/media.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/media.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/sources.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/sources.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/sources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/sources.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/sources.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/sources.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/sources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/sources.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/about.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/about.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/search.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/search.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/search.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/search.html"/>
+  </url>
+  <url>
+    <loc>https://abonawessa.pages.dev/en/search.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abonawessa.pages.dev/en/search.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abonawessa.pages.dev/search.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abonawessa.pages.dev/search.html"/>
+  </url>
 </urlset>

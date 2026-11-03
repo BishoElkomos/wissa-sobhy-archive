@@ -1,0 +1,23 @@
+/* v7 «سجل الذاكرة» — طبقة التصميم الأرشيفية العامة */
+:root{--sj-paper:#f3ead6;--sj-panel:#fbf5e7;--sj-kraft:#e9dcbe;--sj-kraft2:#dcc99f;--sj-ink:#33261a;--sj-ink2:#6e5b43;--sj-walnut:#5d4127;--sj-mast:#3a2c1c;--sj-rule:#c7b48c;--sj-stamp:#9c3d27}
+body{background:var(--sj-paper)}
+/* ترويسة «لوحة المتحف» — محددات مضاعفة لتتقدم على كتلة الترويسة المضمّنة */
+nav.archive-navbar.archive-navbar{background:rgba(58,44,28,.97);border-bottom:1px solid rgba(201,176,120,.6);box-shadow:0 8px 28px rgba(44,33,20,.2)}
+.archive-navbar .archive-brand-mark.archive-brand-mark{border-color:#c9b078;color:#e9dcbe}
+.archive-navbar .archive-brand small{color:#cdbb97}
+.archive-navbar .nav-menu a.active{background:#e9dcbe;color:#3a2c1c}
+.archive-navbar .nav-menu a.lang-en{background:#c9b078;color:#3a2c1c}
+.archive-navbar .archive-nav-toggle.archive-nav-toggle{border-color:rgba(201,176,120,.55)}
+@media(max-width:900px){.archive-navbar .archive-nav-panel.archive-nav-panel{background:#3a2c1c;border-bottom-color:#c9b078}}
+/* أشرطة العناوين الكبرى في الصفحات الداخلية */
+.wissa-hero.wissa-hero,.home-hero.home-hero,.page-header.page-header{background:linear-gradient(115deg,#2c2114,#3a2c1c 58%,#5d4127);border-bottom-color:#c9b078}
+h1,h2{font-family:'Reem Kufi','Amiri','Cairo',sans-serif}
+.story-section h2,.section-heading h2{color:var(--sj-mast)}
+/* تذييل */
+.footer.footer{background:var(--sj-mast);border-top:3px solid #c9b078;color:#cdbb97}
+.footer.footer a{color:#e9dcbe}
+/* أشرطة افتتاحية الصفحات الداخلية المتبقية */
+.v6-hero.v6-hero,.boktor-hero.boktor-hero,.agabius-hero.agabius-hero,.hero.hero{background:linear-gradient(115deg,#2c2114,#3a2c1c 58%,#5d4127)}
+/* عناصر تحكم صغيرة كانت بالكحلي القديم */
+.v6-tabs button.on{background:#5d4127;border-color:#5d4127}
+.v6-tabs button{border-color:#c9b078;color:#3a2c1c;background:#fbf5e7}
