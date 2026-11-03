@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-11-02",
+  "purpose": "سجل تصحيحات موثقة لادعاءات السيرة: يحدد المصدر المفضل لكل ادعاء مع سبب الترجيح التحريري.",
+  "corrections": [
+    {
+      "path": "education.bachelor.sources",
+      "replace_with": [
+        {
+          "type": "published",
+          "source_id": "elbalad-2026",
+          "name": "صدى البلد — اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
+        }
+      ],
+      "reason": "خبر اليوبيل 2026 يكرر صراحة محطة بكالوريوس التجارة من جامعة طنطا 1980؛ يُقدَّم على ويكيبيديا كإحالة منشورة."
+    },
+    {
+      "path": "ecclesiastical_career.elevation_to_abuna.sources",
+      "replace_with": [
+        {
+          "type": "published_reference",
+          "source_id": "st-takla-wissa-profile",
+          "name": "St-Takla.org — أبونا القمص ويصا صبحي تادرس",
+          "url": "https://st-takla.org/characters/priest-pastor-father/waaw/weeca-subhi-tadrus.html"
+        },
+        {
+          "type": "published",
+          "source_id": "elbalad-2026",
+          "name": "صدى البلد — اليوبيل 35",
+          "url": "https://www.elbalad.news/6928700",
+          "date": "2026-04-08"
+        }
+      ],
+      "reason": "إخراج ويكيبيديا من موضع الإحالة المنشورة المفضلة لرفع القمصية 1997، مع بقاء السجل العائلي مصدرًا أرشيفيًا مستقلًا عند توفره."
+    },
+    {
+      "path": "administrative_roles.media_spokesperson.sources",
+      "replace_with": [
+        {
+          "type": "published",
+          "source_id": "youm7-2010-wissa-cathedral",
+          "name": "اليوم السابع — اعتصام عشرات الأقباط والكهنة بكاتدرائية العباسية",
+          "url": "https://www.youm7.com/story/2010/7/23/اعتصام-عشرات-الأقباط-والكهنة-بكاتدرائية-العباسية-لليوم-الثانى/257407",
+          "date": "2010-07-23"
+        },
+        {
+          "type": "published",
+          "source_id": "egypt-independent-2010-kamilia",
+          "name": "Egypt Independent — Priest's wife denies converting to Islam",
+          "url": "https://www.egyptindependent.com/priests-wife-denies-converting-to-islam-questionable-video-clip/",
+          "date": "2010-09-09"
+        }
+      ],
+      "reason": "الاعتماد على تغطية صحفية معاصرة مسماة للدور التمثيلي والإعلامي الموثق بدلًا من ويكيبيديا."
+    },
+    {
+      "path": "birth.sources",
+      "action": "retain_family_archive",
+      "reason": "يبقى الأرشيف العائلي هو الأساس المعلن للميلاد؛ لم يُستبدل به مصدر عام مستقل."
+    },
+    {
+      "path": "marriage.sources",
+      "action": "retain_family_archive",
+      "reason": "حقيقة عائلية تبقى منسوبة صراحة إلى الأرشيف العائلي حتى يتوفر مستند رسمي مناسب."
+    },
+    {
+      "path": "move_to_deir_mawas.sources",
+      "action": "review_wording",
+      "reason": "مصدر اليوبيل 2026 يدعم سياق الارتباط المبكر بديرمواس؛ ولا يُستنتج منه بدء لقب الوكالة رسميًا في 1988."
+    },
+    {
+      "path": "administrative_roles.vicar_of_diocese",
+      "action": "date_bound",
+      "reason": "صيغة الوكالة التاريخية مقيدة بالدور السابق ولا تُعرض كصفة حالية؛ صحّحت العائلة في 2 نوفمبر 2026 الصفة إلى «وكيل مطرانية ديرمواس» والفترة إلى 22 يونيو 1997 – 5 فبراير 2025 (إفادة عائلية قيد التوثيق المستندي)."
+    },
+    {
+      "path": "key_relationships.journalist_collaborator",
+      "action": "needs_claim_level_review",
+      "reason": "الادعاء أقوى مما تثبته المقالات المرصودة حاليًا؛ يبقى بانتظار إسناد كل نشاط مشترك بمصدر مباشر."
+    }
+  ]
+}

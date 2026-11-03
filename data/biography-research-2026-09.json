@@ -1,78 +1,14 @@
 {
   "last_updated": "2026-09-03",
-  "description": "سجل تحريري يربط كل ادعاء في السيرة بمصادره ودرجة دعمه (مدعوم بأكثر من مصدر / مسجل في مصدر)، ويغذي دمج السيرة المعروض.",
+  "note": "Cleaned research enrichment ledger: held-out 2010/2013 sensitive source material removed; original ledger preserved in data/retired/. Matches the merged v6.1 public biography enrichment.",
   "source_ids": [
     "st-takla-wissa-profile",
     "st-takla-wissa-patriarchate-representatives",
     "st-takla-st-george-deir-mawas",
     "elbalad-2026-wissa-jubilee",
-    "wataninet-2013-deir-mawas-wissa",
-    "coptic-solidarity-2013-wissa-deir-mawas",
-    "rawi-burning-history-wissa",
-    "youm7-2010-wissa-cathedral",
-    "almasryalyoum-2010-kamilia-wissa",
-    "egypt-independent-2010-kamilia-wissa",
-    "copts-united-2010-wissa-kamilia",
-    "almasryalyoum-2007-wissa-land",
-    "coptichistory-2007-wissa-land",
-    "youm7-2010-minya-religious-committee",
-    "wataninet-2014-wissa-security",
     "coptichistory-2014-st-george-deir-mawas"
   ],
   "claims": [
-    {
-      "year": 2007,
-      "claim": "ظهر اسم القمص ويصا صبحي ضمن كهنة المطرانية الموجودين أثناء تنفيذ قرار تمكين متعلق بنزاع عقاري في ديرمواس.",
-      "status": "cross_supported",
-      "source_ids": [
-        "almasryalyoum-2007-wissa-land",
-        "coptichistory-2007-wissa-land"
-      ],
-      "wording_rule": "لا يُوصف بأنه قائد النزاع أو صاحبه إلا بدليل مباشر."
-    },
-    {
-      "year": 2010,
-      "claim": "كان القمص ويصا صبحي يُعرّف في التغطية الصحفية المعاصرة بوصفه وكيل مطرانية ديرمواس، وظهر ممثلًا للمطرانية في زيارة لجنة دينية برلمانية للمنيا.",
-      "status": "cross_supported",
-      "source_ids": [
-        "youm7-2010-wissa-cathedral",
-        "youm7-2010-minya-religious-committee",
-        "copts-united-2010-wissa-kamilia"
-      ],
-      "wording_rule": "يُستخدم كدليل على الدور التمثيلي في تلك الفترة، لا كدليل على استمرار المنصب بعد 2025."
-    },
-    {
-      "year": 2010,
-      "claim": "ورد اسم القمص ويصا صبحي وتصريحاته في تغطية قضية كاميليا شحاتة، كما ظهر في مصدر إنجليزي مستقل.",
-      "status": "cross_supported",
-      "source_ids": [
-        "youm7-2010-wissa-cathedral",
-        "almasryalyoum-2010-kamilia-wissa",
-        "egypt-independent-2010-kamilia-wissa",
-        "copts-united-2010-wissa-kamilia"
-      ],
-      "wording_rule": "يُذكر بوصفه متحدثًا/ممثلًا في التغطية المعاصرة دون إعادة صياغة تصريحاته كحقائق مستقلة."
-    },
-    {
-      "year": 2013,
-      "claim": "رافق القمص ويصا صبحي صحفيين في جولة ميدانية داخل ديرمواس لتوثيق أضرار لحقت بكنائس ومبانٍ وممتلكات كنسية، وورد ذلك أيضًا في تغطية إنجليزية.",
-      "status": "cross_supported",
-      "source_ids": [
-        "wataninet-2013-deir-mawas-wissa",
-        "coptic-solidarity-2013-wissa-deir-mawas",
-        "rawi-burning-history-wissa"
-      ],
-      "wording_rule": "هذه من أقوى الشواهد على دوره التوثيقي المباشر في أحداث 2013."
-    },
-    {
-      "year": 2014,
-      "claim": "نقلت وطني تصريحًا مباشرًا للقمص ويصا صبحي حول الوضع الأمني وخطف الأقباط في صعيد مصر.",
-      "status": "source_recorded",
-      "source_ids": [
-        "wataninet-2014-wissa-security"
-      ],
-      "wording_rule": "يُعرض كتغطية صحفية وتصريح منسوب إليه، لا كحكم تحليلي على الوضع الأمني."
-    },
     {
       "year": 2014,
       "claim": "تسجل مادة تاريخية عن كاتدرائية مارجرجس بديرمواس اسم القمص ويصا صبحي ضمن آباء كهنة المطرانية.",
@@ -111,31 +47,6 @@
     }
   ],
   "timeline_additions": [
-    {
-      "date": "2010-03-26",
-      "title": "تمثيل المطرانية في زيارة لجنة دينية برلمانية",
-      "description": "تغطية معاصرة تسمي القمص ويصا صبحي وكيلًا للمطرانية وتذكر تمثيله لها في زيارة اللجنة الدينية بمجلس الشعب للمنيا.",
-      "source_ids": [
-        "youm7-2010-minya-religious-committee"
-      ]
-    },
-    {
-      "date": "2013-09",
-      "title": "جولة ميدانية لتوثيق أضرار أحداث 2013",
-      "description": "رافق صحفيين في جولة داخل ديرمواس شملت كنيسة القديس لعازر والمقابر ومبنى المطرانية ومبنى الخدمات، وشرح الأضرار التي لحقت بها.",
-      "source_ids": [
-        "wataninet-2013-deir-mawas-wissa",
-        "coptic-solidarity-2013-wissa-deir-mawas"
-      ]
-    },
-    {
-      "date": "2014-04",
-      "title": "تصريح صحفي حول خطف الأقباط والوضع الأمني",
-      "description": "نقلت وطني تصريحًا مباشرًا للقمص ويصا صبحي حول تكرار حوادث خطف الأقباط في صعيد مصر.",
-      "source_ids": [
-        "wataninet-2014-wissa-security"
-      ]
-    },
     {
       "date": "2026-04-08",
       "title": "الاحتفال بمرور 35 عامًا على السيامة",
